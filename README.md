@@ -1,2 +1,105 @@
-# furniture
+# furniture-shop
 Future Furniture Project 3
+
+...........
+
+## Setting up my workspace
+
+- Created a new repository on the Github named ismet94/furniture-shop
+- Save to desired directory
+- Created a base folder structure this included the images folder, icons, file, css, js and scss using the make directory command as seen below:
+```
+mkdir "name of folder being created"
+```
+also used the touch command to create my files.
+```
+touch "name of file being created"
+```
+- Cloned the furniture-shop to the desktop uising gitBash command as seen below:
+```
+git clone https://github.com/ismet94/furniture-shop.git
+
+```
+- Pushed all code to the Github and adding a message to keep track of the code im uploading, below are these commands:
+```
+cd furniture-shop
+git add .
+git commit -m "Message to display on the github website"
+git push -u origin master
+
+```
+- When working on another workbench the git pull function was used.
+```
+cd furniture-shop
+git pull
+
+```
+- Updated Readme file on a regular bases.
+- Created Live Link as listed below.
+
+
+## Live Link
+
+- 
+
+## Prevalent Technologies Used
+
+- HTML
+- CSS
+- SASS
+- Javascript
+- GitBash
+
+### Other Technologies Used
+
+- Photoshop CS6
+- Macromedia Freehand 11
+ 
+
+Technologies and Tools Used:
+
+- HTML5 Guide Book
+- Google Research
+- GitHub Articles
+- W3schools
+- Coolers.co
+
+Languages:
+
+- HTML
+- CSS
+- SASS
+- Javascript
+
+
+Tools:
+
+- GitBash
+- Github
+- Visual Studio Code
+- Google Chrome
+- Microsoft Edge
+- WordPad
+- Photoshop CS6
+- Macrodmedia Freehand
+
+### Changelog
+
+2019-03-07:
+- Created repository on github
+- Base folders added
+- Created all needed files
+- linked scss to css
+- Readme Created 
+- Added structure in index.html
+- Updated Readme file
+
+## Contributors
+
+Ismet Samsodien - 2019
+
+
+
+
+
+
