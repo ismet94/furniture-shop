@@ -1,0 +1,16 @@
+// ======================================================================
+// Global Imports
+// ======================================================================
+
+// imported all scss files to execute in sequence 
+@import 'partials/variables',
+        'partials/mixins',
+        'partials/components',
+        'partials/base',
+        'partials/layouts',
+        'partials/responsive';
+
+
+
+
+

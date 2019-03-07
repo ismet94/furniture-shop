@@ -1,3 +1,96 @@
+.lang {
+  grid-area: lang; }
 
+.curr {
+  grid-area: curr; }
+
+.ship {
+  grid-area: ship; }
+
+.face {
+  grid-area: face; }
+
+.gmail {
+  grid: gmail; }
+
+.twitter {
+  grid-area: twitter; }
+
+.mail {
+  grid-area: mail; }
+
+.home {
+  background-color: blue;
+  grid-area: home; }
+
+.shop {
+  background-color: #5ff026;
+  grid-area: shop; }
+
+.about {
+  background-color: #00ff80;
+  grid-area: about; }
+
+.logo {
+  background-color: #ff00d4;
+  grid-area: logo; }
+
+.blog {
+  background-color: #ff4800;
+  grid-area: blog; }
+
+.contact {
+  background-color: #ffc400;
+  grid-area: contact; }
+
+.lookbook {
+  background-color: red;
+  grid-area: lookbook; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0px; }
+
+body {
+  margin: 0px; }
+
+header {
+  display: inline-block; }
+
+h1 {
+  margin: 0px; }
+
+.head {
+  display: inline; }
+
+.navigation {
+  width: 100%;
+  background-color: rgba(252, 151, 0, 0.801); }
+
+.grid-head {
+  display: grid;
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(12, 1.5fr, 1.5fr, 7fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "lang curr ship face gmail twitter mail"; }
+.grid-nav {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "home shop about logo blog contact lookbook"; }
 
 /*# sourceMappingURL=main.css.map */

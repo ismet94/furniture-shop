@@ -1,3 +1,47 @@
+.head {
+  display: inline; }
 
+.navigation {
+  width: 100%;
+  background-color: rgba(252, 151, 0, 0.801); }
+
+.grid-head {
+  display: grid;
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(12, 1.5fr, 1.5fr, 7fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "lang curr ship face gmail twitter mail"; }
+.grid-nav {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "home shop about logo blog contact lookbook"; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0px; }
+
+body {
+  margin: 0px; }
+
+header {
+  display: inline-block; }
+
+h1 {
+  margin: 0px; }
 
 /*# sourceMappingURL=style.css.map */
