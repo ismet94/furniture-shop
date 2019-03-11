@@ -1,30 +1,46 @@
-.lang {
-    grid-area: lang;
+.langcurr {
+    grid-area: langcurr;
+    top: 20%;
+    height: 9px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
 }
 
-.curr {
-    grid-area: curr;
-}
 
 .ship {
     grid-area: ship;
+    height: 9px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: #999999;
 }
 
-.face {
-    grid-area: face;
+.social {
+    grid-area: social;
+    height: 15px;
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
 }
 
-.gmail {
-    grid: gmail;
-}
-
-.twitter {
-    grid-area: twitter;
-}
-
-.mail {
-    grid-area: mail;
-}
 
 .home {
     background-color: blue;
@@ -61,3 +77,43 @@
     grid-area: lookbook;
 }
 
+
+// ----------- Featured Products
+
+.feature {
+    grid-area: feature;
+    background-color: aqua;
+}
+
+.feat1 {
+    grid-area: feat1;
+    background-color: chartreuse;
+}
+
+.feat2 {
+    grid-area: feat2;
+    background-color: chartreuse;
+}
+
+.feat3 {
+    grid-area: feat3;
+    background-color: chartreuse;
+}
+
+
+// ----------- New Collection
+
+.neww {
+    grid-area: neww;
+    background-color: rgb(0, 158, 158);
+}
+
+.coll1 {
+    grid-area: coll1;
+    background-color: rgb(81, 161, 1);
+}
+
+.coll2 {
+    grid-area: coll2;
+    background-color: rgb(81, 161, 1);
+}

@@ -1,23 +1,41 @@
-.lang {
-  grid-area: lang; }
-
-.curr {
-  grid-area: curr; }
+.langcurr {
+  grid-area: langcurr;
+  top: 20%;
+  height: 9px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
 
 .ship {
-  grid-area: ship; }
+  grid-area: ship;
+  height: 9px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.83;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #999999; }
 
-.face {
-  grid-area: face; }
-
-.gmail {
-  grid: gmail; }
-
-.twitter {
-  grid-area: twitter; }
-
-.mail {
-  grid-area: mail; }
+.social {
+  grid-area: social;
+  height: 15px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
 
 .home {
   background-color: blue;
@@ -47,6 +65,34 @@
   background-color: red;
   grid-area: lookbook; }
 
+.feature {
+  grid-area: feature;
+  background-color: aqua; }
+
+.feat1 {
+  grid-area: feat1;
+  background-color: chartreuse; }
+
+.feat2 {
+  grid-area: feat2;
+  background-color: chartreuse; }
+
+.feat3 {
+  grid-area: feat3;
+  background-color: chartreuse; }
+
+.neww {
+  grid-area: neww;
+  background-color: #009e9e; }
+
+.coll1 {
+  grid-area: coll1;
+  background-color: #51a101; }
+
+.coll2 {
+  grid-area: coll2;
+  background-color: #51a101; }
+
 * {
   box-sizing: border-box; }
 
@@ -54,6 +100,7 @@ html {
   margin: 0px; }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0px; }
 
 header {
@@ -62,24 +109,45 @@ header {
 h1 {
   margin: 0px; }
 
+.back {
+  background-color: #a3a3a3;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat; }
+
 .head {
   display: inline; }
 
 .navigation {
   width: 100%;
-  background-color: rgba(252, 151, 0, 0.801); }
+  background-color: rgba(175, 175, 175, 0.801); }
+
+.main-logo {
+  font-size: 100px;
+  text-align: center; }
+.main-slogan {
+  text-align: center; }
+.main-phrase {
+  text-align: center; }
+.main-button {
+  margin-left: 47%;
+  text-align: center; }
+.main-scroll-down {
+  text-align: center; }
 
 .grid-head {
   display: grid;
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
   text-align: center;
-  line-height: 30px;
+  height: 53px;
+  background-color: #2d2827;
+  color: white;
   /* grid columns and rows size */
-  grid-template-columns: repeat(12, 1.5fr, 1.5fr, 7fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 10px;
-  grid-template-areas: "lang curr ship face gmail twitter mail"; }
+  grid-gap: 5px;
+  grid-template-areas: "langcurr ship social"; }
 .grid-nav {
   display: grid;
   width: 80%;
@@ -92,5 +160,25 @@ h1 {
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "home shop about logo blog contact lookbook"; }
+.grid-feature-products {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "feature feature feature" "feat1 feat2 feat3"; }
+.grid-new-collection {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "neww neww" "coll1 coll2"; }
 
 /*# sourceMappingURL=main.css.map */

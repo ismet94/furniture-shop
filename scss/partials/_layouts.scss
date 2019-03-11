@@ -1,27 +1,62 @@
+.back {
+    background-color: rgb(163, 163, 163);
+    background-size: cover;
+  
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
 .head {
+ 
     display: inline;
 }
 
 .navigation {
     width: 100%;
-    background-color: rgba(252, 151, 0, 0.801);
+    background-color: rgba(175, 175, 175, 0.801);
 }
 
+.main {
+    &-logo {
+        font-size: 100px;
+        text-align: center
+    }
+
+    &-slogan {
+        text-align: center;
+    }
+
+    &-phrase {
+        text-align: center;
+    }
+
+    &-button {
+        margin-left: 47%;
+        text-align: center;
+    }
+
+    &-scroll-down {
+        text-align: center;
+    }
+}
+
+// Created a Grid system so t
 .grid {
     &-head {
         display: grid;
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
         text-align: center;
-        line-height: 30px;
+        height: 53px;
+        background-color: #2d2827;
+        color: white;
     
         /* grid columns and rows size */
-        grid-template-columns: repeat(12, 1.5fr, 1.5fr, 7fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        grid-gap: 10px;
-    
+        grid-gap: 5px;
         grid-template-areas: 
-                    "lang curr ship face gmail twitter mail"
+                    "langcurr ship social"
     }
 
     &-nav {
@@ -40,7 +75,41 @@
     grid-template-areas: 
                 "home shop about logo blog contact lookbook"
     }
+
+    &-feature-products {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "feature feature feature"
+                    "feat1 feat2 feat3"
+    }
+
+    &-new-collection {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "neww neww"
+                    "coll1 coll2"
+    }
 }
+
+
 
 
 
