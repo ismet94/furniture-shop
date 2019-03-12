@@ -53,7 +53,6 @@
     }
 
     &-scroll-down {
-        width: 29px;
   height: 16px;
   font-family: Linearicons-Free;
   font-size: 30px;
@@ -63,7 +62,7 @@
   line-height: 1.6;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: #2d2827;
     }
 }
 
@@ -112,10 +111,9 @@
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        grid-gap: 20px;
+        grid-gap: 10px;
     
         grid-template-areas: 
-                    "feature feature feature"
                     "feat1 feat2 feat3"
     }
 
@@ -131,8 +129,54 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "neww neww"
                     "coll1 coll2"
+    }
+
+    &-best {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+        float: left;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "best"
+                    "bestpara"
+                    "bestbtn"
+    }
+
+    &-blog {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+ 
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "blogimg bloginfo"
+    }
+
+    &-footer {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+ 
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "footer-contact footer-links footer-shop footer-insta"
     }
 }
 
