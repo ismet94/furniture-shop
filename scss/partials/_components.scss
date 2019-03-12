@@ -42,39 +42,143 @@
 }
 
 
+.seach {
+    width: 22px;
+  height: 23px;
+  font-family: Linearicons-Free;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color:#2d2827;
+}
+
 .home {
-    background-color: blue;
+    width: 44px;
+  height: 11px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2d2827;
     grid-area: home;
 }
 
 .shop {
-    background-color: rgb(95, 240, 38);
+    width: 44px;
+  height: 11px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2d2827;
     grid-area: shop;
 }
 
 .about {
-    background-color: rgb(0, 255, 128);
+    width: 44px;
+  height: 11px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2d2827;
     grid-area: about;
 }
 
 .logo {
-    background-color: rgb(255, 0, 212);
+    width: 117px;
+  height: 21px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #2d2827;
     grid-area: logo;
 }
 
 .blog {
-    background-color: rgb(255, 72, 0);
+    width: 32px;
+  height: 11px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2d2827;
     grid-area: blog;
 }
 
 .contact {
-    background-color: rgb(255, 196, 0);
+    width: 32px;
+  height: 11px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2d2827;
     grid-area: contact;
 }
 
 .lookbook {
-    background-color: rgb(255, 0, 0);
+    width: 32px;
+    height: 11px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #2d2827;
     grid-area: lookbook;
+}
+
+.items {
+    width: 18px;
+    height: 18px;
+    background-color: #2d2827;
+}
+
+.cart {
+    width: 21px;
+  height: 18px;
+  font-family: FontAwesome;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #2d2827;
 }
 
 

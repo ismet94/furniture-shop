@@ -1,9 +1,9 @@
 .back {
-    background-color: rgb(163, 163, 163);
+    background: url(../images/main.jpg);
+    text-align: center;
     background-size: cover;
-  
     height: 100vh;
-    background-repeat: no-repeat;
+ 
 }
 
 .head {
@@ -13,30 +13,57 @@
 
 .navigation {
     width: 100%;
-    background-color: rgba(175, 175, 175, 0.801);
+    background-color: rgba(175, 175, 175, 0);
 }
 
 .main {
     &-logo {
-        font-size: 100px;
-        text-align: center
+       margin-top: 70px;
+  height: 58px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2d2827;
     }
 
     &-slogan {
-        text-align: center;
-    }
-
-    &-phrase {
-        text-align: center;
+  height: 39px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2d2827;
     }
 
     &-button {
-        margin-left: 47%;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #a88d7b;
         text-align: center;
     }
 
     &-scroll-down {
-        text-align: center;
+        width: 29px;
+  height: 16px;
+  font-family: Linearicons-Free;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
     }
 }
 
@@ -73,7 +100,7 @@
     grid-gap: 10px;
 
     grid-template-areas: 
-                "home shop about logo blog contact lookbook"
+                "search home shop about logo blog contact lookbook items cart"
     }
 
     &-feature-products {
