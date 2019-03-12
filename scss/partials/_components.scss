@@ -1,12 +1,13 @@
 .langcurr {
     grid-area: langcurr;
-    top: 20%;
+   padding: 3%;
     height: 9px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
     font-style: normal;
     line-height: 1.83;
+    letter-spacing: 2.4px;
     letter-spacing: normal;
     text-align: center;
     color: #999999;
@@ -17,7 +18,7 @@
     grid-area: ship;
     height: 9px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -30,8 +31,10 @@
 .social {
     grid-area: social;
     height: 15px;
+    padding: 4%;
+  
     font-family: FontAwesome;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -41,8 +44,9 @@
     color: #999999;
 }
 
-
+// Navbar components
 .seach {
+  grid-area: search;
     width: 22px;
   height: 23px;
   font-family: Linearicons-Free;
@@ -162,12 +166,14 @@
 }
 
 .items {
+  grid-area: items;
     width: 18px;
     height: 18px;
     background-color: #2d2827;
 }
 
 .cart {
+  grid-area: cart;
     width: 21px;
   height: 18px;
   font-family: FontAwesome;
@@ -179,6 +185,68 @@
   letter-spacing: 1.1px;
   text-align: left;
   color: #2d2827;
+}
+
+
+// Content
+
+.main {
+  &-logo {
+    grid-area: logo;
+     margin-top: 70px;
+height: 58px;
+font-family: 'Dosis', sans-serif;
+font-size: 50px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 0.96;
+letter-spacing: normal;
+text-align: center;
+color: #2d2827;
+  }
+
+  &-slogan {
+    grid-area: slogan;
+height: 39px;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 15px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.67;
+letter-spacing: normal;
+text-align: center;
+color: #2d2827;
+  }
+
+  &-button {
+    grid-area: contentbtn;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #a88d7b;
+      text-align: center;
+  }
+
+  &-scroll-down {
+    grid-area: scrolldown;
+padding: 5%;
+font-family: Linearicons-Free;
+font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+
+letter-spacing: normal;
+
+color: #2d2827;
+background-size: contain;
+background-image: url(../icons/scroll.gif);
+background-repeat: no-repeat;
+filter: invert(20%);
+
+  }
 }
 
 
@@ -222,9 +290,12 @@
 }
 
 .feat-img1 {
-    width: 320px;
+    width: 360px;
     height: 360px;
     background-color: #666666;
+    background-image: url(../images/future-chair.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .feat-nam1 {
@@ -260,9 +331,12 @@
 }
 
 .feat-img2 {
-    width: 320px;
+    width: 360px;
     height: 360px;
     background-color: #666666;
+    background-image: url(../images/future-coffee-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .feat-nam2 {
@@ -299,9 +373,12 @@
 }
 
 .feat-img3 {
-    width: 320px;
+    width: 360px;
     height: 360px;
     background-color: #666666;
+    background-image: url(../images/future-sofa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .feat-nam3 {
@@ -411,24 +488,38 @@
 // ---------- Best Goods
 
 .goods {
-  height: 402px;
+  height: 522px;
   opacity: 0.9;
   background-color: #666666;
+  background-image: linear-gradient( to right, #383838b9, #66666652), url(../images/best.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
+//   -moz-transition: all 0.3s;
+//   -webkit-transition: all 0.3s;
+//   transition: all 0.3s;
+// }
 
-.best { 
+// .goods:hover {
+//   -moz-transform: scale(1.1);
+//   -webkit-transform: scale(1.1);
+//   transform: scale(1.1);
+// }
+
+.best-heading { 
     grid-area: best;
-
-  height: 37px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 48px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
+    height: 38px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    margin-left: 20%;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
 }
 
 .best-para {
@@ -436,6 +527,7 @@
     height: 38px;
     font-family:  'Source Sans Pro', sans-serif;
     font-size: 15px;
+    margin-left: 20%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -447,7 +539,7 @@
 
 .best-btn {
     grid-area: bestbtn;
-    margin-left: 30%;
+    margin-left: 20%;
     width: 150px;
     text-align: center;
     height: 40px;
@@ -558,9 +650,14 @@
 
 .footercontact {
  grid-area: footercontact;
+  
+}
+
+.footer-head1 {
+ 
   height: 21px;
   font-family: Dosis;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;

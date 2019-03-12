@@ -11,72 +11,44 @@
   width: 100%;
   background-color: rgba(175, 175, 175, 0); }
 
-.main-logo {
-  margin-top: 70px;
-  height: 58px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.96;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-.main-slogan {
-  height: 39px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-.main-button {
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #a88d7b;
-  text-align: center; }
-.main-scroll-down {
-  height: 16px;
-  font-family: Linearicons-Free;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-
 .grid-head {
   display: grid;
   width: 100%;
   margin: 0px auto;
   text-align: center;
-  height: 53px;
+  height: 8%;
   background-color: #2d2827;
   color: white;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-gap: 10px;
   grid-template-areas: "langcurr ship social"; }
 .grid-nav {
   display: grid;
-  width: 80%;
+  padding: 5%;
+  width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
   /* grid columns and rows size */
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "search home shop about logo blog contact lookbook items cart"; }
+.grid-content {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
 .grid-feature-products {
   display: grid;
   width: 80%;
@@ -101,12 +73,13 @@
   display: grid;
   width: 80%;
   margin: 0px auto;
+  padding-top: 2%;
   float: left;
   /* grid columns and rows size */
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  grid-template-areas: "best" "bestpara" "bestbtn"; }
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+  grid-template-areas: "best " "bestpara " "bestbtn "; }
 .grid-blog {
   display: grid;
   width: 80%;
@@ -124,13 +97,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
-  grid-template-areas: "footer-contact footer-links footer-shop footer-insta"; }
+  grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
 
 * {
   box-sizing: border-box; }
 
 html {
-  margin: 0px; }
+  margin: 0px;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;

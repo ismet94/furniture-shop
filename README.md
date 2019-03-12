@@ -1,7 +1,7 @@
 # furniture-shop
 Future Furniture Project 3
 
-...........
+The Future... We often think about future objects and elements in our daily lives from clothing to cars. Now we have incorporated the future into furniture. 
 
 ## Setting up my workspace
 
@@ -93,6 +93,28 @@ Tools:
 - Readme Created 
 - Added structure in index.html
 - Updated Readme file
+
+2019-03-08:
+- Created code structure for index.html
+- Created the header and navbar
+- Populated Navbar
+- Updated Readme
+
+2019-03-11:
+- Created each section for index.html
+- Populated each section with provided code
+- Created Grid layout for each section
+- Added colours and fonts
+
+2019-03-12:
+- Continued with code structure
+- Photoshoped new featured images to desired look and feel
+- Created clog section
+- Created footer
+- Updated Readme
+
+
+
 
 ## Contributors
 

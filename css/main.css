@@ -1,12 +1,13 @@
 .langcurr {
   grid-area: langcurr;
-  top: 20%;
+  padding: 3%;
   height: 9px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 300;
   font-style: normal;
   line-height: 1.83;
+  letter-spacing: 2.4px;
   letter-spacing: normal;
   text-align: center;
   color: #999999; }
@@ -15,7 +16,7 @@
   grid-area: ship;
   height: 9px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -27,8 +28,9 @@
 .social {
   grid-area: social;
   height: 15px;
+  padding: 4%;
   font-family: FontAwesome;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -38,6 +40,7 @@
   color: #999999; }
 
 .seach {
+  grid-area: search;
   width: 22px;
   height: 23px;
   font-family: Linearicons-Free;
@@ -149,11 +152,13 @@
   grid-area: lookbook; }
 
 .items {
+  grid-area: items;
   width: 18px;
   height: 18px;
   background-color: #2d2827; }
 
 .cart {
+  grid-area: cart;
   width: 21px;
   height: 18px;
   font-family: FontAwesome;
@@ -165,6 +170,53 @@
   letter-spacing: 1.1px;
   text-align: left;
   color: #2d2827; }
+
+.main-logo {
+  grid-area: logo;
+  margin-top: 70px;
+  height: 58px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2d2827; }
+.main-slogan {
+  grid-area: slogan;
+  height: 39px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2d2827; }
+.main-button {
+  grid-area: contentbtn;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #a88d7b;
+  text-align: center; }
+.main-scroll-down {
+  grid-area: scrolldown;
+  padding: 5%;
+  font-family: Linearicons-Free;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #2d2827;
+  background-size: contain;
+  background-image: url(../icons/scroll.gif);
+  background-repeat: no-repeat;
+  filter: invert(20%); }
 
 .feature {
   grid-area: feature;
@@ -194,9 +246,12 @@
   grid-area: feat1; }
 
 .feat-img1 {
-  width: 320px;
+  width: 360px;
   height: 360px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(../images/future-chair.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .feat-nam1 {
   height: 18px;
@@ -226,9 +281,12 @@
   grid-area: feat2; }
 
 .feat-img2 {
-  width: 320px;
+  width: 360px;
   height: 360px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(../images/future-coffee-table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .feat-nam2 {
   height: 18px;
@@ -258,9 +316,12 @@
   grid-area: feat3; }
 
 .feat-img3 {
-  width: 320px;
+  width: 360px;
   height: 360px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(../images/future-sofa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .feat-nam3 {
   height: 18px;
@@ -349,15 +410,20 @@
   color: #a88d7b; }
 
 .goods {
-  height: 402px;
+  height: 522px;
   opacity: 0.9;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: linear-gradient(to right, #383838b9, #66666652), url(../images/best.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%; }
 
-.best {
+.best-heading {
   grid-area: best;
-  height: 37px;
+  height: 38px;
   font-family: 'Dosis', sans-serif;
   font-size: 48px;
+  margin-left: 20%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -371,6 +437,7 @@
   height: 38px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
+  margin-left: 20%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -381,7 +448,7 @@
 
 .best-btn {
   grid-area: bestbtn;
-  margin-left: 30%;
+  margin-left: 20%;
   width: 150px;
   text-align: center;
   height: 40px;
@@ -472,10 +539,12 @@
   background-color: #2d2827; }
 
 .footercontact {
-  grid-area: footercontact;
+  grid-area: footercontact; }
+
+.footer-head1 {
   height: 21px;
   font-family: Dosis;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -497,7 +566,8 @@
   box-sizing: border-box; }
 
 html {
-  margin: 0px; }
+  margin: 0px;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -522,72 +592,44 @@ h1 {
   width: 100%;
   background-color: rgba(175, 175, 175, 0); }
 
-.main-logo {
-  margin-top: 70px;
-  height: 58px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.96;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-.main-slogan {
-  height: 39px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-.main-button {
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #a88d7b;
-  text-align: center; }
-.main-scroll-down {
-  height: 16px;
-  font-family: Linearicons-Free;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2d2827; }
-
 .grid-head {
   display: grid;
   width: 100%;
   margin: 0px auto;
   text-align: center;
-  height: 53px;
+  height: 8%;
   background-color: #2d2827;
   color: white;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-gap: 10px;
   grid-template-areas: "langcurr ship social"; }
 .grid-nav {
   display: grid;
-  width: 80%;
+  padding: 5%;
+  width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
   /* grid columns and rows size */
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "search home shop about logo blog contact lookbook items cart"; }
+.grid-content {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
 .grid-feature-products {
   display: grid;
   width: 80%;
@@ -612,12 +654,13 @@ h1 {
   display: grid;
   width: 80%;
   margin: 0px auto;
+  padding-top: 2%;
   float: left;
   /* grid columns and rows size */
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  grid-template-areas: "best" "bestpara" "bestbtn"; }
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+  grid-template-areas: "best " "bestpara " "bestbtn "; }
 .grid-blog {
   display: grid;
   width: 80%;
@@ -635,6 +678,6 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
-  grid-template-areas: "footer-contact footer-links footer-shop footer-insta"; }
+  grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
 
 /*# sourceMappingURL=main.css.map */
