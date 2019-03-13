@@ -1,5 +1,5 @@
-.langcurr {
-  grid-area: langcurr;
+.lang {
+  grid-area: lang;
   padding: 3%;
   height: 9px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -11,6 +11,66 @@
   letter-spacing: normal;
   text-align: center;
   color: #999999; }
+
+.dropdownlang {
+  position: relative;
+  display: inline-block; }
+
+.dropdownlang-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #2d2827;
+  min-width: 100px;
+  z-index: 1; }
+
+.dropdownlang:hover .dropdownlang-content {
+  display: block; }
+
+.dropdownlang-content a {
+  color: #999999;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block; }
+
+.dropdownlang-content a:hover {
+  color: rgba(255, 255, 255, 0.9); }
+
+.curr {
+  grid-area: curr;
+  padding: 4%;
+  margin-right: 0%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: 2.4px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
+
+.dropdownzar {
+  position: relative;
+  display: inline-block; }
+
+.dropdownzar-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #2d2827;
+  min-width: 100px;
+  z-index: 1; }
+
+.dropdownzar:hover .dropdownzar-content {
+  display: block; }
+
+.dropdownzar-content a {
+  color: #999999;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block; }
+
+.dropdownzar-content a:hover {
+  color: rgba(255, 255, 255, 0.9); }
 
 .ship {
   grid-area: ship;
@@ -41,8 +101,6 @@
 
 .seach {
   grid-area: search;
-  width: 22px;
-  height: 23px;
   font-family: Linearicons-Free;
   font-size: 22px;
   font-weight: normal;
@@ -54,8 +112,7 @@
   color: #2d2827; }
 
 .home {
-  width: 44px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -65,11 +122,18 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: home; }
+  grid-area: home;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.home:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .shop {
-  width: 44px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -79,11 +143,18 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: shop; }
+  grid-area: shop;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.shop:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .about {
-  width: 44px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -93,11 +164,19 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: about; }
+  grid-area: about;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.about:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  text-decoration: none; }
 
 .logo {
-  width: 117px;
-  height: 21px;
+  margin: 10%;
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -105,13 +184,22 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.5px;
-  text-align: left;
+  text-align: center;
   color: #2d2827;
-  grid-area: logo; }
+  text-justify: distribute;
+  grid-area: logo;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.logo:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  text-decoration: none; }
 
 .blog {
-  width: 32px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -121,11 +209,18 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: blog; }
+  grid-area: blog;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.blog:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .contact {
-  width: 32px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -135,11 +230,18 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: contact; }
+  grid-area: contact;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.contact:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .lookbook {
-  width: 32px;
-  height: 11px;
+  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -149,7 +251,15 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #2d2827;
-  grid-area: lookbook; }
+  grid-area: lookbook;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.lookbook:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .items {
   grid-area: items;
@@ -159,8 +269,6 @@
 
 .cart {
   grid-area: cart;
-  width: 21px;
-  height: 18px;
   font-family: FontAwesome;
   font-size: 22px;
   font-weight: normal;
@@ -239,6 +347,7 @@
   background-color: #a88d7b; }
 
 .featured-products {
+  margin-top: 8%;
   height: 504px;
   background-color: var(--white); }
 
@@ -348,6 +457,7 @@
   color: #999999; }
 
 .new-collection {
+  margin-top: 8%;
   height: 555px;
   background-color: #ffffff; }
 
@@ -376,7 +486,10 @@
 
 .collection-img {
   height: 373px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(../images/future-bed-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .collection-name {
   height: 16px;
@@ -395,7 +508,10 @@
 
 .collection-img2 {
   height: 373px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(../images/future-chair-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .collection-name2 {
   height: 16px;
@@ -412,14 +528,16 @@
 .goods {
   height: 522px;
   opacity: 0.9;
+  margin-top: 5%;
   background-color: #666666;
-  background-image: linear-gradient(to right, #383838b9, #66666652), url(../images/best.png);
+  background-image: linear-gradient(to right, #383838b9, #66666652), url(../images/best.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%; }
 
 .best-heading {
   grid-area: best;
+  margin-top: 5%;
   height: 38px;
   font-family: 'Dosis', sans-serif;
   font-size: 48px;
@@ -448,11 +566,12 @@
 
 .best-btn {
   grid-area: bestbtn;
-  margin-left: 20%;
+  margin-left: 50%;
   width: 150px;
-  text-align: center;
   height: 40px;
-  background-color: #a88d7b; }
+  border-radius: 20px;
+  background-color: #a88d7b;
+  text-align: center; }
 
 .blog-section {
   height: 581px;
@@ -543,7 +662,7 @@
 
 .footer-head1 {
   height: 21px;
-  font-family: Dosis;
+  font-family: 'Dosis', sans-serif;
   font-size: 30px;
   font-weight: 600;
   font-style: normal;
@@ -562,6 +681,72 @@
 .footerinsta {
   grid-area: footerinsta; }
 
+.navabout {
+  height: 385px;
+  background-color: #666666; }
+
+.aboutus {
+  padding-top: 10%;
+  height: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #ffffff; }
+
+.navshow {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cccccc; }
+
+.who-we-are {
+  margin-top: 5%;
+  height: 548px;
+  background-color: #ffffff; }
+
+.who-we-are-heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333; }
+
+.about-para {
+  width: 524px;
+  height: 89px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666; }
+
+.about-section {
+  grid-area: whowe; }
+
+.about-us-image {
+  grid-area: aboutimage;
+  width: 600px;
+  height: 490px;
+  background-color: #666666; }
+
 * {
   box-sizing: border-box; }
 
@@ -579,14 +764,17 @@ header {
 h1 {
   margin: 0px; }
 
+a {
+  text-decoration: none; }
+
+li {
+  text-decoration: none; }
+
 .back {
   background: url(../images/main.jpg);
   text-align: center;
   background-size: cover;
   height: 100vh; }
-
-.head {
-  display: inline; }
 
 .navigation {
   width: 100%;
@@ -595,16 +783,28 @@ h1 {
 .grid-head {
   display: grid;
   width: 100%;
-  margin: 0px auto;
   text-align: center;
   height: 8%;
   background-color: #2d2827;
   color: white;
   /* grid columns and rows size */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-gap: 10px;
-  grid-template-areas: "langcurr ship social"; }
+  grid-gap: 15px;
+  grid-template-areas: "lang curr ship ship social"; }
+.grid-head2 {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  height: 8%;
+  padding-bottom: 2%;
+  background-color: #eeeeee;
+  color: #353535;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "lang curr ship ship social"; }
 .grid-nav {
   display: grid;
   padding: 5%;
@@ -660,7 +860,7 @@ h1 {
   grid-template-columns: repeat(1, 60%);
   grid-template-rows: repeat(auto);
   grid-gap: 10px;
-  grid-template-areas: "best " "bestpara " "bestbtn "; }
+  grid-template-areas: "best" "bestpara" "bestbtn"; }
 .grid-blog {
   display: grid;
   width: 80%;
@@ -679,5 +879,29 @@ h1 {
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
+
+.grid2-nav2 {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo logo home shop about  blog contact lookbook items cart search"; }
+.grid2-about {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "whowe aboutimage"; }
 
 /*# sourceMappingURL=main.css.map */

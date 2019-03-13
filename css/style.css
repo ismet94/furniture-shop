@@ -4,9 +4,6 @@
   background-size: cover;
   height: 100vh; }
 
-.head {
-  display: inline; }
-
 .navigation {
   width: 100%;
   background-color: rgba(175, 175, 175, 0); }
@@ -14,16 +11,28 @@
 .grid-head {
   display: grid;
   width: 100%;
-  margin: 0px auto;
   text-align: center;
   height: 8%;
   background-color: #2d2827;
   color: white;
   /* grid columns and rows size */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-gap: 10px;
-  grid-template-areas: "langcurr ship social"; }
+  grid-gap: 15px;
+  grid-template-areas: "lang curr ship ship social"; }
+.grid-head2 {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  height: 8%;
+  padding-bottom: 2%;
+  background-color: #eeeeee;
+  color: #353535;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "lang curr ship ship social"; }
 .grid-nav {
   display: grid;
   padding: 5%;
@@ -79,7 +88,7 @@
   grid-template-columns: repeat(1, 60%);
   grid-template-rows: repeat(auto);
   grid-gap: 10px;
-  grid-template-areas: "best " "bestpara " "bestbtn "; }
+  grid-template-areas: "best" "bestpara" "bestbtn"; }
 .grid-blog {
   display: grid;
   width: 80%;
@@ -99,6 +108,30 @@
   grid-gap: 20px;
   grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
 
+.grid2-nav2 {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo logo home shop about  blog contact lookbook items cart search"; }
+.grid2-about {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "whowe aboutimage"; }
+
 * {
   box-sizing: border-box; }
 
@@ -115,5 +148,11 @@ header {
 
 h1 {
   margin: 0px; }
+
+a {
+  text-decoration: none; }
+
+li {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
