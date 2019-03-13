@@ -113,8 +113,10 @@ Tools:
 - Created footer
 - Updated Readme
 
-
-
+2019-03-13:
+- Created structure fro About.html
+- Inserted navbar and header
+- Created Grid layout 
 
 ## Contributors
 
