@@ -112,7 +112,6 @@
   color: #2d2827; }
 
 .home {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -133,7 +132,6 @@
   transform: scale(1.4); }
 
 .shop {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -154,7 +152,6 @@
   transform: scale(1.4); }
 
 .about {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -176,30 +173,31 @@
   text-decoration: none; }
 
 .logo {
-  margin: 10%;
-  font-family: 'Dosis', sans-serif;
-  font-size: 30px;
+  height: 80px;
+  width: 80px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.5px;
   text-align: center;
-  color: #2d2827;
-  text-justify: distribute;
+  background-image: url(../icons/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   grid-area: logo;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  filter: invert(70%); }
 
 .logo:hover {
   -moz-transform: scale(1.4);
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
+  cursor: pointer;
   text-decoration: none; }
 
 .blog {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -220,7 +218,6 @@
   transform: scale(1.4); }
 
 .contact {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -241,7 +238,6 @@
   transform: scale(1.4); }
 
 .lookbook {
-  margin: 30%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -312,19 +308,15 @@
   background-color: #a88d7b;
   text-align: center; }
 .main-scroll-down {
+  height: 10%;
+  width: 10%;
   grid-area: scrolldown;
   padding: 5%;
-  font-family: Linearicons-Free;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #2d2827;
-  background-size: contain;
   background-image: url(../icons/scroll.gif);
+  background-size: cover;
   background-repeat: no-repeat;
-  filter: invert(20%); }
+  cursor: pointer;
+  filter: invert(30%); }
 
 .feature {
   grid-area: feature;
@@ -362,7 +354,7 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.feat-nam1 {
+.feat-name1 {
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -397,7 +389,7 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.feat-nam2 {
+.feat-name2 {
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -432,7 +424,7 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.feat-nam3 {
+.feat-name3 {
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -485,6 +477,7 @@
   grid-area: coll1; }
 
 .collection-img {
+  width: 526px;
   height: 373px;
   background-color: #666666;
   background-image: url(../images/future-bed-new.jpg);
@@ -507,6 +500,7 @@
   grid-area: coll2; }
 
 .collection-img2 {
+  width: 526px;
   height: 373px;
   background-color: #666666;
   background-image: url(../images/future-chair-new.jpg);
@@ -566,7 +560,6 @@
 
 .best-btn {
   grid-area: bestbtn;
-  margin-left: 50%;
   width: 150px;
   height: 40px;
   border-radius: 20px;
@@ -661,29 +654,149 @@
   grid-area: footercontact; }
 
 .footer-head1 {
-  height: 21px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-  font-weight: 600;
+  height: 80px;
+  width: 80px;
+  background-image: url(../icons/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.footercontact-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 1.5px;
+  line-height: 1.6;
+  letter-spacing: normal;
   text-align: left;
-  color: #e5e5e5; }
+  color: #666666; }
 
 .footerlinks {
   grid-area: footerlinks; }
 
+.footer-head2 {
+  width: 46px;
+  height: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e5e5e5; }
+
+.footerlinks-content {
+  padding: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666; }
+
 .footershop {
   grid-area: footershop; }
+
+.footer-head3 {
+  width: 46px;
+  height: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e5e5e5; }
+
+.footershop-content {
+  padding: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666; }
 
 .footerinsta {
   grid-area: footerinsta; }
 
+.footer-head4 {
+  width: 46px;
+  height: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e5e5e5; }
+
+.insta-img1 {
+  grid: insta1;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img2 {
+  grid: insta2;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img3 {
+  grid: insta3;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img4 {
+  grid: insta4;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img5 {
+  grid: insta5;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img6 {
+  grid: insta6;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img7 {
+  grid: insta7;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
+.insta-img8 {
+  grid: insta8;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff; }
+
 .navabout {
   height: 385px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .aboutus {
   padding-top: 10%;
@@ -747,6 +860,211 @@
   height: 490px;
   background-color: #666666; }
 
+.meet-us {
+  height: 581px;
+  background-color: #ffffff; }
+
+.meet-our-team {
+  grid-area: feature;
+  height: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333; }
+
+.line4 {
+  margin-left: 45%;
+  margin-right: 45%;
+  height: 2px;
+  text-align: center;
+  background-color: #a88d7b; }
+
+.meet1 {
+  grid-area: meet1; }
+
+.meet-img1 {
+  width: 270px;
+  height: 305px;
+  background-color: #666666;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.meet-name1 {
+  height: 19px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333333; }
+
+.meet-position1 {
+  height: 11px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
+
+.meet-social1 {
+  height: 11px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555; }
+
+.meet2 {
+  grid-area: meet2; }
+
+.meet-img2 {
+  width: 270px;
+  height: 305px;
+  background-color: #666666;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.meet-name2 {
+  height: 19px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333333; }
+
+.meet-position2 {
+  height: 11px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
+
+.meet-social2 {
+  height: 11px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555; }
+
+.meet3 {
+  grid-area: meet3; }
+
+.meet-img3 {
+  width: 270px;
+  height: 305px;
+  background-color: #666666;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.meet-name3 {
+  height: 19px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333333; }
+
+.meet-position3 {
+  height: 11px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
+
+.meet-social3 {
+  height: 11px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555; }
+
+.meet4 {
+  grid-area: meet4; }
+
+.meet-img4 {
+  width: 270px;
+  height: 305px;
+  background-color: #666666;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.meet-name4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333333; }
+
+.meet-position4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999; }
+
+.meet-social4 {
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555; }
+
 * {
   box-sizing: border-box; }
 
@@ -807,12 +1125,14 @@ li {
   grid-template-areas: "lang curr ship ship social"; }
 .grid-nav {
   display: grid;
-  padding: 5%;
+  padding: 2%;
   width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  justify-items: center;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
@@ -856,6 +1176,7 @@ li {
   margin: 0px auto;
   padding-top: 2%;
   float: left;
+  justify-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(1, 60%);
   grid-template-rows: repeat(auto);
@@ -874,19 +1195,34 @@ li {
   display: grid;
   width: 80%;
   margin: 0px auto;
+  justify-items: center;
+  padding-top: 5%;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
+.grid-instagram {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 4%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "insta1 insta2 insta3 insta4" "insta5 isnta6 insta7 insta8"; }
 
 .grid2-nav2 {
   display: grid;
+  padding: 1%;
   width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  justify-items: center;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: auto;
@@ -903,5 +1239,17 @@ li {
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "whowe aboutimage"; }
+.grid2-meet {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  justify-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "meet1 meet2 meet3 meet4"; }
 
 /*# sourceMappingURL=main.css.map */

@@ -35,12 +35,14 @@
   grid-template-areas: "lang curr ship ship social"; }
 .grid-nav {
   display: grid;
-  padding: 5%;
+  padding: 2%;
   width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  justify-items: center;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
@@ -84,6 +86,7 @@
   margin: 0px auto;
   padding-top: 2%;
   float: left;
+  justify-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(1, 60%);
   grid-template-rows: repeat(auto);
@@ -102,19 +105,34 @@
   display: grid;
   width: 80%;
   margin: 0px auto;
+  justify-items: center;
+  padding-top: 5%;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
+.grid-instagram {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 4%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "insta1 insta2 insta3 insta4" "insta5 isnta6 insta7 insta8"; }
 
 .grid2-nav2 {
   display: grid;
+  padding: 1%;
   width: 85%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  justify-items: center;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: auto;
@@ -131,6 +149,18 @@
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "whowe aboutimage"; }
+.grid2-meet {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  justify-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "meet1 meet2 meet3 meet4"; }
 
 * {
   box-sizing: border-box; }
