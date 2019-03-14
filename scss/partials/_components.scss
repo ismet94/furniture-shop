@@ -138,7 +138,7 @@
 }
 
 .home {
-  
+  padding: 20%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -147,6 +147,7 @@
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
+  cursor: pointer;
   color: #2d2827;
     grid-area: home;
     -moz-transition: all 0.3s;
@@ -161,7 +162,7 @@
 }
 
 .shop {
- 
+  padding: 20%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -170,6 +171,7 @@
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
+  cursor: pointer;
   color: #2d2827;
     grid-area: shop;
     -moz-transition: all 0.3s;
@@ -184,7 +186,7 @@
 }
 
 .about {
-
+  padding: 20%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -193,6 +195,7 @@
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
+  cursor: pointer;
   color: #2d2827;
     grid-area: about;
     -moz-transition: all 0.3s;
@@ -237,7 +240,7 @@
 }
 
 .blog {
-  
+  padding: 20%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -246,6 +249,7 @@
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
+  cursor: pointer;
   color: #2d2827;
     grid-area: blog;
     -moz-transition: all 0.3s;
@@ -261,7 +265,7 @@
 }
 
 .contact {
-  
+  padding: 20%;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -270,6 +274,7 @@
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
+  cursor: pointer;
   color: #2d2827;
     grid-area: contact;
     -moz-transition: all 0.3s;
@@ -285,7 +290,7 @@
 }
 
 .lookbook {
- 
+  padding: 20%;
     font-family: 'Dosis', sans-serif;
     font-size: 15px;
     font-weight: normal;
@@ -294,6 +299,7 @@
     line-height: normal;
     letter-spacing: 0.8px;
     text-align: left;
+    cursor: pointer;
     color: #2d2827;
     grid-area: lookbook;
     -moz-transition: all 0.3s;
@@ -1372,5 +1378,157 @@ color: #555555;
   line-height: 1.67;
   letter-spacing: normal;
   text-align: left;
+  color: #666666;
+}
+
+// --------------------------------------------------------------------------------------
+// ----------------------------------- CONTACT PAGE -------------------------------------
+// --------------------------------------------------------------------------------------
+
+.contact-us-view {
+  width: 100%;
+  height: 485px;
+  background-color: #ffffff;
+}
+
+.address {
+  grid-area: address;
+  width: 370px;
+  height: 200px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.location-icon {
+  width: 100%;
+  height: 37px;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.58;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.our-address {
+  width: 100%;
+  height: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #333333;
+}
+
+.our-address-view {
+  width: 100%;
+  height: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+
+.phone {
+  grid-area: phone;
+  width: 390px;
+  height: 100px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.phone-content {
+  margin-top: 10%;
+  height: 21px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+
+.email {
+  grid-area: email;
+  width: 390px;
+  height: 100px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.email-content {
+  margin-top: 10%;
+  height: 21px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+
+.hour {
+  grid-area: hour;
+  width: 390px;
+  height: 200px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.clock {
+  width: 100%;
+  height: 37px;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.58;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.openning-hour {
+  width: 100%;
+  height: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #333333;
+}
+
+.trading {
+  width: 100%;
+  height: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: center;
   color: #666666;
 }

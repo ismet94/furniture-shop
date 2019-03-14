@@ -2,7 +2,8 @@
   background: url(../images/main.jpg);
   text-align: center;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
 
 .navigation {
   width: 100%;
@@ -170,6 +171,18 @@
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "wedoimg wedoinfo"; }
+
+.grid3-contact-us-view {
+  display: grid;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 5%;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "address phone hour" "address email hour"; }
 
 * {
   box-sizing: border-box; }
