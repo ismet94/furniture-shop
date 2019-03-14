@@ -117,6 +117,8 @@ Tools:
 - Created structure fro About.html
 - Inserted navbar and header
 - Created Grid layout 
+- Fixed Navbar
+- Created layout for about.html
 
 ## Contributors
 
