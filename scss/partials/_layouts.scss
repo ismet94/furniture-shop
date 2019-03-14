@@ -99,6 +99,7 @@
         width: 80%;
         margin: 0px auto;
         text-align: center;
+        
     
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
@@ -226,7 +227,7 @@
         line-height: 30px;
     
         /* grid columns and rows size */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 10px;
     

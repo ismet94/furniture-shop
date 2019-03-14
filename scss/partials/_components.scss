@@ -156,9 +156,9 @@
   }
 
 .home:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .shop {
@@ -416,19 +416,20 @@ color: #2d2827;
   background-color: #a88d7b;
 }
 
-
-// --------------------------Feature 1
-
 .featured-products {
   margin-top: 8%;
     height: 504px;
-    background-color: var(--white);
-
+    // background-color: var(--white);
 }
+
+
+// --------------------------Feature 1
+
+
 
 .feat1 {
     grid-area: feat1;
-   
+    background-color: #ffffff41;
 }
 
 .feat-img1 {
@@ -917,6 +918,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-chair.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .insta-img2 {
@@ -924,6 +928,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-chair.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .insta-img3 {
@@ -931,6 +938,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-chair.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .insta-img4 {
@@ -938,6 +948,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-bed-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .insta-img5 {
@@ -945,6 +958,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-chair-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .insta-img6 {
@@ -952,6 +968,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(/images/future-chair.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .insta-img7 {
@@ -959,6 +978,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-sofa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .insta-img8 {
@@ -966,6 +988,9 @@ color: #2d2827;
   width: 80px;
   height: 80px;
   background-color: #ffffff;
+  background-image: url(../images/future-coffee-table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .copyright {
@@ -1016,8 +1041,9 @@ color: #2d2827;
 }
 
 .navshow {
+  padding-top: 1%;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -1031,6 +1057,7 @@ color: #2d2827;
   margin-top: 5%;
   height: 548px;
   background-color: #ffffff;
+
 } 
 
 .who-we-are-heading {
@@ -1071,7 +1098,8 @@ color: #2d2827;
 
   height: 490px;
 
-  background-color: #666666;
+  background-image: url(/images/whatwedo.png);
+  background-size: cover;
 }
 
 .meet-us {
@@ -1111,7 +1139,7 @@ color: #2d2827;
   width: 270px;
   height: 305px;
   background-color: #666666;
-    // background-image: url(../images/future-chair.jpg);
+    background-image: url(../images/greg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1337,7 +1365,11 @@ color: #555555;
       grid-area: wedoimg;
       width: 600px;
   height: 490px;
-  background-color: #666666;
+  
+  background-image: url(../images/whoweare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
   }
 
   .what-we-do-info {
@@ -1384,6 +1416,42 @@ color: #555555;
 // --------------------------------------------------------------------------------------
 // ----------------------------------- CONTACT PAGE -------------------------------------
 // --------------------------------------------------------------------------------------
+
+
+.navcontact {
+  height: 385px;
+  background-color: #666666;
+  background-image: linear-gradient( to right, #383838b9, #383838b9), url(../images/main3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactus {
+  padding-top: 10%;
+  height: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contactshow {
+  padding-top: 1%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cccccc;
+}
 
 .contact-us-view {
   width: 100%;
@@ -1532,3 +1600,5 @@ color: #555555;
   text-align: center;
   color: #666666;
 }
+
+

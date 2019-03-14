@@ -114,11 +114,19 @@ Tools:
 - Updated Readme
 
 2019-03-13:
-- Created structure fro About.html
+- Created structure fro about.html
 - Inserted navbar and header
 - Created Grid layout 
 - Fixed Navbar
 - Created layout for about.html
+
+2019-03-14:
+- Created structure fro contact.html
+- Added grid layout and navigation section
+- Updated about.html
+- Added images
+- Updated Readme
+
 
 ## Contributors
 
