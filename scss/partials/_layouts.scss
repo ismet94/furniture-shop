@@ -250,6 +250,21 @@
         grid-template-areas: 
                     "meet1 meet2 meet3 meet4"
     }    
+
+    &-we-do {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+       
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                    "wedoimg wedoinfo"
+    }
 }
 
 
