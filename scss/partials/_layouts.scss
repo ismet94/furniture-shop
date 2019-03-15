@@ -56,12 +56,10 @@
     &-nav {
     display: grid;
     padding: 2%;
+    margin-left: 5%;
     width: 85%;
-    margin: 0px auto;
-    text-align: center;
-    line-height: 30px;
+    line-height: 20px;
     text-transform: uppercase;
-    justify-items: center;
     align-items: center;
 
     /* grid columns and rows size */
@@ -70,7 +68,7 @@
     grid-gap: 10px;
 
     grid-template-areas: 
-                "search home shop about logo blog contact lookbook items cart"
+                "search home shop about logo blog contact lookbook cart"
     }
 
     &-content {

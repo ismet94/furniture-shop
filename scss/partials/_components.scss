@@ -123,9 +123,8 @@
 }
 
 // Navbar components
-.seach {
+.search {
   grid-area: search;
-    
   font-family: Linearicons-Free;
   font-size: 22px;
   font-weight: normal;
@@ -133,8 +132,17 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.1px;
-  text-align: left;
+  text-align: center;
   color:#2d2827;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.search:hover {
+-moz-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .home {
@@ -146,7 +154,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
     grid-area: home;
@@ -314,16 +322,15 @@
   transform: scale(1.4);
 }
 
-.items {
-  grid-area: items;
-    width: 18px;
-    height: 18px;
-    background-color: #2d2827;
-}
+// .items {
+//   grid-area: items;
+//     width: 18px;
+//     height: 18px;
+//     background-color: #2d2827;
+// }
 
 .cart {
   grid-area: cart;
-    
   font-family: FontAwesome;
   font-size: 22px;
   font-weight: normal;
@@ -333,7 +340,17 @@
   letter-spacing: 1.1px;
   text-align: left;
   color: #2d2827;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+.cart:hover {
+-moz-transform: scale(1.4);
+-webkit-transform: scale(1.4);
+transform: scale(1.4);
+}
+
 
 
 // Content
@@ -341,40 +358,40 @@
 .main {
   &-logo {
     grid-area: logo;
-     margin-top: 70px;
-height: 58px;
-font-family: 'Dosis', sans-serif;
-font-size: 50px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 0.96;
-letter-spacing: normal;
-text-align: center;
-color: #2d2827;
+    margin-top: 70px;
+    height: 58px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.96;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2d2827;
   }
 
   &-slogan {
     grid-area: slogan;
-height: 39px;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 1.67;
-letter-spacing: normal;
-text-align: center;
-color: #2d2827;
+    height: 39px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2d2827;
   }
 
   &-button {
     grid-area: contentbtn;
-      width: 150px;
-      height: 40px;
-      border-radius: 20px;
-      background-color: #a88d7b;
-      text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #a88d7b;
+    text-align: center;
   }
 
   &-scroll-down {
@@ -395,22 +412,22 @@ color: #2d2827;
 // --------------- Featured Products ---------------
 
 .feature {
-    grid-area: feature;
-    height: 24px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
+  grid-area: feature;
+  height: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
 }
 
 .line {
-    margin-left: 40%;
-    margin-right: 40%;
+  margin-left: 40%;
+  margin-right: 40%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b;
@@ -418,8 +435,8 @@ color: #2d2827;
 
 .featured-products {
   margin-top: 8%;
-    height: 504px;
-    // background-color: var(--white);
+  height: 504px;
+  // background-color: var(--white);
 }
 
 

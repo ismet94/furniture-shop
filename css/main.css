@@ -99,7 +99,7 @@
   text-align: center;
   color: #999999; }
 
-.seach {
+.search {
   grid-area: search;
   font-family: Linearicons-Free;
   font-size: 22px;
@@ -108,8 +108,16 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.1px;
-  text-align: left;
-  color: #2d2827; }
+  text-align: center;
+  color: #2d2827;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.search:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
 
 .home {
   padding: 20%;
@@ -120,7 +128,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
   grid-area: home;
@@ -269,12 +277,6 @@
   -webkit-transform: scale(1.4);
   transform: scale(1.4); }
 
-.items {
-  grid-area: items;
-  width: 18px;
-  height: 18px;
-  background-color: #2d2827; }
-
 .cart {
   grid-area: cart;
   font-family: FontAwesome;
@@ -285,7 +287,15 @@
   line-height: normal;
   letter-spacing: 1.1px;
   text-align: left;
-  color: #2d2827; }
+  color: #2d2827;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.cart:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
 
 .main-logo {
   grid-area: logo;
@@ -1402,18 +1412,16 @@ li {
 .grid-nav {
   display: grid;
   padding: 2%;
+  margin-left: 5%;
   width: 85%;
-  margin: 0px auto;
-  text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   text-transform: uppercase;
-  justify-items: center;
   align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
-  grid-template-areas: "search home shop about logo blog contact lookbook items cart"; }
+  grid-template-areas: "search home shop about logo blog contact lookbook cart"; }
 .grid-content {
   display: grid;
   width: 85%;
