@@ -7,47 +7,39 @@
 }
 
 
-.navigation {
-    width: 100%;
-    background-color: rgba(175, 175, 175, 0);
-}
-
-
 
 
 // Created a Grid system so t
 .grid {
     &-head {
         display: grid;
-        width: 100%;
-       
-        text-align: center;
-        height: 8%;
-        background-color: #2d2827;
+        width: 90%;
+        margin-left: 5%;
         color: white;
+        align-items: center;
     
         /* grid columns and rows size */
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, auto);
         grid-template-rows: auto;
         grid-gap: 15px;
+        
         grid-template-areas: 
                     "lang curr ship ship social"
     }
 
     &-head2 {
         display: grid;
-        width: 100%;
-       
-        text-align: center;
-        height: 8%;
-        padding-bottom: 2%;
-        background-color: #eeeeee;
+        width: 90%;
+        margin-left: 5%;
         color: rgb(53, 53, 53);
+        background-color: #eeeeee;
+        align-items: center;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
         grid-gap: 15px;
+
         grid-template-areas: 
                     "lang curr ship ship social"
     }
@@ -56,14 +48,14 @@
     &-nav {
     display: grid;
     padding: 2%;
-    margin-left: 5%;
+    margin-left: 7.3%;
     width: 85%;
     line-height: 20px;
     text-transform: uppercase;
     align-items: center;
 
     /* grid columns and rows size */
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
 
@@ -88,7 +80,6 @@
                     "logo"
                     "slogan"
                     "contentbtn"
-                   
                     "scrolldown"
         }
 
@@ -161,7 +152,6 @@
         display: grid;
         width: 80%;
         margin: 0px auto;
-        justify-items: center;
        padding-top: 5%;
     
         /* grid columns and rows size */
@@ -198,24 +188,22 @@
 .grid2 {
     &-nav2 {
         display: grid;
-        padding: 1%;
+  
+        margin-left: 7.3%;
         width: 85%;
-        margin: 0px auto;
-        text-align: center;
-        line-height: 30px;
+        line-height: 20px;
         text-transform: uppercase;
-        justify-items: center;
         align-items: center;
     
-        
         /* grid columns and rows size */
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "logo logo home shop about  blog contact lookbook items cart search"
+                    "logo . . . home shop about  blog contact lookbook cart search"
         }
+
 
     &-about {
         display: grid;
@@ -272,13 +260,14 @@
 
 
 .grid3 {
+
     &-contact-us-view {
         display: grid;
         width: 70%;
-        margin: 0px auto;
+        margin: auto;
         text-align: center;
         padding-top: 5%;
-       align-items: center;
+        align-items: center;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
@@ -287,5 +276,25 @@
         grid-template-areas: 
                     "address phone hour"
                     "address email hour"
+    }
+
+    &-form {
+        display: grid;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5%;
+        text-align: center;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 15px;
+
+        grid-template-areas: 
+                    "yourname email"
+                    "number  subject"
+                    "textarea1 textarea1"
+                    "contactbtn contactbtn"
+   
     }
 }

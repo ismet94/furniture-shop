@@ -1,7 +1,13 @@
+.header1 {
+  width: 100%;
+  height: 53px;
+  background-color: #2d2827;
+}
+
 .lang {
     grid-area: lang;
-   padding: 3%;
-    height: 9px;
+    padding: 1%;
+    margin-right: 0%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -46,7 +52,7 @@
 
 .curr {
   grid-area: curr;
-   padding: 4%;
+   padding: 1%;
    margin-right: 0%;
 
     font-family: 'Source Sans Pro', sans-serif;
@@ -95,7 +101,8 @@
 
 .ship {
     grid-area: ship;
-    height: 9px;
+    padding: 1%;
+  
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -109,8 +116,8 @@
 
 .social {
     grid-area: social;
-    height: 15px;
-    padding: 4%;
+   
+    padding: 1%;
     font-family: FontAwesome;
     font-size: 17px;
     font-weight: normal;
@@ -121,6 +128,8 @@
     text-align: center;
     color: #999999;
 }
+
+
 
 // Navbar components
 .search {
@@ -178,7 +187,7 @@ transform: scale(1.5);
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
     grid-area: shop;
@@ -202,7 +211,7 @@ transform: scale(1.5);
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
     grid-area: about;
@@ -220,29 +229,29 @@ transform: scale(1.5);
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
+  padding: 20%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 1.5px;
-  text-align: center;
-  background-image: url(../icons/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  letter-spacing: 1.8px;
+  text-align: right;
+
+
     grid-area: logo;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    filter: invert(70%);
+    filter: invert(30%);
   }
 
 
 .logo:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
   cursor: pointer;
   text-decoration: none;
 }
@@ -256,7 +265,7 @@ transform: scale(1.5);
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
     grid-area: blog;
@@ -281,7 +290,7 @@ transform: scale(1.5);
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   color: #2d2827;
     grid-area: contact;
@@ -306,7 +315,7 @@ transform: scale(1.5);
     font-stretch: normal;
     line-height: normal;
     letter-spacing: 0.8px;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     color: #2d2827;
     grid-area: lookbook;
@@ -332,13 +341,13 @@ transform: scale(1.5);
 .cart {
   grid-area: cart;
   font-family: FontAwesome;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.1px;
-  text-align: left;
+  text-align: right;
   color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -408,6 +417,9 @@ transform: scale(1.4);
   }
 }
 
+.scrolling {
+  margin-top: 5%;
+}
 
 // --------------- Featured Products ---------------
 
@@ -827,21 +839,25 @@ transform: scale(1.4);
 }
 
 .footer-head1 {
-  height: 80px;
-  width: 80px;
-  background-image: url(../icons/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: 5%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #e5e5e5;
 }
 
 .footercontact-content {
-
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.6;
+  line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
   // color: var(--warm-grey);
@@ -1471,13 +1487,13 @@ color: #555555;
 
 .contact-us-view {
   width: 100%;
-  height: 485px;
+  height: 370px;
   background-color: #ffffff;
 }
 
 .address {
   grid-area: address;
-  width: 370px;
+  width: 100%;
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0;
@@ -1548,7 +1564,7 @@ color: #555555;
 
 .email {
   grid-area: email;
-  width: 390px;
+  width: 100%;
   height: 100px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0;
@@ -1570,7 +1586,7 @@ color: #555555;
 
 .hour {
   grid-area: hour;
-  width: 390px;
+  width: 100%;
   height: 200px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0;
@@ -1618,3 +1634,91 @@ color: #555555;
 }
 
 
+.name {
+    grid-area: yourname;
+    text-indent: 2%;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+  }
+  
+.emailform {
+    grid-area: email;
+    text-indent: 2%;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+  }
+
+.number {
+    grid-area: number;
+    text-indent: 2%;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+  }
+
+ .subject {
+    grid-area: subject;
+    text-indent: 2%;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+  }
+
+.text-area1 {
+    grid-area: textarea1;
+    text-indent: 2%;
+  height: 150px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: solid 1px #e6e6e6;
+  background-color: #ffffff;
+  }
+
+.contact-btn {
+    grid-area: contactbtn;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #a88d7b;
+    text-align: center;
+  }
+
+  // --------------------------------------------------------------------------------------
+// ----------------------------------- BLOG PAGE -------------------------------------
+// --------------------------------------------------------------------------------------
+
+  .navblog {
+    height: 385px;
+    background-color: #666666;
+    background-image: linear-gradient( to right, #383838b9, #383838b9), url(../images/main4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .blogus {
+    padding-top: 10%;
+    height: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .blogshow {
+    padding-top: 1%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #cccccc;
+  }
