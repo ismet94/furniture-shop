@@ -1095,11 +1095,10 @@ color: #2d2827;
 .about-us-image {
   grid-area: aboutimage;
   width: 600px;
-
   height: 490px;
-
   background-image: url(../images/whatwedo.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .meet-us {

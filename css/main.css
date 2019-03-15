@@ -915,8 +915,9 @@
   grid-area: aboutimage;
   width: 600px;
   height: 490px;
-  background-image: url(/images/whatwedo.png);
-  background-size: cover; }
+  background-image: url(../images/whatwedo.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .meet-us {
   height: 581px;
