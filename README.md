@@ -127,6 +127,12 @@ Tools:
 - Added images
 - Updated Readme
 
+2019-03-15:
+- Fixed Navbar for a more comfortable feel
+- Completed Contact.html
+- Completed contact form
+- Worked on first header
+- Updated Readme
 
 ## Contributors
 
