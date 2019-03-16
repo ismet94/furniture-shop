@@ -205,6 +205,14 @@
   grid-gap: 20px;
   grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
 
+.grid5-container {
+  display: grid;
+  width: 100%;
+  padding-top: 3.5%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto; }
+
 * {
   box-sizing: border-box; }
 

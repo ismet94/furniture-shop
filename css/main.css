@@ -907,6 +907,7 @@
 .who-we-are-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
+  width: 70%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1816,6 +1817,43 @@
   text-align: left;
   color: #706259; }
 
+.navlook {
+  height: 385px;
+  background-color: #666666;
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.lookus {
+  padding-top: 10%;
+  height: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #ffffff; }
+
+.lookshow {
+  padding-top: 1%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cccccc; }
+
+.item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 * {
   box-sizing: border-box; }
 
@@ -2045,5 +2083,13 @@ li {
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
+
+.grid5-container {
+  display: grid;
+  width: 100%;
+  padding-top: 3.5%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto; }
 
 /*# sourceMappingURL=main.css.map */
