@@ -352,10 +352,12 @@
       display: grid;
       width: 100%;
       padding-top: 3.5%;
-      grid-gap: 10px;
+      grid-gap: 5px;
+      
 
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto;
+      grid-template-rows: repeat(12, 400px);
     }
 
 }
+
