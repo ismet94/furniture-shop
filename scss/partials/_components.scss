@@ -1026,6 +1026,8 @@ transform: scale(1.4);
   background-repeat: no-repeat;
 }
 
+// COPYRIGHT TEXT ---------------------------------------------
+
 .copyright {
   width: 100%;
   height: 85px;
@@ -1034,7 +1036,7 @@ transform: scale(1.4);
 
 .copyright-text {
   height: 14px;
- padding-top: 2%;
+ padding-top: 1.5%;
   margin-top: 0px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
@@ -1095,6 +1097,7 @@ transform: scale(1.4);
 
 .who-we-are-heading {
   font-family: 'Source Sans Pro', sans-serif;
+ 
   font-size: 36px;
   font-weight: normal;
   font-style: normal;
@@ -1542,7 +1545,7 @@ color: #555555;
 
 .phone {
   grid-area: phone;
-  width: 390px;
+  width: 100%;
   height: 100px;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0;
@@ -1550,6 +1553,7 @@ color: #555555;
 
 .phone-content {
   margin-top: 10%;
+  width: 100%;
   height: 21px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
@@ -1634,6 +1638,19 @@ color: #555555;
 }
 
 
+.googlemaps1 {
+  grid-area: maps;
+  width: 100%;
+ height: 350px;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.form1 {
+  width: 100%;
+  height: 750px;
+}
+
 .name {
     grid-area: yourname;
     text-indent: 2%;
@@ -1653,6 +1670,7 @@ color: #555555;
 .number {
     grid-area: number;
     text-indent: 2%;
+    width: 100%;
     height: 50px;
     border: solid 1px #e6e6e6;
     background-color: #ffffff;
@@ -1721,4 +1739,496 @@ color: #555555;
     letter-spacing: normal;
     text-align: center;
     color: #cccccc;
+  }
+
+  .blog-blog {
+    grid-area: blogblog;
+    width: 100%;
+    height: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+  }
+
+  .blog-social {
+    grid-area: blogsocial;
+    width: 100%;
+    height: 15px;
+    padding-top: 2%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: right;
+    color: #666666;
+  }
+
+  .line6 {
+    grid-area: line6;
+    width: 80%;
+    margin-left: 10%;
+    height: 1.2px;
+    text-align: right;
+    background-color: #e6e6e6;
+  }
+
+  .blog1 {
+    &-content {
+      grid-area: blog1;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
+  }
+
+
+  .blog2 {
+    &-content {
+      grid-area: blog2;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
+  }
+
+
+  .blog3 {
+    &-content {
+      grid-area: blog3;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
+  }
+
+  .blog4 {
+    &-content {
+      grid-area: blog3;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
+  }
+
+  .blog5 {
+    &-content {
+      grid-area: blog3;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
+  }
+
+  .blog6 {
+    &-content {
+      grid-area: blog3;
+    }
+
+    &-img {
+      width: 100%;
+      height: 225px;
+      background-color: #666666;
+    }
+
+    &-heading {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+
+    &-date {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: normal;   
+      font-style: normal;    
+      font-stretch: normal;    
+      line-height: 3.2;    
+      letter-spacing: normal;    
+      text-align: left;    
+      // color: var(--warm-grey);
+      color: gray;
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &-paragraph {
+      width: 100%;
+       
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;   
+      font-weight: normal;  
+      font-style: normal; 
+      font-stretch: normal; 
+      line-height: 1.67;   
+      letter-spacing: normal;    
+      text-align: left;    
+      color: #666666;
+    }
+
+    &-readmore {
+      width: 100%;
+     
+      font-family: 'Source Sans Pro', sans-serif;    
+      font-size: 15px;    
+      font-weight: 600;   
+      font-style: normal;   
+      font-stretch: normal;  
+      line-height: 1.67;  
+      letter-spacing: normal;  
+      text-align: left;  
+      color: #706259;
+    }
   }
