@@ -1,3 +1,4 @@
+/* ------------------ Mixins -------------------- */
 .header1 {
   width: 100%;
   height: 53px;
@@ -105,201 +106,160 @@
 
 .search {
   grid-area: search;
-  font-family: Linearicons-Free;
   font-size: 22px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 1.1px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.search:hover {
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5); }
 
 .home {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: home;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: home;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.home:hover {
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5); }
 
 .shop {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: shop;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: shop;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.shop:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4); }
 
 .about {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: about;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: about;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
-.about:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
-  text-decoration: none; }
-
 .logo {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: logo;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 1.8px;
-  text-align: right;
-  grid-area: logo;
+  text-align: center;
+  letter-spacing: 0.8px;
+  cursor: pointer;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  letter-spacing: 1.8px;
+  text-align: right;
   filter: invert(30%); }
 
-.logo:hover {
-  -moz-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  cursor: pointer;
-  text-decoration: none; }
-
 .blog {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: blog;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: blog;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.blog:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4); }
 
 .contact {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: contact;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: contact;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.contact:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4); }
 
 .lookbook {
-  padding: 20%;
-  font-family: 'Dosis', sans-serif;
+  grid-area: lookbook;
   font-size: 15px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
-  grid-area: lookbook;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.lookbook:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4); }
 
 .cart {
   grid-area: cart;
-  font-family: FontAwesome;
   font-size: 20px;
+  padding: 20%;
+  color: #2d2827;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 1.1px;
   text-align: center;
+  letter-spacing: 0.8px;
   cursor: pointer;
-  color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.cart:hover {
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4); }
 
 .main-logo {
   grid-area: logo;
@@ -384,8 +344,7 @@
   background-color: #a88d7b; }
 
 .feat1 {
-  grid-area: feat1;
-  background-color: #ffffff41; }
+  grid-area: feat1; }
 
 .feat-img1 {
   width: 370px;
@@ -924,7 +883,7 @@
   line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
-  color: #cccccc; }
+  color: #919191; }
 
 .who-we-are {
   margin-top: 5%;
@@ -998,7 +957,6 @@
   width: 270px;
   height: 305px;
   background-color: #666666;
-  background-image: url(../images/greg.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1251,7 +1209,7 @@
   line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
-  color: #cccccc; }
+  color: #919191; }
 
 .contact-us-view {
   width: 100%;
@@ -1475,7 +1433,7 @@
   line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
-  color: #cccccc; }
+  color: #919191; }
 
 .blog-blog {
   grid-area: blogblog;
@@ -1519,8 +1477,8 @@
 .blog1-img {
   width: 100%;
   height: 325px;
-  padding-top: 2%;
-  background-color: #666666; }
+  background-color: #666666;
+  background-size: cover; }
 .blog1-heading {
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1542,7 +1500,7 @@
   line-height: 3.2;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog1-line {
   width: 100%;
   height: 1px;
@@ -1560,11 +1518,13 @@
   color: #666666; }
 
 .blog2-content {
-  grid-area: blog2; }
+  grid-area: blog2;
+  padding-top: 2.5%; }
 .blog2-img {
   width: 100%;
   height: 325px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-size: cover; }
 .blog2-heading {
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1586,7 +1546,7 @@
   line-height: 3.2;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog2-line {
   width: 100%;
   height: 1px;
@@ -1598,7 +1558,7 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.67;
+  line-height: 1.60;
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
@@ -1630,7 +1590,7 @@
   line-height: 3.2;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog3-line {
   width: 100%;
   height: 1px;
@@ -1674,7 +1634,7 @@
   line-height: 3.2;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog4-line {
   width: 100%;
   height: 1px;
@@ -1715,10 +1675,10 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 3.2;
+  line-height: 3.0;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog5-line {
   width: 100%;
   height: 1px;
@@ -1730,7 +1690,7 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.67;
+  line-height: 1.50;
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
@@ -1748,7 +1708,7 @@
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.4;
+  line-height: 2.2;
   letter-spacing: normal;
   text-align: left;
   color: #333333; }
@@ -1759,10 +1719,10 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 3.2;
+  line-height: 3.0;
   letter-spacing: normal;
   text-align: left;
-  color: gray; }
+  color: #919191; }
 .blog6-line {
   width: 100%;
   height: 1px;
@@ -1774,7 +1734,7 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.67;
+  line-height: 1.52;
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
@@ -1809,7 +1769,7 @@
   line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
-  color: #cccccc; }
+  color: #919191; }
 
 .zoom {
   display: inline-block;
@@ -1826,118 +1786,6 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   filter: brightness(110%); }
-
-.future-office-design {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.future-coffee-table1 {
-  grid-column: span 1; }
-
-.future-chairs-office3 {
-  grid-column: span 1; }
-
-.future-coffee-table3 {
-  grid-column: span 1; }
-
-.future-sofa {
-  grid-column: span 1; }
-
-.egg-chair1 {
-  grid-column: span 1; }
-
-.future-bed2 {
-  grid-column: span 2; }
-
-.future-chair1 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.future-couch2 {
-  grid-column: span 1; }
-
-.future-bed3 {
-  grid-column: span 1; }
-
-.future-chairs-office1 {
-  grid-row: span 2; }
-
-.future-desk-table1 {
-  grid-column: span 1; }
-
-.future-coffee-table2 {
-  grid-column: span 1; }
-
-.future-bed-new {
-  grid-column: span 1; }
-
-.future-kitchen-1 {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.future-chair3 {
-  grid-column: span 1; }
-
-.future-bed4 {
-  grid-column: span 1; }
-
-.home-bar-elegant {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.future-couch1 {
-  grid-column: span 2; }
-
-.future-chair {
-  grid-column: span 1; }
-
-.future-couch3 {
-  grid-column: span 2; }
-
-.future-chairs-office2 {
-  grid-row: span 2; }
-
-.future-bedroom1 {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.future-chair-new {
-  grid-column: span 1; }
-
-.best3 {
-  grid-column: span 2; }
-
-.future-chair2 {
-  grid-column: span 1; }
-
-.future-chair4 {
-  grid-column: span 1; }
-
-.future-kitchen-2 {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.future-couch5 {
-  grid-column: span 1; }
-
-.future-bed5 {
-  grid-column: span 1; }
-
-.future-lounge-1 {
-  grid-column: span 3;
-  grid-row: span 2; }
-
-.future-chair5 {
-  grid-row: span 2; }
-
-.future-couch6 {
-  grid-column: span 1; }
-
-.home-theater1 {
-  grid-column: span 1; }
-
-.future-couch4 {
-  grid-column: span 2; }
 
 * {
   box-sizing: border-box; }
@@ -1969,6 +1817,54 @@ img {
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
+.search:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.home:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.shop:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.about:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  text-decoration: none; }
+
+.logo:hover {
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+  text-decoration: none; }
+
+.blog:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.contact:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.lookbook:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.cart:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
 .back {
   background: url(../images/main.jpg);
   text-align: center;
@@ -2172,7 +2068,7 @@ img {
   align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 700px);
+  grid-template-rows: repeat(2, auto);
   grid-gap: 20px;
   grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
 
@@ -2184,5 +2080,117 @@ img {
   grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(16, 400px); }
+
+.future-office-design {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-coffee-table1 {
+  grid-column: span 1; }
+
+.future-chairs-office3 {
+  grid-column: span 1; }
+
+.future-coffee-table3 {
+  grid-column: span 1; }
+
+.future-sofa {
+  grid-column: span 1; }
+
+.egg-chair1 {
+  grid-column: span 1; }
+
+.future-bed2 {
+  grid-column: span 2; }
+
+.future-chair1 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.future-couch2 {
+  grid-column: span 1; }
+
+.future-bed3 {
+  grid-column: span 1; }
+
+.future-chairs-office1 {
+  grid-row: span 2; }
+
+.future-desk-table1 {
+  grid-column: span 1; }
+
+.future-coffee-table2 {
+  grid-column: span 1; }
+
+.future-bed-new {
+  grid-column: span 1; }
+
+.future-kitchen-1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair3 {
+  grid-column: span 1; }
+
+.future-bed4 {
+  grid-column: span 1; }
+
+.home-bar-elegant {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch1 {
+  grid-column: span 2; }
+
+.future-chair {
+  grid-column: span 1; }
+
+.future-couch3 {
+  grid-column: span 2; }
+
+.future-chairs-office2 {
+  grid-row: span 2; }
+
+.future-bedroom1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair-new {
+  grid-column: span 1; }
+
+.best3 {
+  grid-column: span 2; }
+
+.future-chair2 {
+  grid-column: span 1; }
+
+.future-chair4 {
+  grid-column: span 1; }
+
+.future-kitchen-2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch5 {
+  grid-column: span 1; }
+
+.future-bed5 {
+  grid-column: span 1; }
+
+.future-lounge-1 {
+  grid-column: span 3;
+  grid-row: span 2; }
+
+.future-chair5 {
+  grid-row: span 2; }
+
+.future-couch6 {
+  grid-column: span 1; }
+
+.home-theater1 {
+  grid-column: span 1; }
+
+.future-couch4 {
+  grid-column: span 2; }
 
 /*# sourceMappingURL=main.css.map */

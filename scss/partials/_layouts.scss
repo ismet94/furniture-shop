@@ -1,3 +1,8 @@
+// --------------------------------------------------------------------------------------
+// ------------------------------------- INDEX PAGE -------------------------------------
+// --------------------------------------------------------------------------------------
+
+// This ensures taht my background is called for the main section
 .back {
     background:  url(../images/main.jpg);
     text-align: center;
@@ -5,8 +10,6 @@
     height: 100vh;
     background-attachment: fixed;
 }
-
-
 
 
 // Created a Grid system so t
@@ -333,7 +336,7 @@
     
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 700px);
+        grid-template-rows: repeat(2, auto);
         grid-gap: 20px;
     
         grid-template-areas: 
@@ -361,4 +364,153 @@
     }
 
 }
+
+.future-office-design {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .future-coffee-table1 {
+    grid-column: span 1;
+  }
+  
+  .future-chairs-office3 {
+    grid-column: span 1;
+  }
+  
+  .future-coffee-table3 {
+    grid-column: span 1;
+  }
+  
+  .future-sofa {
+    grid-column: span 1;
+  }
+  
+  .egg-chair1 {
+    grid-column: span 1;
+  }
+  
+  .future-bed2 {
+    grid-column: span 2;
+  }
+  
+  
+  .future-chair1 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .future-couch2 {
+    grid-column: span 1;
+  }
+  
+  .future-bed3 {
+    grid-column: span 1;
+  }
+  
+  .future-chairs-office1 {
+    grid-row: span 2;
+  }
+  
+  .future-desk-table1 {
+    grid-column: span 1;
+  
+  }
+  
+  .future-coffee-table2 {
+    grid-column: span 1;
+  }
+  
+  .future-bed-new {
+    grid-column: span 1;
+  }
+  
+  .future-kitchen-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .future-chair3 {
+    grid-column: span 1;
+  }
+  
+  .future-bed4 {
+    grid-column: span 1;
+  }
+  
+  .home-bar-elegant {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .future-couch1 {
+    grid-column: span 2;
+  }
+  
+  .future-chair {
+    grid-column: span 1;
+  }
+  
+  .future-couch3 {
+    grid-column: span 2;
+  }
+  
+  .future-chairs-office2 {
+    grid-row: span 2;
+  }
+  
+  .future-bedroom1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .future-chair-new {
+    grid-column: span 1;
+  }
+  
+  .best3 {
+    grid-column: span 2;
+  }
+  
+  .future-chair2 {
+    grid-column: span 1;
+  }
+  
+  .future-chair4 {
+    grid-column: span 1;
+  }
+  
+  .future-kitchen-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .future-couch5 {
+    grid-column: span 1;
+  }
+  
+  .future-bed5 {
+    grid-column: span 1;
+  }
+  
+  .future-lounge-1 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  
+  .future-chair5 {
+    grid-row: span 2;
+  }
+  
+  .future-couch6 {
+    grid-column: span 1;
+  }
+  
+  .home-theater1 {
+    grid-column: span 1;
+  }
+  
+  .future-couch4 {
+    grid-column: span 2;
+  }
 
