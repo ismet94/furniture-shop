@@ -1,7 +1,7 @@
 # furniture-shop
 Future Furniture Project 3
 
-The Future... We often think about future objects and elements in our daily lives from clothing to cars. Now we have incorporated the future into furniture. 
+The Future... We often think about future objects and elements in our daily lives from clothing to cars. Now we have incorporated the future into furniture. Future Furniture the new living age has evolved into a great organization lead by a highly advanced team. 
 
 ## Setting up my workspace
 
@@ -40,7 +40,7 @@ git pull
 
 ## Live Link
 
-- 
+- https://ismet94.github.io/furniture-shop/
 
 ## Prevalent Technologies Used
 
@@ -133,6 +133,14 @@ Tools:
 - Completed contact form
 - Worked on first header
 - Updated Readme
+
+2019-03-16:
+- Created Structure for lookbook.html
+- Downloaded images for lookbook
+- Created masonry grid for images
+- Comlpeted lookbook page
+- Remastering code in progress.
+
 
 ## Contributors
 
