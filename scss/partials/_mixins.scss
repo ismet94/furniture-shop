@@ -1,5 +1,83 @@
 /* ------------------ Mixins -------------------- */
 
+// HEADINGS --------------------
+
+@mixin main-heading {
+    height: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $heading;
+}
+
+@mixin underline {
+    margin-left: 46%;
+    margin-right: 46%;
+    margin-bottom: 3%;
+    height: 2px;
+    text-align: center;
+    background-color: $teel-colour;
+}
+
+// FOOTER MIXINS ------------------
+
+@mixin footer-heading1 {
+    margin-top: 4%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: $footer-heading;
+}
+
+@mixin footer-heading2 {
+    width: 46px;
+    height: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: $footer-heading;
+}
+
+@mixin footer-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: $brown;
+}
+
+@mixin footer-insta-images {
+    width: 80px;
+    height: 80px;
+    background-color: $white-back;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+// --------------------------------------------
+// ------------- HOME PAGE MIXINS -------------
+// --------------------------------------------
+
 @mixin nav{
     padding: 20%;
     color:$dark-brown;
@@ -15,3 +93,74 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+
+// ******* Feature properties ***********
+
+@mixin feature-image {
+    width: 370px;
+    height: 360px;
+    background-color: $brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin feature-name {
+    padding: 2%;
+    height: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: $heading;
+}
+
+@mixin feature-price {
+    padding: 5%;
+    height: 11px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $font-light;
+}
+
+// ******* New Collection properties *********
+
+@mixin collection-image {
+    width: 526px;
+    height: 373px;
+    background-color: $brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin collection-name {
+    height: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: $teel-colour;
+}
+
+// --------------------------------------------
+// ------------ ABOUT PAGE MIXINS -------------
+// --------------------------------------------
+
+
+// --------------------------------------------
+// ------------ BLOG PAGE MIXINS --------------
+// --------------------------------------------

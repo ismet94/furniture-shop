@@ -24,6 +24,7 @@
     letter-spacing: 2.4px;
     letter-spacing: normal;
     text-align: center;
+    text-decoration: none;
     color: $font-light;
 }
 .dropdownlang {
@@ -280,26 +281,11 @@
 
 .feature {
   grid-area: feature;
-  height: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: $heading;
+  @include main-heading;
 }
 
 .line {
-  margin-left: 46%;
-  margin-right: 46%;
-  margin-bottom: 3%;
-  height: 2px;
-  text-align: center;
-  background-color: $teel-colour;
+  @include underline;
 }
 
 
@@ -312,53 +298,24 @@
 }
 
 .feat-img1 {
-  width: 370px;
-  height: 360px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include feature-image;
 }
 
 .feat-name1 {
-  padding: 2%;
-  height: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.4;
-  letter-spacing: normal;
-  text-align: center;
-  color: $heading;
+    @include feature-name;
 }
 
 .feat-price1 {
-  padding: 5%;
-  height: 11px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 3.2;
-  letter-spacing: normal;
-  text-align: center;
-  color: $font-light;
+    @include feature-price;
 }
 
 // --------------------------Feature 2
 .feat2 {
     grid-area: feat2;
- 
 }
 
 .feat-img2 {
-  width: 370px;
-  height: 360px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include feature-image;
 }
 
 .button-new {
@@ -370,79 +327,33 @@
 }
 
 .feat-name2 {
-    padding: 2%;
-    height: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.4;
-    letter-spacing: normal;
-    text-align: center;
-    color: $heading;
-  }
+    @include feature-name;
+}
   
-  .feat-price2 {
-    padding: 5%;
-    height: 11px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 3.2;
-    letter-spacing: normal;
-    text-align: center;
-    color: $font-light;
-  }
+.feat-price2 {
+    @include feature-price;
+}
 
 // --------------------------Feature 3
 
 .feat3 {
     grid-area: feat3;
- 
 }
 
 .feat-img3 {
-  width: 370px;
-
-  height: 360px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include feature-image;
 }
 
 .feat-name3 {
-  padding: 2%;
-    height: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.4;
-    letter-spacing: normal;
-    text-align: center;
-    color: $heading;
-  }
+    @include feature-name;
+}
   
-  .feat-price3 {
-    padding: 5%;
-    height: 11px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 3.2;
-    letter-spacing: normal;
-    text-align: center;
-    color: $font-light;
-  }
+.feat-price3 {
+    @include feature-price;
+}
 
 
-// ----------- New Collection
+// ----------- New Collection ------------------
 
 .new-collection {
   margin-top: 8%;
@@ -451,92 +362,52 @@
 }
 .neww {
     grid-area: neww;
-    height: 24px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: $heading;
+    @include main-heading;
 }
 
 .line2 {
-    margin-left: 46%;
-    margin-right: 46%;
-    margin-bottom: 3%;
-  height: 2px;
-  text-align: center;
-  background-color: $teel-colour;
+    @include underline;
 }
+
+// --------------------------Collection 1
 
 .coll1 {
     grid-area: coll1;
-    
 }
 
 .collection-img {
-  width: 526px;
-    height: 373px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include collection-image;
 }
 
 .collection-name {
-    
-    height: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.92;
-    letter-spacing: 2.5px;
-    text-align: center;
-    color: $teel-colour;
+    @include collection-name;
 }
+
+// --------------------------Collection 2
 
 .coll2 {
     grid-area: coll2;
-   
 }
 
 .collection-img2 {
-    width: 526px;
-    height: 373px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include collection-image;
 }
 
 .collection-name2 {
-    
-    height: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.92;
-    letter-spacing: 2.5px;
-    text-align: center;
-    color: $teel-colour;
+    @include collection-name;
 }
 
-// ---------- Best Goods
+// ------------- Best Goods --------------------
 
 .goods {
-  height: 522px;
-  opacity: 0.9;
-  margin-top: 5%;
-  background-color: $brown;
-  background-image: linear-gradient( to right, #383838b9, #66666652), url(../images/best.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
+    height: 522px;
+    opacity: 0.9;
+    margin-top: 5%;
+    background-color: $brown;
+    background-image: linear-gradient( to right, #383838b9, #66666652), url(../images/best.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
 }
 
 .best-heading { 
@@ -572,60 +443,44 @@
 
 .best-btn {
     grid-area: bestbtn;
-    
-    
     width: 150px;
-      height: 40px;
-      border-radius: 20px;
-      background-color: $teel-colour;
-      text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $teel-colour;
+    text-align: center;
 }
 
-// -------------- Blog
+// ----------------- Blog --------------------
 
 .blog-section {
-  height: 581px;
-  background-color: #f9f9f9;
-  }
+    height: 581px;
+    background-color: #f9f9f9;
+}
 
 .blog-head {
-    height: 24px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 38px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: $heading;
-  }
+    @include main-heading;
+}
   
-  .line3 {
-      margin-left: 43%;
-      margin-right: 43%;
-    height: 2px;
-    text-align: center;
-    background-color: $teel-colour;
-  }
+.line3 {
+    @include underline;
+}
 
-  .blogimg {
-      grid-area: blogimg;
-      width: 100%;
+.blogimg {
+    grid-area: blogimg;
+    width: 100%;
     height: 405px;
     background-color: $brown;
     background-image: url(/images/blog-images/z-island.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  }
+}
 
-  .bloginfo {
+.bloginfo {
     grid-area: bloginfo;
     height: 405px;
-  }
+}
 
-  .blog-seconday-head {
-
+.blog-seconday-head {
     height: 23px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
@@ -636,8 +491,7 @@
     letter-spacing: normal;
     text-align: left;
     color: $heading;
-  }
-
+}
   .blog-date {
 
     height: 14px;
@@ -650,34 +504,32 @@
     letter-spacing: normal;
     text-align: left;
     color: $font-light;
-  }
+}
 
-  .blog-para {
-    height: 249px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: left;
-    color: $brown;
-  }
-
-  .blog-readm {
-   
-    height: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 3.2;
-    letter-spacing: 1.5px;
-    text-align: left;
-    color: $teel-colour;
-  }
+.blog-para {
+  height: 249px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $brown;
+}
+.blog-readm {
+  height: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.2;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: $teel-colour;
+}
 
 //  --------------- Footer 
 
@@ -693,30 +545,11 @@
 }
 
 .footer-head1 {
-  margin-top: 4%;
-  font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 1.5px;
-  text-align: left;
-  color: #e5e5e5;
+  @include footer-heading1;
 }
 
 .footercontact-content {
-
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  
-  color: $brown;
+    @include footer-content;
 }
 
 .footerlinks {
@@ -724,31 +557,12 @@
 }
 
 .footer-head2 {
-  width: 46px;
-  height: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #e5e5e5;
+    @include footer-heading2;
 }
 
 .footerlinks-content {
-  padding: 2%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: left;
-  
-  color: $brown;
+    padding: 2%;
+    @include footer-content;
 }
 
 .footershop {
@@ -756,31 +570,12 @@
 }
 
 .footer-head3 {
-  width: 46px;
-  height: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #e5e5e5;
+    @include footer-heading2;
 }
 
 .footershop-content {
-  padding: 2%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: left;
-  
-  color: $brown;
+    padding: 2%;
+    @include footer-content;
 }
 
 .footerinsta {
@@ -788,97 +583,47 @@
 }
 
 .footer-head4 {
-  width: 46px;
-  height: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #e5e5e5;
+    @include footer-heading2;
 }
 
 .insta-img1 {
-  grid: insta1;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-chair.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+    grid: insta1;
+    @include footer-insta-images;
 }
 
 .insta-img2 {
-  grid: insta2;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-chair.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+    grid: insta2;
+    @include footer-insta-images;
 }
 
 .insta-img3 {
-  grid: insta3;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-chair.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+    grid: insta3;
+    @include footer-insta-images;
 }
 
 .insta-img4 {
-  grid: insta4;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-bed-new.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    grid: insta4;
+    @include footer-insta-images;
 }
 
 .insta-img5 {
-  grid: insta5;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-chair-new.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    grid: insta5;
+    @include footer-insta-images;
 }
 
 .insta-img6 {
-  grid: insta6;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(/images/future-chair.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+    grid: insta6;
+    @include footer-insta-images;
 }
 
 .insta-img7 {
-  grid: insta7;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-sofa.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    grid: insta7;
+    @include footer-insta-images;
 }
 
 .insta-img8 {
-  grid: insta8;
-  width: 80px;
-  height: 80px;
-  background-color: $white-back;
-  background-image: url(../images/future-coffee-table.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    grid: insta8;
+    @include footer-insta-images;
 }
 
 // COPYRIGHT TEXT ---------------------------------------------

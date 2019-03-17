@@ -41,8 +41,9 @@ img {
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
 
-// ******* Navbar Hover Properties ***********
 
+
+// Navbar Hover includes different web browser properties
 .search:hover {
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -65,15 +66,12 @@ img {
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
-    text-decoration: none;
 }
 
 .logo:hover {
     -moz-transform: scale(1.3);
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .blog:hover {
@@ -88,16 +86,29 @@ img {
     transform: scale(1.4);
 }
 
-
 .lookbook:hover {
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
-  }
-
+}
   
 .cart:hover {
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
+}
+
+.footerlinks-content {
+    &-:link {
+        color: $brown;
     }
+    &-:hover {
+        color: $brown;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-out;
+    }
+    &-:visited {
+        color: white;
+    }
+}
+    

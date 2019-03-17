@@ -27,7 +27,7 @@
         grid-gap: 15px;
         
         grid-template-areas: 
-                    "lang curr ship ship social"
+                "lang curr ship ship social"
     }
 
     &-head2 {
@@ -44,25 +44,25 @@
         grid-gap: 15px;
 
         grid-template-areas: 
-                    "lang curr ship ship social"
+                "lang curr ship ship social"
     }
 
     // Navbar Grid Layout
     &-nav {
-    display: grid;
-    padding: 2%;
-    margin-left: 7.3%;
-    width: 85%;
-    line-height: 20px;
-    text-transform: uppercase;
-    align-items: center;
+        display: grid;
+        padding: 2%;
+        margin-left: 7.3%;
+        width: 85%;
+        line-height: 20px;
+        text-transform: uppercase;
+        align-items: center;
 
-    /* grid columns and rows size */
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
+        /* grid columns and rows size */
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
 
-    grid-template-areas: 
+        grid-template-areas: 
                 "search home shop about logo blog contact lookbook cart"
     }
 
@@ -80,10 +80,10 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "logo"
-                    "slogan"
-                    "contentbtn"
-                    "scrolldown"
+                "logo"
+                "slogan"
+                "contentbtn"
+                "scrolldown"
         }
 
     &-feature-products {
@@ -99,7 +99,7 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "feat1 feat2 feat3"
+                "feat1 feat2 feat3"
     }
 
     &-new-collection {
@@ -114,7 +114,7 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "coll1 coll2"
+                "coll1 coll2"
     }
 
     &-best {
@@ -131,9 +131,9 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "best"
-                    "bestpara"
-                    "bestbtn"
+                "best"
+                "bestpara"
+                "bestbtn"
     }
 
     &-blog {
@@ -148,14 +148,14 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "blogimg bloginfo"
+                "blogimg bloginfo"
     }
 
     &-footer {
         display: grid;
-        width: 80%;
+        width: 70%;
         margin: 0px auto;
-       padding-top: 5%;
+        padding-top: 5%;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(4, 1fr);
@@ -163,7 +163,7 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "footercontact footerlinks footershop footerinsta"
+                "footercontact footerlinks footershop footerinsta"
     }
 
     &-instagram {
@@ -180,8 +180,8 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "insta1 insta2 insta3 insta4"
-                    "insta5 isnta6 insta7 insta8"
+                "insta1 insta2 insta3 insta4"
+                "insta5 isnta6 insta7 insta8"
     }
 }
 
@@ -193,9 +193,8 @@
 .grid2 {
     &-nav2 {
         display: grid;
-  
         margin-left: 7.3%;
-        width: 85%;
+        width: 100%;
         line-height: 20px;
         text-transform: uppercase;
         align-items: center;
@@ -206,7 +205,7 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "logo . . . home shop about  blog contact lookbook cart search"
+                "logo . . . home shop about  blog contact lookbook cart search"
         }
 
 
@@ -214,7 +213,6 @@
         display: grid;
         width: 85%;
         margin: 0px auto;
-       
         line-height: 30px;
     
         /* grid columns and rows size */
@@ -223,7 +221,7 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "whowe aboutimage"
+                "whowe aboutimage"
         }   
 
     &-meet {
@@ -240,7 +238,7 @@
         grid-gap: 10px;
     
         grid-template-areas: 
-                    "meet1 meet2 meet3 meet4"
+                "meet1 meet2 meet3 meet4"
     }    
 
     &-we-do {
@@ -248,14 +246,13 @@
         width: 80%;
         margin: 0px auto;
        
-    
         /* grid columns and rows size */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "wedoimg wedoinfo"
+                 "wedoimg wedoinfo"
     }
 }
 
@@ -265,7 +262,6 @@
 
 
 .grid3 {
-
     &-contact-us-view {
         display: grid;
         width: 70%;
@@ -279,9 +275,9 @@
         grid-template-rows: auto;
     
         grid-template-areas: 
-                    "address phone hour"
-                    "address email hour"
-                    "maps maps maps"
+                "address phone hour"
+                "address email hour"
+                "maps maps maps"
     }
 
     &-form {
@@ -289,7 +285,6 @@
         width: 70%;
         margin: auto;
         padding-top: 17%;
-
         text-align: center;
     
         /* grid columns and rows size */
@@ -298,10 +293,10 @@
         grid-gap: 15px;
 
         grid-template-areas: 
-                    "yourname email"
-                    "number  subject"
-                    "textarea1 textarea1"
-                    "contactbtn contactbtn"
+                "yourname email"
+                "number  subject"
+                "textarea1 textarea1"
+                "contactbtn contactbtn"
    
     }
 }
@@ -323,8 +318,8 @@
         grid-template-rows: auto;
     
         grid-template-areas: 
-                    "blogblog blogsocial"
-                    "line6 lin6"
+                "blogblog blogsocial"
+                "line6 lin6"
     }
 
     &-blog-main {
@@ -340,8 +335,8 @@
         grid-gap: 20px;
     
         grid-template-areas: 
-                    "blog1 blog2 blog3"
-                    "blog4 blog5 blog6"
+                "blog1 blog2 blog3"
+                "blog4 blog5 blog6"
                     
     }
 }
@@ -352,165 +347,162 @@
 
 .grid5 {
     &-container {
-      display: grid;
-      width: 100%;
-      padding-top: 3.5%;
-      padding-bottom: 3.5%;
-      grid-gap: 5px;
+        display: grid;
+        width: 100%;
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+        grid-gap: 5px;
       
-
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(16, 400px);
+        /* grid columns and rows size */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(16, 400px);
     }
-
 }
 
 .future-office-design {
     grid-column: span 2;
     grid-row: span 2;
-  }
+}
   
-  .future-coffee-table1 {
+.future-coffee-table1 {
     grid-column: span 1;
-  }
-  
-  .future-chairs-office3 {
+}
+
+.future-chairs-office3 {
     grid-column: span 1;
-  }
-  
-  .future-coffee-table3 {
+}
+
+.future-coffee-table3 {
     grid-column: span 1;
-  }
-  
-  .future-sofa {
+}
+
+.future-sofa {
     grid-column: span 1;
-  }
-  
-  .egg-chair1 {
+}
+
+.egg-chair1 {
     grid-column: span 1;
-  }
-  
-  .future-bed2 {
+}
+
+.future-bed2 {
     grid-column: span 2;
-  }
-  
-  
-  .future-chair1 {
+}
+
+.future-chair1 {
     grid-column: span 1;
     grid-row: span 2;
-  }
-  
-  .future-couch2 {
+}
+
+.future-couch2 {
     grid-column: span 1;
-  }
-  
-  .future-bed3 {
+}
+
+.future-bed3 {
     grid-column: span 1;
-  }
-  
-  .future-chairs-office1 {
+}
+
+.future-chairs-office1 {
     grid-row: span 2;
-  }
-  
-  .future-desk-table1 {
+}
+
+.future-desk-table1 {
     grid-column: span 1;
-  
-  }
-  
-  .future-coffee-table2 {
+}
+
+.future-coffee-table2 {
     grid-column: span 1;
-  }
-  
-  .future-bed-new {
+}
+
+.future-bed-new {
     grid-column: span 1;
-  }
-  
-  .future-kitchen-1 {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  
-  .future-chair3 {
-    grid-column: span 1;
-  }
-  
-  .future-bed4 {
-    grid-column: span 1;
-  }
-  
-  .home-bar-elegant {
+}
+
+.future-kitchen-1 {
     grid-column: span 2;
     grid-row: span 2;
-  }
-  
-  .future-couch1 {
-    grid-column: span 2;
-  }
-  
-  .future-chair {
+}
+
+.future-chair3 {
     grid-column: span 1;
-  }
-  
-  .future-couch3 {
-    grid-column: span 2;
-  }
-  
-  .future-chairs-office2 {
-    grid-row: span 2;
-  }
-  
-  .future-bedroom1 {
+}
+
+.future-bed4 {
+    grid-column: span 1;
+}
+
+.home-bar-elegant {
     grid-column: span 2;
     grid-row: span 2;
-  }
-  
-  .future-chair-new {
-    grid-column: span 1;
-  }
-  
-  .best3 {
+}
+
+.future-couch1 {
     grid-column: span 2;
-  }
-  
-  .future-chair2 {
+}
+
+.future-chair {
     grid-column: span 1;
-  }
-  
-  .future-chair4 {
-    grid-column: span 1;
-  }
-  
-  .future-kitchen-2 {
+}
+
+.future-couch3 {
+    grid-column: span 2;
+}
+
+.future-chairs-office2 {
+    grid-row: span 2;
+}
+
+.future-bedroom1 {
     grid-column: span 2;
     grid-row: span 2;
-  }
-  
-  .future-couch5 {
+}
+
+.future-chair-new {
     grid-column: span 1;
-  }
-  
-  .future-bed5 {
+}
+
+.best3 {
+    grid-column: span 2;
+}
+
+.future-chair2 {
     grid-column: span 1;
-  }
-  
-  .future-lounge-1 {
+}
+
+.future-chair4 {
+    grid-column: span 1;
+}
+
+.future-kitchen-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.future-couch5 {
+    grid-column: span 1;
+}
+
+.future-bed5 {
+    grid-column: span 1;
+}
+
+.future-lounge-1 {
     grid-column: span 3;
     grid-row: span 2;
-  }
-  
-  .future-chair5 {
+}
+
+.future-chair5 {
     grid-row: span 2;
-  }
-  
-  .future-couch6 {
+}
+
+.future-couch6 {
     grid-column: span 1;
-  }
-  
-  .home-theater1 {
+}
+
+.home-theater1 {
     grid-column: span 1;
-  }
-  
-  .future-couch4 {
+}
+
+.future-couch4 {
     grid-column: span 2;
-  }
+}
 
