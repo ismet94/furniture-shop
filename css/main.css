@@ -113,6 +113,7 @@
   line-height: normal;
   letter-spacing: 1.1px;
   text-align: center;
+  cursor: pointer;
   color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -288,7 +289,8 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.1px;
-  text-align: right;
+  text-align: center;
+  cursor: pointer;
   color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -330,7 +332,11 @@
   height: 40px;
   border-radius: 20px;
   background-color: #a88d7b;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
 .main-scroll-down {
   height: 10%;
   width: 10%;
@@ -343,7 +349,17 @@
   filter: invert(30%); }
 
 .scrolling {
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-right: 1.8%; }
+
+.main-button:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.featured-products {
+  margin-top: 5%;
+  height: 504px; }
 
 .feature {
   grid-area: feature;
@@ -356,32 +372,30 @@
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #333333; }
 
 .line {
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b; }
-
-.featured-products {
-  margin-top: 8%;
-  height: 504px; }
 
 .feat1 {
   grid-area: feat1;
   background-color: #ffffff41; }
 
 .feat-img1 {
-  width: 360px;
+  width: 370px;
   height: 360px;
   background-color: #666666;
-  background-image: url(../images/future-chair.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .feat-name1 {
+  padding: 2%;
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -394,6 +408,7 @@
   color: #333333; }
 
 .feat-price1 {
+  padding: 5%;
   height: 11px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -409,14 +424,21 @@
   grid-area: feat2; }
 
 .feat-img2 {
-  width: 360px;
+  width: 370px;
   height: 360px;
   background-color: #666666;
-  background-image: url(../images/future-coffee-table.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
+.button-new {
+  width: 60px;
+  height: 25px;
+  border-radius: 7.5px;
+  background-color: #a88d7b;
+  z-index: 1; }
+
 .feat-name2 {
+  padding: 2%;
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -429,6 +451,7 @@
   color: #333333; }
 
 .feat-price2 {
+  padding: 5%;
   height: 11px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -444,14 +467,14 @@
   grid-area: feat3; }
 
 .feat-img3 {
-  width: 360px;
+  width: 370px;
   height: 360px;
   background-color: #666666;
-  background-image: url(../images/future-sofa.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .feat-name3 {
+  padding: 2%;
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -464,6 +487,7 @@
   color: #333333; }
 
 .feat-price3 {
+  padding: 5%;
   height: 11px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -494,8 +518,9 @@
   color: #333333; }
 
 .line2 {
-  margin-left: 43%;
-  margin-right: 43%;
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b; }
@@ -507,7 +532,6 @@
   width: 526px;
   height: 373px;
   background-color: #666666;
-  background-image: url(../images/future-bed-new.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -530,7 +554,6 @@
   width: 526px;
   height: 373px;
   background-color: #666666;
-  background-image: url(../images/future-chair-new.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -618,8 +641,12 @@
 
 .blogimg {
   grid-area: blogimg;
+  width: 100%;
   height: 405px;
-  background-color: #666666; }
+  background-color: #666666;
+  background-image: url(/images/blog-images/z-island.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .bloginfo {
   grid-area: bloginfo;
@@ -650,7 +677,7 @@
   color: #999999; }
 
 .blog-para {
-  height: 239px;
+  height: 249px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1862,16 +1889,23 @@
 .zoom:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  filter: brightness(110%); }
 
-.future-chair1 {
-  grid-column: span 1;
-  grid-row: span 1; }
+.future-office-design {
+  grid-column: span 2;
+  grid-row: span 2; }
 
 .future-coffee-table1 {
   grid-column: span 1; }
 
-.future-couch1 {
+.future-chairs-office3 {
+  grid-column: span 1; }
+
+.future-coffee-table3 {
+  grid-column: span 1; }
+
+.future-sofa {
   grid-column: span 1; }
 
 .egg-chair1 {
@@ -1892,6 +1926,83 @@
 
 .future-chairs-office1 {
   grid-row: span 2; }
+
+.future-desk-table1 {
+  grid-column: span 1; }
+
+.future-coffee-table2 {
+  grid-column: span 1; }
+
+.future-bed-new {
+  grid-column: span 1; }
+
+.future-kitchen-1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair3 {
+  grid-column: span 1; }
+
+.future-bed4 {
+  grid-column: span 1; }
+
+.home-bar-elegant {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch1 {
+  grid-column: span 2; }
+
+.future-chair {
+  grid-column: span 1; }
+
+.future-couch3 {
+  grid-column: span 2; }
+
+.future-chairs-office2 {
+  grid-row: span 2; }
+
+.future-bedroom1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair-new {
+  grid-column: span 1; }
+
+.best3 {
+  grid-column: span 2; }
+
+.future-chair2 {
+  grid-column: span 1; }
+
+.future-chair4 {
+  grid-column: span 1; }
+
+.future-kitchen-2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch5 {
+  grid-column: span 1; }
+
+.future-bed5 {
+  grid-column: span 1; }
+
+.future-lounge-1 {
+  grid-column: span 3;
+  grid-row: span 2; }
+
+.future-chair5 {
+  grid-row: span 2; }
+
+.future-couch6 {
+  grid-column: span 1; }
+
+.home-theater1 {
+  grid-column: span 1; }
+
+.future-couch4 {
+  grid-column: span 2; }
 
 * {
   box-sizing: border-box; }
@@ -1920,6 +2031,9 @@ img {
   width: 100%;
   height: 100%; }
 
+/* -------------------------------------------------------
+--------------------- Pseudo-classes --------------------- 
+---------------------------------------------------------*/
 .back {
   background: url(../images/main.jpg);
   text-align: center;
@@ -1977,7 +2091,7 @@ img {
   grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
 .grid-feature-products {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   text-align: center;
   /* grid columns and rows size */
@@ -1987,7 +2101,7 @@ img {
   grid-template-areas: "feat1 feat2 feat3"; }
 .grid-new-collection {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   text-align: center;
   /* grid columns and rows size */
@@ -2009,7 +2123,7 @@ img {
   grid-template-areas: "best" "bestpara" "bestbtn"; }
 .grid-blog {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
@@ -2131,8 +2245,9 @@ img {
   display: grid;
   width: 100%;
   padding-top: 3.5%;
+  padding-bottom: 3.5%;
   grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(12, 400px); }
+  grid-template-rows: repeat(16, 400px); }
 
 /*# sourceMappingURL=main.css.map */

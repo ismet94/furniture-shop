@@ -55,7 +55,7 @@
   grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
 .grid-feature-products {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   text-align: center;
   /* grid columns and rows size */
@@ -65,7 +65,7 @@
   grid-template-areas: "feat1 feat2 feat3"; }
 .grid-new-collection {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   text-align: center;
   /* grid columns and rows size */
@@ -87,7 +87,7 @@
   grid-template-areas: "best" "bestpara" "bestbtn"; }
 .grid-blog {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
@@ -209,9 +209,10 @@
   display: grid;
   width: 100%;
   padding-top: 3.5%;
+  padding-bottom: 3.5%;
   grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(12, 400px); }
+  grid-template-rows: repeat(16, 400px); }
 
 * {
   box-sizing: border-box; }
@@ -239,5 +240,9 @@ li {
 img {
   width: 100%;
   height: 100%; }
+
+/* -------------------------------------------------------
+--------------------- Pseudo-classes --------------------- 
+---------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

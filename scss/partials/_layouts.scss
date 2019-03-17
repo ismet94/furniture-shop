@@ -85,7 +85,7 @@
 
     &-feature-products {
         display: grid;
-        width: 80%;
+        width: 70%;
         margin: 0px auto;
         text-align: center;
         
@@ -101,7 +101,7 @@
 
     &-new-collection {
         display: grid;
-        width: 80%;
+        width: 70%;
         margin: 0px auto;
         text-align: center;
     
@@ -135,7 +135,7 @@
 
     &-blog {
         display: grid;
-        width: 80%;
+        width: 70%;
         margin: 0px auto;
  
     
@@ -352,11 +352,12 @@
       display: grid;
       width: 100%;
       padding-top: 3.5%;
+      padding-bottom: 3.5%;
       grid-gap: 5px;
       
 
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(12, 400px);
+      grid-template-rows: repeat(16, 400px);
     }
 
 }

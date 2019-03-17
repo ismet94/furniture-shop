@@ -142,6 +142,7 @@
   line-height: normal;
   letter-spacing: 1.1px;
   text-align: center;
+  cursor: pointer;
   color:#2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -347,7 +348,8 @@ transform: scale(1.5);
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.1px;
-  text-align: right;
+  text-align: center;
+  cursor: pointer;
   color: #2d2827;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -401,6 +403,10 @@ transform: scale(1.4);
     border-radius: 20px;
     background-color: #a88d7b;
     text-align: center;
+    cursor: pointer;
+     -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   }
 
   &-scroll-down {
@@ -413,15 +419,29 @@ transform: scale(1.4);
     background-repeat: no-repeat;
     cursor: pointer;
     filter: invert(30%);
-
   }
 }
 
 .scrolling {
   margin-top: 5%;
+  margin-right: 1.8%;
 }
 
+.main-button:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  }
+  
+
+
 // --------------- Featured Products ---------------
+
+.featured-products {
+  margin-top: 5%;
+  height: 504px;
+  // background-color: var(--white);
+}
 
 .feature {
   grid-area: feature;
@@ -434,21 +454,17 @@ transform: scale(1.4);
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #333333;
 }
 
 .line {
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b;
-}
-
-.featured-products {
-  margin-top: 8%;
-  height: 504px;
-  // background-color: var(--white);
 }
 
 
@@ -462,15 +478,16 @@ transform: scale(1.4);
 }
 
 .feat-img1 {
-    width: 360px;
-    height: 360px;
+  width: 370px;
+
+  height: 360px;
     background-color: #666666;
-    background-image: url(../images/future-chair.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .feat-name1 {
+  padding: 2%;
   height: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -484,6 +501,7 @@ transform: scale(1.4);
 }
 
 .feat-price1 {
+  padding: 5%;
   height: 11px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -503,15 +521,23 @@ transform: scale(1.4);
 }
 
 .feat-img2 {
-    width: 360px;
-    height: 360px;
+  width: 370px;
+  height: 360px;
     background-color: #666666;
-    background-image: url(../images/future-coffee-table.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.button-new {
+  width: 60px;
+  height: 25px;
+  border-radius: 7.5px;
+  background-color: #a88d7b;
+  z-index: 1;
+}
+
 .feat-name2 {
+    padding: 2%;
     height: 18px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -525,6 +551,7 @@ transform: scale(1.4);
   }
   
   .feat-price2 {
+    padding: 5%;
     height: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -545,15 +572,16 @@ transform: scale(1.4);
 }
 
 .feat-img3 {
-    width: 360px;
-    height: 360px;
+  width: 370px;
+
+  height: 360px;
     background-color: #666666;
-    background-image: url(../images/future-sofa.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .feat-name3 {
+  padding: 2%;
     height: 18px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -567,6 +595,7 @@ transform: scale(1.4);
   }
   
   .feat-price3 {
+    padding: 5%;
     height: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -602,8 +631,9 @@ transform: scale(1.4);
 }
 
 .line2 {
-    margin-left: 43%;
-    margin-right: 43%;
+    margin-left: 46%;
+    margin-right: 46%;
+    margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b;
@@ -618,7 +648,6 @@ transform: scale(1.4);
   width: 526px;
     height: 373px;
     background-color: #666666;
-    background-image: url(../images/future-bed-new.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -643,10 +672,9 @@ transform: scale(1.4);
 }
 
 .collection-img2 {
-  width: 526px;
+    width: 526px;
     height: 373px;
     background-color: #666666;
-    background-image: url(../images/future-chair-new.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -677,16 +705,6 @@ transform: scale(1.4);
   background-size: cover;
   max-width: 100%;
 }
-//   -moz-transition: all 0.3s;
-//   -webkit-transition: all 0.3s;
-//   transition: all 0.3s;
-// }
-
-// .goods:hover {
-//   -moz-transform: scale(1.1);
-//   -webkit-transform: scale(1.1);
-//   transform: scale(1.1);
-// }
 
 .best-heading { 
     grid-area: best;
@@ -760,8 +778,12 @@ transform: scale(1.4);
 
   .blogimg {
       grid-area: blogimg;
+      width: 100%;
     height: 405px;
     background-color: #666666;
+    background-image: url(/images/blog-images/z-island.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .bloginfo {
@@ -799,7 +821,7 @@ transform: scale(1.4);
 
   .blog-para {
   
-    height: 239px;
+    height: 249px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: normal;
@@ -2280,6 +2302,7 @@ color: #555555;
   .zoom {
     display: inline-block;
     overflow: hidden;
+    
   }
 
   .zoom img {
@@ -2292,19 +2315,27 @@ color: #555555;
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    filter: brightness(110%);
   }
 
-.future-chair1 {
-  grid-column: span 1;
-  grid-row: span 1;
+.future-office-design {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .future-coffee-table1 {
   grid-column: span 1;
 }
 
+.future-chairs-office3 {
+  grid-column: span 1;
+}
 
-.future-couch1 {
+.future-coffee-table3 {
+  grid-column: span 1;
+}
+
+.future-sofa {
   grid-column: span 1;
 }
 
@@ -2315,6 +2346,7 @@ color: #555555;
 .future-bed2 {
   grid-column: span 2;
 }
+
 
 .future-chair1 {
   grid-column: span 1;
@@ -2334,5 +2366,103 @@ color: #555555;
 }
 
 .future-desk-table1 {
+  grid-column: span 1;
 
+}
+
+.future-coffee-table2 {
+  grid-column: span 1;
+}
+
+.future-bed-new {
+  grid-column: span 1;
+}
+
+.future-kitchen-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.future-chair3 {
+  grid-column: span 1;
+}
+
+.future-bed4 {
+  grid-column: span 1;
+}
+
+.home-bar-elegant {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.future-couch1 {
+  grid-column: span 2;
+}
+
+.future-chair {
+  grid-column: span 1;
+}
+
+.future-couch3 {
+  grid-column: span 2;
+}
+
+.future-chairs-office2 {
+  grid-row: span 2;
+}
+
+.future-bedroom1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.future-chair-new {
+  grid-column: span 1;
+}
+
+.best3 {
+  grid-column: span 2;
+}
+
+.future-chair2 {
+  grid-column: span 1;
+}
+
+.future-chair4 {
+  grid-column: span 1;
+}
+
+.future-kitchen-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.future-couch5 {
+  grid-column: span 1;
+}
+
+.future-bed5 {
+  grid-column: span 1;
+}
+
+.future-lounge-1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.future-chair5 {
+  grid-row: span 2;
+}
+
+.future-couch6 {
+  grid-column: span 1;
+}
+
+.home-theater1 {
+  grid-column: span 1;
+}
+
+.future-couch4 {
+  grid-column: span 2;
 }
