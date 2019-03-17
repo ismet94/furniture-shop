@@ -333,7 +333,7 @@
     
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        grid-template-rows: repeat(2, 700px);
         grid-gap: 20px;
     
         grid-template-areas: 

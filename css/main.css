@@ -709,7 +709,7 @@
   grid-area: footercontact; }
 
 .footer-head1 {
-  margin-top: 5%;
+  margin-top: 4%;
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -726,7 +726,7 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.2;
+  line-height: 2;
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
@@ -1518,7 +1518,8 @@
   grid-area: blog1; }
 .blog1-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
+  padding-top: 2%;
   background-color: #666666; }
 .blog1-heading {
   width: 100%;
@@ -1557,23 +1558,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog1-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .blog2-content {
   grid-area: blog2; }
 .blog2-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
   background-color: #666666; }
 .blog2-heading {
   width: 100%;
@@ -1612,23 +1602,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog2-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .blog3-content {
   grid-area: blog3; }
 .blog3-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
   background-color: #666666; }
 .blog3-heading {
   width: 100%;
@@ -1667,23 +1646,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog3-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .blog4-content {
   grid-area: blog3; }
 .blog4-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
   background-color: #666666; }
 .blog4-heading {
   width: 100%;
@@ -1722,23 +1690,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog4-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .blog5-content {
   grid-area: blog3; }
 .blog5-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
   background-color: #666666; }
 .blog5-heading {
   width: 100%;
@@ -1777,23 +1734,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog5-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .blog6-content {
   grid-area: blog3; }
 .blog6-img {
   width: 100%;
-  height: 225px;
+  height: 325px;
   background-color: #666666; }
 .blog6-heading {
   width: 100%;
@@ -1832,17 +1778,6 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666; }
-.blog6-readmore {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #706259; }
 
 .navlook {
   height: 385px;
@@ -2237,7 +2172,7 @@ img {
   align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(2, 700px);
   grid-gap: 20px;
   grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
 
