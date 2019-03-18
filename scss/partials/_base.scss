@@ -3,19 +3,16 @@
 }
 
 html {
-  margin: 0px;
-  scroll-behavior: smooth;
-
+    margin: 0px;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
-
 }
 
 header {
-    
     display: inline-block;
 }
 
@@ -34,14 +31,24 @@ li {
 img {
     width: 100%;
     height: 100%; 
-    
 }
+
 
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
 
+.fab:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
+.fas:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
 // Navbar Hover includes different web browser properties
 .search:hover {

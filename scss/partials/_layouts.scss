@@ -89,8 +89,8 @@
     &-feature-products {
         display: grid;
         width: 70%;
-        margin: 0px auto;
-        text-align: center;
+        margin-left: 10%;
+     
         
     
         /* grid columns and rows size */
@@ -105,8 +105,7 @@
     &-new-collection {
         display: grid;
         width: 70%;
-        margin: 0px auto;
-        text-align: center;
+        margin-left: 10%;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(2, 1fr);
@@ -284,7 +283,7 @@
         display: grid;
         width: 70%;
         margin: auto;
-        padding-top: 17%;
+        padding-top: 22%;
         text-align: center;
     
         /* grid columns and rows size */
@@ -297,7 +296,6 @@
                 "number  subject"
                 "textarea1 textarea1"
                 "contactbtn contactbtn"
-   
     }
 }
 
@@ -355,7 +353,7 @@
       
         /* grid columns and rows size */
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(16, auto);
+        grid-template-rows: repeat(16, 300px);
     }
 }
 

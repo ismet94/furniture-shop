@@ -25,6 +25,38 @@
     background-color: $teel-colour;
 }
 
+// HEADERS --------------------------
+
+@mixin langcurr {
+    padding: 1%;
+    margin-right: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: 2.4px;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    color: $font-light;
+}
+
+@mixin socialship {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    padding: 1%;
+    line-height: 1.83;
+    letter-spacing: 2.4px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $font-light;
+}
+
 // NAV PANEL MIXINS ------------------
 
 @mixin nav-image {
@@ -134,7 +166,7 @@
 // ******* Feature properties ***********
 
 @mixin feature-image {
-    width: 370px;
+    width: 100%;
     height: 360px;
     background-color: $brown;
     background-size: cover;
@@ -286,9 +318,92 @@
     letter-spacing: normal;
     letter-spacing: 1.3px;
     text-align: center;
-    color: $heading
+}
+
+@mixin form-style {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 2%;
+    border: solid 1px $white-border;
+    background-color: $white-back;
+    color: $social-gray;
 }
 
 // --------------------------------------------
 // ------------ BLOG PAGE MIXINS --------------
 // --------------------------------------------
+
+@mixin blog-image {
+    width: 100%;
+    height: 305px;
+    background-color: $brown;
+    background-size: cover;
+}
+
+@mixin blog-heading {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: $heading;
+}
+
+@mixin blog-date {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;    
+    font-weight: normal;   
+    font-style: normal;    
+    font-stretch: normal;    
+    line-height: 3.2;    
+    letter-spacing: normal;    
+    text-align: left;    
+    color: $gray;
+}
+
+@mixin blog-line {
+    width: 100%;
+    height: 1px;
+    background-color: $border-line-blog;
+}
+
+@mixin blog-paragraph {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;   
+    font-weight: normal;  
+    font-style: normal; 
+    font-stretch: normal; 
+    line-height: 1.67;   
+    letter-spacing: normal;    
+    text-align: left;    
+    color: $brown;
+}
+
+/* ------------------ Responsive Mixins -------------------- */
+
+@mixin res-mobi-nav{
+    padding: 10%;
+}
+
+@mixin res-mobi-reslangcurr {
+    padding: 0px;
+    margin-right: 0%;
+    font-size: 8px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+@mixin res-mobi-socialship {
+    font-size: 8px;
+    padding: 0px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}

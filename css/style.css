@@ -1,4 +1,5 @@
 /* ------------------ Mixins -------------------- */
+/* ------------------ Responsive Mixins -------------------- */
 .back {
   background: url(../images/main.jpg);
   text-align: center;
@@ -57,8 +58,7 @@
 .grid-feature-products {
   display: grid;
   width: 70%;
-  margin: 0px auto;
-  text-align: center;
+  margin-left: 10%;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -67,8 +67,7 @@
 .grid-new-collection {
   display: grid;
   width: 70%;
-  margin: 0px auto;
-  text-align: center;
+  margin-left: 10%;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -176,7 +175,7 @@
   display: grid;
   width: 70%;
   margin: auto;
-  padding-top: 17%;
+  padding-top: 22%;
   text-align: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
@@ -214,7 +213,7 @@
   grid-gap: 5px;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(16, auto); }
+  grid-template-rows: repeat(16, 300px); }
 
 .future-office-design {
   grid-column: span 2;
@@ -358,6 +357,16 @@ img {
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
+.fab:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.fas:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
 .search:hover {
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
@@ -411,5 +420,175 @@ img {
   transition-timing-function: ease-out; }
 .footerlinks-content-:visited {
   color: white; }
+
+/***********************************************************************
+**************************** MEDIA QUERIES *****************************
+***********************************************************************/
+/* ---------------------------- MOBILE -------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  .header1 {
+    width: 100%;
+    height: 33px; }
+
+  .lang {
+    padding: 0px;
+    margin-right: 0%;
+    font-size: 8px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .curr {
+    padding: 0px;
+    margin-right: 0%;
+    font-size: 8px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .ship {
+    font-size: 8px;
+    padding: 0px;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .social {
+    font-size: 8px;
+    padding: 0px;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .back {
+    background: url(../images/main.jpg);
+    background-size: contain; }
+
+  .search {
+    padding: 10%;
+    font-size: 12px; }
+
+  .home {
+    padding: 10%;
+    font-size: 10px; }
+
+  .shop {
+    padding: 10%;
+    font-size: 10px; }
+
+  .about {
+    padding: 10%;
+    font-size: 10px; }
+
+  .logo {
+    padding: 10%;
+    font-size: 20px;
+    letter-spacing: 1px; }
+
+  .blog {
+    padding: 10%;
+    font-size: 10px; }
+
+  .contact {
+    padding: 10%;
+    font-size: 10px; }
+
+  .lookbook {
+    padding: 10%;
+    font-size: 10px; }
+
+  .cart {
+    padding: 10%;
+    font-size: 12px; }
+
+  .grid-head {
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: "lang curr ship ship social"; }
+
+  .grid-nav {
+    padding: 2px;
+    margin-left: 0px;
+    width: 98%;
+    line-height: 10px;
+    /* grid columns and rows size */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    grid-template-areas: "search home shop about logo" "blog contact lookbook cart"; }
+
+  .grid-content {
+    width: 95%;
+    margin: 10px;
+    line-height: 20px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 18px;
+    grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
+
+  .featured-products {
+    margin-top: 5%;
+    height: 100%;
+    margin-bottom: 5%; }
+
+  .grid-feature-products {
+    width: 100%;
+    margin-left: 0px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "feat1" "feat2" "feat3"; }
+
+  .grid-new-collection {
+    width: 100%;
+    margin-left: 0px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "coll1" "coll2"; }
+
+  .grid-best {
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 2%;
+    float: center;
+    justify-items: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 80%);
+    grid-gap: 10px;
+    grid-template-areas: "best" "bestpara" "bestbtn"; }
+
+  .main-logo {
+    margin-top: 50px;
+    height: 58px;
+    font-size: 50px;
+    line-height: 0.96; }
+
+  .main-slogan {
+    height: 80px;
+    font-size: 8px;
+    line-height: 2.97; }
+
+  .main-button {
+    grid-area: contentbtn;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px; }
+
+  .main-scroll-down {
+    height: 10%;
+    width: 7%;
+    grid-area: scrolldown;
+    padding: 9%; }
+
+  .scrolling {
+    margin-top: 4.5%;
+    margin-right: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

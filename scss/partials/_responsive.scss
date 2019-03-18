@@ -1,0 +1,203 @@
+/***********************************************************************
+**************************** MEDIA QUERIES *****************************
+***********************************************************************/
+
+
+/* ---------------------------- MOBILE -------------------------------*/
+
+@media only screen 
+    and (min-width: 200px)
+    and (max-width: 480px) {
+        .header1 {
+            width: 100%;
+            height: 33px;
+        }
+
+        .lang {
+            @include res-mobi-reslangcurr;
+        }
+
+        .curr {
+            @include res-mobi-reslangcurr;
+        }
+
+        .ship {
+            @include res-mobi-socialship;
+        }
+
+        .social {
+            @include res-mobi-socialship;
+        }
+
+        .back {
+            background:  url(../images/main.jpg);
+            background-size: contain;
+        }
+
+        .search {
+            @include res-mobi-nav;
+            font-size: 12px;
+        }
+        .home {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .shop {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .about {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .logo {
+            @include res-mobi-nav;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .blog {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .contact {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .lookbook {
+            @include res-mobi-nav;
+            font-size: 10px;
+        }
+        .cart {
+            @include res-mobi-nav;
+            font-size: 12px;
+        }
+
+        .grid-head {
+                width: 90%;
+                margin-left: 5%;
+                align-items: center;
+            
+                /* grid columns and rows size */
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: auto;
+                grid-gap: 15px;
+                
+                grid-template-areas: 
+                        "lang curr ship ship social"
+            }
+
+        .grid-nav {
+            padding: 2px;
+            margin-left: 0px;
+            width: 98%;
+            line-height: 10px;
+    
+            /* grid columns and rows size */
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-gap: 0px;
+    
+            grid-template-areas: 
+                    "search home shop about logo" 
+                    "blog contact lookbook cart"
+        }
+
+        .grid-content {
+            width: 95%;
+            margin: 10px;
+            line-height: 20px;
+        
+            /* grid columns and rows size */
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 18px;
+        
+            grid-template-areas: 
+                    "logo"
+                    "slogan"
+                    "contentbtn"
+                    "scrolldown"
+            }
+
+        .featured-products {
+            margin-top: 5%;
+            height: 100%;
+            margin-bottom: 5%;
+        }
+
+        .grid-feature-products {
+            width: 100%;
+            margin-left: 0px;
+            
+            /* grid columns and rows size */
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+        
+            grid-template-areas: 
+                    "feat1"
+                    "feat2"
+                    "feat3"
+        }
+        
+        .grid-new-collection {
+            width: 100%;
+            margin-left: 0px;
+        
+            /* grid columns and rows size */
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        
+            grid-template-areas: 
+                    "coll1"
+                    "coll2"
+        }
+
+        .grid-best {
+            width: 100%;
+            margin: 0px auto;
+            padding-top: 2%;
+            float: center;
+            justify-items: center;
+        
+            /* grid columns and rows size */
+            grid-template-columns: repeat(1, 80%);
+            grid-gap: 10px;
+        
+            grid-template-areas: 
+                    "best"
+                    "bestpara"
+                    "bestbtn"
+        }
+
+    .main-logo {
+        margin-top: 50px;
+        height: 58px;
+        font-size: 50px;
+        line-height: 0.96;
+    }   
+
+    .main-slogan {
+        height: 80px;
+        font-size: 8px;
+        line-height: 2.97;
+    }
+
+    .main-button {
+        grid-area: contentbtn;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .main-scroll-down {
+        height: 10%;
+        width: 7%;
+        grid-area: scrolldown;
+        padding: 9%;
+    }
+
+    .scrolling {
+        margin-top: 4.5%;
+        margin-right: 5%;
+    }
+}
