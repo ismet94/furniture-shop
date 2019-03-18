@@ -131,7 +131,7 @@
   grid-template-areas: "logo . . . home shop about  blog contact lookbook cart search"; }
 .grid2-about {
   display: grid;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   line-height: 30px;
   /* grid columns and rows size */
@@ -141,7 +141,7 @@
   grid-template-areas: "whowe aboutimage"; }
 .grid2-meet {
   display: grid;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
@@ -214,7 +214,7 @@
   grid-gap: 5px;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(16, 400px); }
+  grid-template-rows: repeat(16, auto); }
 
 .future-office-design {
   grid-column: span 2;

@@ -138,32 +138,27 @@
 
 
 
-// Navbar components
+// Navbar components included mixins for code redundancy
 .search {
     grid-area: search;
     font-size: 22px;
     @include nav;
 }
-
 .home {
     grid-area: home;
     font-size: 15px;
     @include nav;
-  }
-
+}
 .shop {
     grid-area: shop;
     font-size: 15px;
     @include nav;
-  }
-
-
+}
 .about {
     grid-area: about;
     font-size: 15px;
     @include nav;
-  }
-
+}
 .logo {
     grid-area: logo;
     font-size: 30px;
@@ -172,33 +167,27 @@
     letter-spacing: 1.8px;
     text-align: right;
     filter: invert(30%);
-  }
-
+}
 .blog {
     grid-area: blog;
     font-size: 15px;
     @include nav;
 }
-
 .contact {
     grid-area: contact;
     font-size: 15px;
     @include nav;
 }
-
 .lookbook {
     grid-area: lookbook;
     font-size: 15px;
     @include nav;
 }
-
 .cart {
     grid-area: cart;
     font-size: 20px;
     @include nav;
 }
-
-
 
 
 // Content
@@ -278,12 +267,10 @@
   margin-top: 5%;
   height: 504px;
 }
-
 .feature {
   grid-area: feature;
   @include main-heading;
 }
-
 .line {
   @include underline;
 }
@@ -291,33 +278,27 @@
 
 // --------------------------Feature 1
 
-
-
 .feat1 {
     grid-area: feat1;
 }
-
 .feat-img1 {
     @include feature-image;
 }
-
 .feat-name1 {
     @include feature-name;
 }
-
 .feat-price1 {
     @include feature-price;
 }
 
 // --------------------------Feature 2
+
 .feat2 {
     grid-area: feat2;
 }
-
 .feat-img2 {
     @include feature-image;
 }
-
 .button-new {
   width: 60px;
   height: 25px;
@@ -325,11 +306,9 @@
   background-color: $teel-colour;
   z-index: 1;
 }
-
 .feat-name2 {
     @include feature-name;
 }
-  
 .feat-price2 {
     @include feature-price;
 }
@@ -339,15 +318,12 @@
 .feat3 {
     grid-area: feat3;
 }
-
 .feat-img3 {
     @include feature-image;
 }
-
 .feat-name3 {
     @include feature-name;
 }
-  
 .feat-price3 {
     @include feature-price;
 }
@@ -364,7 +340,6 @@
     grid-area: neww;
     @include main-heading;
 }
-
 .line2 {
     @include underline;
 }
@@ -374,11 +349,9 @@
 .coll1 {
     grid-area: coll1;
 }
-
 .collection-img {
     @include collection-image;
 }
-
 .collection-name {
     @include collection-name;
 }
@@ -388,11 +361,9 @@
 .coll2 {
     grid-area: coll2;
 }
-
 .collection-img2 {
     @include collection-image;
 }
-
 .collection-name2 {
     @include collection-name;
 }
@@ -578,49 +549,42 @@
     @include footer-content;
 }
 
+// --------------------------Footer Instagram Images
+
 .footerinsta {
     grid-area: footerinsta;
 }
-
 .footer-head4 {
     @include footer-heading2;
 }
-
 .insta-img1 {
     grid: insta1;
     @include footer-insta-images;
 }
-
 .insta-img2 {
     grid: insta2;
     @include footer-insta-images;
 }
-
 .insta-img3 {
     grid: insta3;
     @include footer-insta-images;
 }
-
 .insta-img4 {
     grid: insta4;
     @include footer-insta-images;
 }
-
 .insta-img5 {
     grid: insta5;
     @include footer-insta-images;
 }
-
 .insta-img6 {
     grid: insta6;
     @include footer-insta-images;
 }
-
 .insta-img7 {
     grid: insta7;
     @include footer-insta-images;
 }
-
 .insta-img8 {
     grid: insta8;
     @include footer-insta-images;
@@ -629,24 +593,24 @@
 // COPYRIGHT TEXT ---------------------------------------------
 
 .copyright {
-  width: 100%;
-  height: 85px;
-  background-color: #d7d7d7;
+    width: 100%;
+    height: 85px;
+    background-color: #d7d7d7;
 }
 
 .copyright-text {
-  height: 14px;
- padding-top: 1.5%;
-  margin-top: 0px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: center;
-  color: $brown;
+    height: 14px;
+    padding-top: 1.5%;
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: $brown;
 }
 
 // --------------------------------------------------------------------------------------
@@ -654,605 +618,254 @@
 // --------------------------------------------------------------------------------------
 
 .navabout {
-  height: 385px;
-  background-color: $brown;
-  background-image: $nav-panel, url(../images/main2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: $nav-panel, url(../images/main2.jpg);
+    @include nav-image;
 }
-
 .aboutus {
-  padding-top: 10%;
-  height: 35px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-align: center;
-  color: $white-back;
+    @include nav-heading;
+}
+.navshow {
+    @include nav-show;
 }
 
-.navshow {
-  padding-top: 1%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  text-align: center;
-  color: $warm-gray;
-}
+// --------------------------Who We Are
 
 .who-we-are {
-  margin-top: 5%;
-  height: 548px;
-  background-color: $white-back;
-
+    margin-top: 5%;
+    height: 548px;
+    background-color: $white-back;
 } 
-
 .who-we-are-heading {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
-  width: 70%;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: $heading;
+    width: 70%;
+    @include main-heading;
 }
-
-
-
+.line7 {
+    @include underline;
+}
 .about-para {
-  width: 524px;
-  height: 89px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: $brown;
+    @include about-paragraph;
 }
-
 .about-section {
-  grid-area: whowe;
+    grid-area: whowe;
 }
-
-
-
 .about-us-image {
-  grid-area: aboutimage;
-  width: 600px;
-  height: 490px;
-  background-image: url(../images/whatwedo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+    grid-area: aboutimage;
+    @include what-we-do-images;
 }
-
 .meet-us {
-  height: 581px;
-  background-color: $white-back;
+    height: 581px;
+    background-color: $white-back;
 }
-
 .meet-our-team {
-  grid-area: feature;
-  height: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: center;
-  color: $heading;
+    grid-area: feature;
+    @include main-heading;
 }
-
 .line4 {
-  margin-left: 45%;
-  margin-right: 45%;
-  height: 2px;
-  text-align: center;
-  background-color: $teel-colour;
+    @include underline
 }
 
+// --------------------------Person 1
 
 .meet1 {
     grid-area: meet1;
-   
 }
-
 .meet-img1 {
-  width: 270px;
-  height: 305px;
-  background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include meet-image;
 }
-
 .meet-name1 {
-  height: 19px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.4;
-  letter-spacing: 1px;
-  text-align: center;
-  color: $heading;
+    @include meet-name;
 }
-
 .meet-position1 {
-
-  height: 11px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.5;
-  letter-spacing: normal;
-  text-align: center;
-  
-  color: $font-light;
+    @include meet-position;
 }
-
 .meet-social1 {
-  height: 11px;
-  font-family: FontAwesome;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #555555;
+    @include meet-social;
 }
+
+// --------------------------Person 2
 
 .meet2 {
     grid-area: meet2;
- 
 }
-
 .meet-img2 {
-    width: 270px;
-    height: 305px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include meet-image;
 }
-
 .meet-name2 {
-height: 19px;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 20px;
-font-weight: 600;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.4;
-letter-spacing: 1px;
-text-align: center;
-color: $heading;
+    @include meet-name;
 }
-
 .meet-position2 {
-
-height: 11px;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 0.5;
-letter-spacing: normal;
-text-align: center;
-
-color: $font-light;
+    @include meet-position;
 }
-
 .meet-social2 {
-
-height: 11px;
-font-family: FontAwesome;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.5;
-letter-spacing: normal;
-text-align: center;
-color: #555555;
+    @include meet-social;
 }
+
+// --------------------------Person 3
 
 .meet3 {
-  grid-area: meet3;
- 
+    grid-area: meet3;
 }
-
 .meet-img3 {
-    width: 270px;
-    height: 305px;
-    background-color: $brown;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include meet-image;
 }
-
 .meet-name3 {
-height: 19px;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 20px;
-font-weight: 600;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.4;
-letter-spacing: 1px;
-text-align: center;
-color: $heading;
+    @include meet-name;
 }
-
 .meet-position3 {
-
-height: 11px;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 0.5;
-letter-spacing: normal;
-text-align: center;
-
-color: $font-light;
+    @include meet-position;
 }
-
 .meet-social3 {
-
-height: 11px;
-font-family: FontAwesome;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.5;
-letter-spacing: normal;
-text-align: center;
-color: #555555;
+    @include meet-social;
 }
+
+// --------------------------Person 4
 
 .meet4 {
-  grid-area: meet4;
- 
+    grid-area: meet4;
 }
-
 .meet-img4 {
-width: 270px;
-height: 305px;
-background-color: $brown;
-  background-size: cover;
-  background-repeat: no-repeat;
+    @include meet-image;
 }
-
 .meet-name4 {
-
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 20px;
-font-weight: 600;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.4;
-letter-spacing: 1px;
-text-align: center;
-color: $heading;
+    @include meet-name;
 }
-
 .meet-position4 {
-
-
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 0.5;
-letter-spacing: normal;
-text-align: center;
-
-color: $font-light;
+    @include meet-position;
 }
-
 .meet-social4 {
-
-
-font-family: FontAwesome;
-font-size: 15px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 2.5;
-letter-spacing: normal;
-text-align: center;
-color: #555555;
+    @include meet-social;
 }
 
+// --------------------------What We Do
 
 .what-we-do {
- 
-  height: 690px;
-  background-color: $white-back;
-  }
-
-  .what-we-do-img {
-      grid-area: wedoimg;
-      width: 600px;
-  height: 490px;
-  
-  background-image: url(../images/whoweare.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-  }
-
-  .what-we-do-info {
+    height: 690px;
+    background-color: $white-back;
+}
+.what-we-do-img {
+    grid-area: wedoimg;
+    @include what-we-do-images;
+}
+.what-we-do-info {
     grid-area: wedoinfo;
     height: 495px;
-  }
-
-  .what-we-do-head {
-    height: 24px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 38px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: $heading;
-  }
-
-   
-  .line5 {
-    margin-left: 43%;
-    margin-right: 43%;
-  height: 2px;
-  text-align: center;
-  background-color: $teel-colour;
 }
-
+.what-we-do-head {
+    @include main-heading;
+}
+.line5 {
+    @include underline;
+}
 .what-we-do-para {
-  width: 524px;
-  height: 139px;
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: $brown;
+    @include about-paragraph;
 }
 
 // --------------------------------------------------------------------------------------
 // ----------------------------------- CONTACT PAGE -------------------------------------
 // --------------------------------------------------------------------------------------
 
-
 .navcontact {
-  height: 385px;
-  background-color: $brown;
-  background-image: $nav-panel, url(../images/main3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: $nav-panel, url(../images/main3.jpg);
+    @include nav-image;
 }
-
 .contactus {
-  padding-top: 10%;
-  height: 35px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.2;
-  letter-spacing: 5px;
-  text-align: center;
-  color: $white-back;
+    @include nav-heading;
 }
-
 .contactshow {
-  padding-top: 1%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  text-align: center;
-  color: $warm-gray;
+    @include nav-show;
 }
-
 .contact-us-view {
-  width: 100%;
-  height: 370px;
-  background-color: $white-back;
+    width: 100%;
+    height: 370px;
+    background-color: $white-back;
 }
 
 .address {
-  grid-area: address;
-  width: 100%;
-  height: 200px;
-  border: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+    grid-area: address;
+    height: 200px;
+    @include contact-panel;
 }
-
 .location-icon {
-  width: 100%;
-  height: 37px;
-  font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.58;
-  letter-spacing: normal;
-  text-align: center;
-  color: $heading;
+    height: 37px;
+    font-size: 36px;
+    @include contact-content;
 }
-
 .our-address {
-  width: 100%;
-  height: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: 1.3px;
-  text-align: center;
-  color: $heading;
+    height: 18px;
+    font-size: 25px;
+    @include contact-content;
+    color: $heading;
 }
-
 .our-address-view {
-  width: 100%;
-  height: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  text-align: center;
-  color: $brown;
+    height: 16px;
+    font-size: 18px;
+    color: $brown;
+    @include contact-content;
 }
-
 .phone {
-  grid-area: phone;
-  width: 100%;
-  height: 100px;
-  border: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+    grid-area: phone;
+    height: 100px;
+    @include contact-panel;
 }
-
 .phone-content {
-  margin-top: 10%;
-  width: 100%;
-  height: 21px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  text-align: center;
-  color: $brown;
+    margin-top: 10%;
+    height: 21px;
+    font-size: 18px;
+    color: $brown;
+    @include contact-content;
 }
-
 .email {
-  grid-area: email;
-  width: 100%;
-  height: 100px;
-  border: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+    grid-area: email;
+    height: 100px;
+    @include contact-panel;
 }
-
 .email-content {
-  margin-top: 10%;
-  height: 21px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  text-align: center;
-  color: $brown;
+    margin-top: 10%;
+    height: 21px;
+    font-size: 18px;
+    color: $brown;
+    @include contact-content;
 }
-
 .hour {
-  grid-area: hour;
-  width: 100%;
-  height: 200px;
-  border: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+    grid-area: hour;
+    height: 200px;
+    @include contact-panel;
 }
-
 .clock {
-  width: 100%;
-  height: 37px;
-  font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.58;
-  letter-spacing: normal;
-  text-align: center;
-  color: $heading;
+    height: 37px;
+    font-size: 36px;
+    color: $heading;
+    @include contact-content;
 }
-
 .openning-hour {
-  width: 100%;
-  height: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: 1.3px;
-  text-align: center;
-  color: $heading;
+    height: 18px;
+    font-size: 25px;
+    color: $heading;
+    @include contact-content;
 }
-
 .trading {
-  width: 100%;
-  height: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  text-align: center;
-  color: $brown;
+    height: 16px;
+    font-size: 18px;
+    color: $brown;
+    @include contact-content;
 }
-
-
 .googlemaps1 {
-  grid-area: maps;
-  width: 100%;
- height: 350px;
-  border: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+    grid-area: maps;
+    height: 350px;
+    @include contact-panel;
 }
+
 
 .form1 {
-  width: 100%;
-  height: 750px;
+    width: 100%;
+    height: 750px;
 }
 
 .name {
     grid-area: yourname;
     text-indent: 2%;
     height: 50px;
-    border: solid 1px #e6e6e6;
+    border: solid 1px $white-border;
     background-color: $white-back;
   }
   
@@ -1260,7 +873,7 @@ color: #555555;
     grid-area: email;
     text-indent: 2%;
     height: 50px;
-    border: solid 1px #e6e6e6;
+    border: solid 1px $white-border;
     background-color: $white-back;
   }
 
@@ -1269,7 +882,7 @@ color: #555555;
     text-indent: 2%;
     width: 100%;
     height: 50px;
-    border: solid 1px #e6e6e6;
+    border: solid 1px $white-border;
     background-color: $white-back;
   }
 
@@ -1277,7 +890,7 @@ color: #555555;
     grid-area: subject;
     text-indent: 2%;
     height: 50px;
-    border: solid 1px #e6e6e6;
+    border: solid 1px $white-border;
     background-color: $white-back;
   }
 
@@ -1286,7 +899,7 @@ color: #555555;
     text-indent: 2%;
   height: 150px;
   font-family: 'Source Sans Pro', sans-serif;
-  border: solid 1px #e6e6e6;
+  border: solid 1px $white-border;
   background-color: $white-back;
   }
 
@@ -1303,40 +916,18 @@ color: #555555;
 // ----------------------------------- BLOG PAGE -------------------------------------
 // --------------------------------------------------------------------------------------
 
-  .navblog {
-    height: 385px;
-    background-color: $brown;
+.navblog {
     background-image: $nav-panel, url(../images/main4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+    @include nav-image;
+}
   
-  .blogus {
-    padding-top: 10%;
-    height: 35px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 50px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: 5px;
-    text-align: center;
-    color: $white-back;
-  }
+.blogus {
+    @include nav-heading;
+}
   
-  .blogshow {
-    padding-top: 1%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    text-align: center;
-    color: $warm-gray;
-  }
+.blogshow {
+    @include nav-show;
+}
 
   .blog-blog {
     grid-area: blogblog;
@@ -1375,7 +966,7 @@ color: #555555;
     margin-left: 10%;
     height: 1.2px;
     text-align: right;
-    background-color: #e6e6e6;
+    background-color: $white-border;
   }
 
   .blog1 {
@@ -1753,59 +1344,33 @@ color: #555555;
 // ----------------------------------- LOOKBOOK PAGE -------------------------------------
 // --------------------------------------------------------------------------------------
 
-  .navlook {
-    height: 385px;
-    background-color: $brown;
-    background-image: $nav-panel, url(../images/main5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.navlook {
+    background-image: $nav-panel, url(../imagesmain5.jpg);
+    @include nav-image;
+}
+
+.lookus {
+    @include nav-heading;
+}
+
+.lookshow {
+    @include nav-show;
+}
+
+.zoom {
+  display: inline-block;
+  overflow: hidden;
   
-  .lookus {
-    padding-top: 10%;
-    height: 35px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 50px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: 5px;
-    text-align: center;
-    color: $white-back;
-  }
-  
-  .lookshow {
-    padding-top: 1%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    text-align: center;
-    color: $warm-gray;
-  }
-
-
-
-  .zoom {
-    display: inline-block;
-    overflow: hidden;
-    
-  }
-
-  .zoom img {
-    display: block;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .zoom:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    filter: brightness(110%);
-  }
-
+}
+.zoom img {
+  display: block;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: brightness(110%);
+}

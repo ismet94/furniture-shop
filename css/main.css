@@ -850,14 +850,14 @@
   color: #666666; }
 
 .navabout {
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main2.jpg);
   height: 385px;
   background-color: #666666;
-  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .aboutus {
-  padding-top: 10%;
+  padding-top: 7%;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -887,16 +887,26 @@
   background-color: #ffffff; }
 
 .who-we-are-heading {
+  width: 70%;
+  height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
-  width: 70%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.67;
+  line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #333333; }
+
+.line7 {
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
+  height: 2px;
+  text-align: center;
+  background-color: #a88d7b; }
 
 .about-para {
   width: 524px;
@@ -918,7 +928,6 @@
   grid-area: aboutimage;
   width: 600px;
   height: 490px;
-  background-image: url(../images/whatwedo.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -937,11 +946,13 @@
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #333333; }
 
 .line4 {
-  margin-left: 45%;
-  margin-right: 45%;
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b; }
@@ -1095,6 +1106,7 @@
   background-repeat: no-repeat; }
 
 .meet-name4 {
+  height: 19px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -1106,6 +1118,7 @@
   color: #333333; }
 
 .meet-position4 {
+  height: 11px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1117,6 +1130,7 @@
   color: #999999; }
 
 .meet-social4 {
+  height: 11px;
   font-family: FontAwesome;
   font-size: 15px;
   font-weight: normal;
@@ -1135,7 +1149,6 @@
   grid-area: wedoimg;
   width: 600px;
   height: 490px;
-  background-image: url(../images/whoweare.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -1146,25 +1159,27 @@
 .what-we-do-head {
   height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #333333; }
 
 .line5 {
-  margin-left: 43%;
-  margin-right: 43%;
+  margin-left: 46%;
+  margin-right: 46%;
+  margin-bottom: 3%;
   height: 2px;
   text-align: center;
   background-color: #a88d7b; }
 
 .what-we-do-para {
   width: 524px;
-  height: 139px;
+  height: 89px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1176,14 +1191,14 @@
   color: #666666; }
 
 .navcontact {
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main3.jpg);
   height: 385px;
   background-color: #666666;
-  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main3.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .contactus {
-  padding-top: 10%;
+  padding-top: 7%;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1214,139 +1229,165 @@
 
 .address {
   grid-area: address;
-  width: 100%;
   height: 200px;
+  width: 100%;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
 
 .location-icon {
-  width: 100%;
   height: 37px;
   font-size: 36px;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.58;
-  letter-spacing: normal;
-  text-align: center;
-  color: #333333; }
-
-.our-address {
-  width: 100%;
-  height: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
+  letter-spacing: normal;
   letter-spacing: 1.3px;
   text-align: center;
   color: #333333; }
 
-.our-address-view {
+.our-address {
+  height: 18px;
+  font-size: 25px;
   width: 100%;
-  height: 16px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.39;
+  line-height: 1;
   letter-spacing: normal;
+  letter-spacing: 1.3px;
   text-align: center;
-  color: #666666; }
+  color: #333333;
+  color: #333333; }
+
+.our-address-view {
+  height: 16px;
+  font-size: 18px;
+  color: #666666;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #333333; }
 
 .phone {
   grid-area: phone;
-  width: 100%;
   height: 100px;
+  width: 100%;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
 
 .phone-content {
   margin-top: 10%;
-  width: 100%;
   height: 21px;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+  color: #666666;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.39;
+  line-height: 1;
   letter-spacing: normal;
+  letter-spacing: 1.3px;
   text-align: center;
-  color: #666666; }
+  color: #333333; }
 
 .email {
   grid-area: email;
-  width: 100%;
   height: 100px;
+  width: 100%;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
 
 .email-content {
   margin-top: 10%;
   height: 21px;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+  color: #666666;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.39;
+  line-height: 1;
   letter-spacing: normal;
+  letter-spacing: 1.3px;
   text-align: center;
-  color: #666666; }
+  color: #333333; }
 
 .hour {
   grid-area: hour;
-  width: 100%;
   height: 200px;
+  width: 100%;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
 
 .clock {
-  width: 100%;
   height: 37px;
   font-size: 36px;
+  color: #333333;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.58;
+  line-height: 1;
   letter-spacing: normal;
+  letter-spacing: 1.3px;
   text-align: center;
   color: #333333; }
 
 .openning-hour {
-  width: 100%;
   height: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 25px;
+  color: #333333;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
+  letter-spacing: normal;
   letter-spacing: 1.3px;
   text-align: center;
   color: #333333; }
 
 .trading {
-  width: 100%;
   height: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+  color: #666666;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.39;
+  line-height: 1;
   letter-spacing: normal;
+  letter-spacing: 1.3px;
   text-align: center;
-  color: #666666; }
+  color: #333333; }
 
 .googlemaps1 {
   grid-area: maps;
-  width: 100%;
   height: 350px;
+  width: 100%;
   border: solid 1px #e6e6e6;
   background-color: #f0f0f0; }
 
@@ -1400,14 +1441,14 @@
   text-align: center; }
 
 .navblog {
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main4.jpg);
   height: 385px;
   background-color: #666666;
-  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main4.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .blogus {
-  padding-top: 10%;
+  padding-top: 7%;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1736,14 +1777,14 @@
   color: #666666; }
 
 .navlook {
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../imagesmain5.jpg);
   height: 385px;
   background-color: #666666;
-  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main5.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .lookus {
-  padding-top: 10%;
+  padding-top: 7%;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1999,7 +2040,7 @@ img {
   grid-template-areas: "logo . . . home shop about  blog contact lookbook cart search"; }
 .grid2-about {
   display: grid;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   line-height: 30px;
   /* grid columns and rows size */
@@ -2009,7 +2050,7 @@ img {
   grid-template-areas: "whowe aboutimage"; }
 .grid2-meet {
   display: grid;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
@@ -2082,7 +2123,7 @@ img {
   grid-gap: 5px;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(16, 400px); }
+  grid-template-rows: repeat(16, auto); }
 
 .future-office-design {
   grid-column: span 2;

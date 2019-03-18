@@ -25,6 +25,42 @@
     background-color: $teel-colour;
 }
 
+// NAV PANEL MIXINS ------------------
+
+@mixin nav-image {
+    height: 385px;
+    background-color: $brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin nav-heading {
+    padding-top: 7%;
+    height: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-align: center;
+    color: $white-back;
+}
+
+@mixin nav-show {
+    padding-top: 1%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: $warm-gray;
+}
+
 // FOOTER MIXINS ------------------
 
 @mixin footer-heading1 {
@@ -160,6 +196,98 @@
 // ------------ ABOUT PAGE MIXINS -------------
 // --------------------------------------------
 
+@mixin about-paragraph {
+    width: 524px;
+    height: 89px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: $brown;
+}
+
+@mixin what-we-do-images {
+    width: 600px;
+    height: 490px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@mixin meet-image {
+    width: 270px;
+    height: 305px;
+    background-color: $brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin meet-name {
+    height: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $heading;
+}
+
+@mixin meet-position {
+    height: 11px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $font-light;
+}
+
+@mixin meet-social {
+    height: 11px;
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $social-gray;
+}
+
+// --------------------------------------------
+// ---------- CONTACT PAGE MIXINS -------------
+// --------------------------------------------
+
+
+@mixin contact-panel {
+    width: 100%;
+    border: solid 1px $white-border;
+    background-color: $white-panel;
+}
+
+@mixin contact-content {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: $heading
+}
 
 // --------------------------------------------
 // ------------ BLOG PAGE MIXINS --------------

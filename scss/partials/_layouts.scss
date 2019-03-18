@@ -211,7 +211,7 @@
 
     &-about {
         display: grid;
-        width: 85%;
+        width: 80%;
         margin: 0px auto;
         line-height: 30px;
     
@@ -226,7 +226,7 @@
 
     &-meet {
         display: grid;
-        width: 85%;
+        width: 80%;
         margin: 0px auto;
         text-align: center;
         line-height: 30px;
@@ -355,7 +355,7 @@
       
         /* grid columns and rows size */
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(16, 400px);
+        grid-template-rows: repeat(16, auto);
     }
 }
 
