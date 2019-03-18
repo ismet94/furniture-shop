@@ -5,6 +5,11 @@
   height: 53px;
   background-color: #2d2827; }
 
+.header2 {
+  width: 100%;
+  height: 55px;
+  background-color: #f0f0f0; }
+
 .lang {
   grid-area: lang;
   padding: 1%;
@@ -18,6 +23,7 @@
   letter-spacing: normal;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
   color: #999999; }
 
 .dropdownlang {
@@ -27,7 +33,7 @@
 .dropdownlang-content {
   display: none;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #2d2827;
   min-width: 100px;
   z-index: 1; }
@@ -57,6 +63,7 @@
   letter-spacing: normal;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
   color: #999999; }
 
 .dropdownzar {
@@ -637,18 +644,20 @@
 
 .blog-seconday-head {
   height: 23px;
+  width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.92;
+  line-height: 2.4;
   letter-spacing: normal;
   text-align: left;
   color: #333333; }
 
 .blog-date {
-  height: 14px;
+  height: 20px;
+  width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -657,10 +666,11 @@
   line-height: 3.2;
   letter-spacing: normal;
   text-align: left;
-  color: #999999; }
+  color: #919191; }
 
 .blog-para {
   height: 249px;
+  width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -692,6 +702,8 @@
   grid-area: footercontact; }
 
 .footer-head1 {
+  width: 60%;
+  height: 20%;
   margin-top: 4%;
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
@@ -907,7 +919,6 @@
   background-color: #ffffff; }
 
 .who-we-are-heading {
-  width: 70%;
   height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
@@ -929,7 +940,7 @@
   background-color: #a88d7b; }
 
 .about-para {
-  width: 524px;
+  width: 100%;
   height: 89px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -1198,7 +1209,7 @@
   background-color: #a88d7b; }
 
 .what-we-do-para {
-  width: 524px;
+  width: 100%;
   height: 89px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -1501,6 +1512,7 @@
   grid-area: blogblog;
   width: 100%;
   height: 15px;
+  margin-top: 3%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1515,7 +1527,7 @@
   grid-area: blogsocial;
   width: 100%;
   height: 15px;
-  padding-top: 2%;
+  padding-top: 1%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1882,6 +1894,18 @@ img {
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-google-plus-g:hover {
+  color: #dd4b39; }
+
+.fa-twitter:hover {
+  color: #1DA1F2; }
+
+.fa-pinterest-p:hover {
+  color: #c8232c; }
+
 .fab:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -1955,27 +1979,26 @@ img {
 
 .grid-head {
   display: grid;
-  width: 90%;
-  margin-left: 5%;
+  width: 85%;
+  margin-left: 8%;
   color: white;
-  align-items: center;
-  /* grid columns and rows size */
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: auto;
-  grid-gap: 15px;
-  grid-template-areas: "lang curr ship ship social"; }
-.grid-head2 {
-  display: grid;
-  width: 90%;
-  margin-left: 5%;
-  color: #353535;
-  background-color: #eeeeee;
   align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-gap: 15px;
   grid-template-areas: "lang curr ship ship social"; }
+.grid-head2 {
+  display: grid;
+  width: 85%;
+  margin: auto;
+  color: #333333;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "lang social ship ship curr"; }
 .grid-nav {
   display: grid;
   padding: 2%;
@@ -2004,16 +2027,16 @@ img {
 .grid-feature-products {
   display: grid;
   width: 70%;
-  margin-left: 10%;
+  margin-left: 15%;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "feat1 feat2 feat3"; }
 .grid-new-collection {
+  margin-left: 15%;
   display: grid;
   width: 70%;
-  margin-left: 10%;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -2065,10 +2088,9 @@ img {
 .grid2-nav2 {
   display: grid;
   margin-left: 7.3%;
-  width: 100%;
+  width: 85%;
   line-height: 20px;
   text-transform: uppercase;
-  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
@@ -2079,6 +2101,7 @@ img {
   width: 80%;
   margin: 0px auto;
   line-height: 30px;
+  align-content: left;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -2121,7 +2144,7 @@ img {
   display: grid;
   width: 70%;
   margin: auto;
-  padding-top: 22%;
+  padding-top: 18%;
   text-align: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
@@ -2144,7 +2167,7 @@ img {
   width: 80%;
   margin: auto;
   padding-top: 3.5%;
-  align-items: center;
+  padding-bottom: 2.5%;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -2314,7 +2337,8 @@ img {
 
   .back {
     background: url(../images/main.jpg);
-    background-size: contain; }
+    background-size: cover;
+    background-repeat: no-repeat; }
 
   .search {
     padding: 10%;
@@ -2352,6 +2376,33 @@ img {
   .cart {
     padding: 10%;
     font-size: 12px; }
+
+  .main-logo {
+    margin-top: 50px;
+    height: 58px;
+    font-size: 50px;
+    line-height: 0.96; }
+
+  .main-slogan {
+    height: 80px;
+    font-size: 8px;
+    line-height: 2.97; }
+
+  .main-button {
+    grid-area: contentbtn;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px; }
+
+  .main-scroll-down {
+    height: 10%;
+    width: 7%;
+    grid-area: scrolldown;
+    padding: 9%; }
+
+  .scrolling {
+    margin-top: 4.5%;
+    margin-right: 5%; }
 
   .grid-head {
     width: 90%;
@@ -2394,6 +2445,7 @@ img {
     margin-left: 0px;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 460px);
     grid-gap: 10px;
     grid-template-areas: "feat1" "feat2" "feat3"; }
 
@@ -2402,45 +2454,50 @@ img {
     margin-left: 0px;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 500px);
     grid-gap: 20px;
     grid-template-areas: "coll1" "coll2"; }
 
   .grid-best {
     width: 100%;
-    margin: 0px auto;
-    padding-top: 2%;
-    float: center;
-    justify-items: center;
+    margin: 0px;
+    padding-top: 20%;
     /* grid columns and rows size */
-    grid-template-columns: repeat(1, 80%);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 460px);
     grid-gap: 10px;
     grid-template-areas: "best" "bestpara" "bestbtn"; }
 
-  .main-logo {
-    margin-top: 50px;
-    height: 58px;
-    font-size: 50px;
-    line-height: 0.96; }
+  .collection-img {
+    width: 100%;
+    height: 380px; }
 
-  .main-slogan {
-    height: 80px;
-    font-size: 8px;
-    line-height: 2.97; }
+  .collection-img2 {
+    width: 100%;
+    height: 380px; }
 
-  .main-button {
-    grid-area: contentbtn;
-    width: 120px;
-    height: 30px;
-    border-radius: 20px; }
+  .grid-blog {
+    width: 100%;
+    margin: auto;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "blogimg" "bloginfo"; }
 
-  .main-scroll-down {
-    height: 10%;
-    width: 7%;
-    grid-area: scrolldown;
-    padding: 9%; }
+  .grid-footer {
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "footercontact" "footerlinks" "footershop" "footerinsta"; }
 
-  .scrolling {
-    margin-top: 4.5%;
-    margin-right: 5%; } }
+  .footer1 {
+    width: 100%;
+    height: auto;
+    background-color: #2d2827; } }
 
 /*# sourceMappingURL=main.css.map */

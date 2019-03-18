@@ -38,6 +38,23 @@ img {
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
 
+.fa-facebook-f:hover {
+    color: $facebook;
+}
+
+.fa-google-plus-g:hover {
+    color: $google;
+}
+
+.fa-twitter:hover {
+    color: $twitter;
+}
+
+.fa-pinterest-p:hover {
+    color: $pintrest;
+}
+
+
 .fab:hover {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);

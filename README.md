@@ -1,7 +1,12 @@
 # furniture-shop
 Future Furniture Project 3
 
-The Future... We often think about future objects and elements in our daily lives from clothing to cars. Now we have incorporated the future into furniture. Future Furniture the new living age has evolved into a great organization lead by a highly advanced team. 
+The Future... We often think about future objects and elements in our daily lives from clothing to cars. Now we have incorporated the future into furniture. Future Furniture the new living age has evolved into a great organization lead by a highly advanced team. In this website we will showcase only the best of the best.
+
+Loads of hours put into the website I started off with a grid structure layout this would help for future references concerning the responsiveness. Each tag had certain properties to abide by, by this, the code added up to 2000+ code I then resolved this by adding in mixins.scss file which removed alot of my redundancy. 
+Next step was to figure out a way to make the page feel professional so instead of having several odd colours I then turned to more subtle colours and kept it consist throught. Seeing that the website is aimed at a futuristic look the colours I chose, remained modern and easy.
+
+The final step was to make my website responsive so as said above using the grid sturcture layout helped me lay each section under each other or alter the current columns and rows to site in the desired position... Next is functionality... JS Here I come...
 
 ## Setting up my workspace
 
@@ -140,6 +145,18 @@ Tools:
 - Created masonry grid for images
 - Comlpeted lookbook page
 - Remastering code in progress.
+
+2019-03-17:
+- Added mixins
+- Added Variables
+- Removed redundancy
+- Done some touch ups on positioning and sizing
+- Responsiveness in progress.
+
+2019-03-18:
+- Added hover effects and colours
+- Added extra variables
+- Responsiveness completed on index.html
 
 
 ## Contributors
