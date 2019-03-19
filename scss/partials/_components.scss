@@ -877,7 +877,7 @@
     @include nav-show;
 }
 
-  .blog-blog {
+.blog-blog {
     grid-area: blogblog;
     width: 100%;
     height: 15px;
@@ -891,9 +891,9 @@
     letter-spacing: normal;
     text-align: left;
     color: $brown;
-  }
+}
 
-  .blog-social {
+.blog-social {
     grid-area: blogsocial;
     width: 100%;
     height: 15px;

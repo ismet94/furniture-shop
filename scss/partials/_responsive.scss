@@ -136,6 +136,7 @@
         }
 
         .grid-content {
+            display: block;
             width: 95%;
             margin: 10px;
             line-height: 20px;
@@ -154,11 +155,12 @@
 
         .featured-products {
             margin-top: 5%;
-            height: 100%;
+            height: 1055px;
             margin-bottom: 5%;
         }
 
         .grid-feature-products {
+            display: block;
             width: 100%;
             margin-left: 0px;
             
@@ -173,14 +175,20 @@
                     "feat3"
         }
 
+        .new-collection {
+            margin-top: 8%;
+            height: 100%;
+            margin-bottom: 5%;
+          }
 
         .grid-new-collection {
+            display: block;
             width: 100%;
             margin-left: 0px;
         
             /* grid columns and rows size */
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 500px);
+            grid-template-rows: repeat(2, 1000px);
             grid-gap: 20px;
         
             grid-template-areas: 
@@ -188,7 +196,15 @@
                     "coll2"
         }
 
+        .goods {
+            height: 100%;
+            opacity: 0.9;
+            margin-top: 50%;
+            max-width: 100%;
+        }
+
         .grid-best {
+            display: block;
             width: 100%;
             margin: 0px;
             padding-top: 20%;
@@ -215,7 +231,13 @@
             height: 380px;
         }
 
+        .blog-section {
+            height: 100%;
+            background-color: #f9f9f9;
+        }
+
         .grid-blog {
+            display: block;
             width: 100%;
             margin: auto;
      
@@ -229,8 +251,15 @@
                     "blogimg"
                     "bloginfo"
         }
+
+        .footer1 {
+            width: 100%;
+            height: 100%;
+            background-color: #2d2827;
+          }
    
         .grid-footer {
+            display: block;
             width: 100%;
             margin: auto;
             padding-top: 5%;
@@ -252,4 +281,10 @@
             height: auto;
             background-color: #2d2827;
           }
+
+          .copyright {
+            width: 100%;
+            height: 100%;
+            background-color: #d7d7d7;
+        }
 }

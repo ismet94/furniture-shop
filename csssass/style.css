@@ -1,0 +1,671 @@
+/* ------------------ Mixins -------------------- */
+/* ------------------ Responsive Mixins -------------------- */
+.back {
+  background: url(../images/main.jpg);
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+
+.grid-head {
+  display: grid;
+  width: 85%;
+  margin-left: 8%;
+  color: white;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "lang curr ship ship social"; }
+.grid-head2 {
+  display: grid;
+  width: 85%;
+  margin: auto;
+  color: #333333;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "lang social ship ship curr"; }
+.grid-nav {
+  display: grid;
+  padding: 2%;
+  margin-left: 7.3%;
+  width: 85%;
+  line-height: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "search home shop about logo blog contact lookbook cart"; }
+.grid-content {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
+.grid-feature-products {
+  display: grid;
+  width: 70%;
+  margin-left: 15%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "feat1 feat2 feat3"; }
+.grid-new-collection {
+  margin-left: 15%;
+  display: grid;
+  width: 70%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "coll1 coll2"; }
+.grid-best {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 2%;
+  float: left;
+  justify-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+  grid-template-areas: "best" "bestpara" "bestbtn"; }
+.grid-blog {
+  display: grid;
+  width: 70%;
+  margin: 0px auto;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "blogimg bloginfo"; }
+.grid-footer {
+  display: grid;
+  width: 70%;
+  margin: 0px auto;
+  padding-top: 5%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "footercontact footerlinks footershop footerinsta"; }
+.grid-instagram {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 4%;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "insta1 insta2 insta3 insta4" "insta5 isnta6 insta7 insta8"; }
+
+.grid2-nav2 {
+  display: grid;
+  margin-left: 7.3%;
+  width: 85%;
+  line-height: 20px;
+  text-transform: uppercase;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "logo . . . home shop about  blog contact lookbook cart search"; }
+.grid2-about {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  line-height: 30px;
+  align-content: left;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "whowe aboutimage"; }
+.grid2-meet {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 30px;
+  justify-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "meet1 meet2 meet3 meet4"; }
+.grid2-we-do {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas: "wedoimg wedoinfo"; }
+
+.grid3-contact-us-view {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "address phone hour" "address email hour" "maps maps maps"; }
+.grid3-form {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  padding-top: 18%;
+  text-align: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "yourname email" "number  subject" "textarea1 textarea1" "contactbtn contactbtn"; }
+
+.grid4-blog-header {
+  display: grid;
+  width: 80%;
+  height: 47px;
+  margin: auto;
+  align-items: center;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "blogblog blogsocial" "line6 lin6"; }
+.grid4-blog-main {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-top: 3.5%;
+  padding-bottom: 2.5%;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+  grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
+
+.grid5-container {
+  display: grid;
+  width: 100%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  grid-gap: 5px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 300px); }
+
+.future-office-design {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-coffee-table1 {
+  grid-column: span 1; }
+
+.future-chairs-office3 {
+  grid-column: span 1; }
+
+.future-coffee-table3 {
+  grid-column: span 1; }
+
+.future-sofa {
+  grid-column: span 1; }
+
+.egg-chair1 {
+  grid-column: span 1; }
+
+.future-bed2 {
+  grid-column: span 2; }
+
+.future-chair1 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.future-couch2 {
+  grid-column: span 1; }
+
+.future-bed3 {
+  grid-column: span 1; }
+
+.future-chairs-office1 {
+  grid-row: span 2; }
+
+.future-desk-table1 {
+  grid-column: span 1; }
+
+.future-coffee-table2 {
+  grid-column: span 1; }
+
+.future-bed-new {
+  grid-column: span 1; }
+
+.future-kitchen-1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair3 {
+  grid-column: span 1; }
+
+.future-bed4 {
+  grid-column: span 1; }
+
+.home-bar-elegant {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch1 {
+  grid-column: span 2; }
+
+.future-chair {
+  grid-column: span 1; }
+
+.future-couch3 {
+  grid-column: span 2; }
+
+.future-chairs-office2 {
+  grid-row: span 2; }
+
+.future-bedroom1 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-chair-new {
+  grid-column: span 1; }
+
+.best3 {
+  grid-column: span 2; }
+
+.future-chair2 {
+  grid-column: span 1; }
+
+.future-chair4 {
+  grid-column: span 1; }
+
+.future-kitchen-2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.future-couch5 {
+  grid-column: span 1; }
+
+.future-bed5 {
+  grid-column: span 1; }
+
+.future-lounge-1 {
+  grid-column: span 3;
+  grid-row: span 2; }
+
+.future-chair5 {
+  grid-row: span 2; }
+
+.future-couch6 {
+  grid-column: span 1; }
+
+.home-theater1 {
+  grid-column: span 1; }
+
+.future-couch4 {
+  grid-column: span 2; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0px;
+  scroll-behavior: smooth; }
+
+body {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px; }
+
+header {
+  display: inline-block; }
+
+h1 {
+  margin: 0px; }
+
+a {
+  text-decoration: none; }
+
+li {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+/* -------------------------------------------------------
+--------------------- Pseudo-classes --------------------- 
+---------------------------------------------------------*/
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-google-plus-g:hover {
+  color: #dd4b39; }
+
+.fa-twitter:hover {
+  color: #1DA1F2; }
+
+.fa-pinterest-p:hover {
+  color: #c8232c; }
+
+.fab:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.fas:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.search:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.home:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.shop:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.about:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.logo:hover {
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.blog:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.contact:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.lookbook:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.cart:hover {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.footerlinks-content-:link {
+  color: #666666; }
+.footerlinks-content-:hover {
+  color: #666666;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out; }
+.footerlinks-content-:visited {
+  color: white; }
+
+/***********************************************************************
+**************************** MEDIA QUERIES *****************************
+***********************************************************************/
+/* ---------------------------- MOBILE -------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  .header1 {
+    width: 100%;
+    height: 33px; }
+
+  .lang {
+    padding: 0px;
+    margin-right: 0%;
+    font-size: 8px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .curr {
+    padding: 0px;
+    margin-right: 0%;
+    font-size: 8px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .ship {
+    font-size: 8px;
+    padding: 0px;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .social {
+    font-size: 8px;
+    padding: 0px;
+    line-height: 1.1;
+    letter-spacing: 2px; }
+
+  .back {
+    background: url(../images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  .search {
+    padding: 10%;
+    font-size: 12px; }
+
+  .home {
+    padding: 10%;
+    font-size: 10px; }
+
+  .shop {
+    padding: 10%;
+    font-size: 10px; }
+
+  .about {
+    padding: 10%;
+    font-size: 10px; }
+
+  .logo {
+    padding: 10%;
+    font-size: 20px;
+    letter-spacing: 1px; }
+
+  .blog {
+    padding: 10%;
+    font-size: 10px; }
+
+  .contact {
+    padding: 10%;
+    font-size: 10px; }
+
+  .lookbook {
+    padding: 10%;
+    font-size: 10px; }
+
+  .cart {
+    padding: 10%;
+    font-size: 12px; }
+
+  .main-logo {
+    margin-top: 50px;
+    height: 58px;
+    font-size: 50px;
+    line-height: 0.96; }
+
+  .main-slogan {
+    height: 80px;
+    font-size: 8px;
+    line-height: 2.97; }
+
+  .main-button {
+    grid-area: contentbtn;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px; }
+
+  .main-scroll-down {
+    height: 10%;
+    width: 7%;
+    grid-area: scrolldown;
+    padding: 9%; }
+
+  .scrolling {
+    margin-top: 4.5%;
+    margin-right: 5%; }
+
+  .grid-head {
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: "lang curr ship ship social"; }
+
+  .grid-nav {
+    padding: 2px;
+    margin-left: 0px;
+    width: 98%;
+    line-height: 10px;
+    /* grid columns and rows size */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    grid-template-areas: "search home shop about logo" "blog contact lookbook cart"; }
+
+  .grid-content {
+    display: block;
+    width: 95%;
+    margin: 10px;
+    line-height: 20px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 18px;
+    grid-template-areas: "logo" "slogan" "contentbtn" "scrolldown"; }
+
+  .featured-products {
+    margin-top: 5%;
+    height: 1055px;
+    margin-bottom: 5%; }
+
+  .grid-feature-products {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 460px);
+    grid-gap: 10px;
+    grid-template-areas: "feat1" "feat2" "feat3"; }
+
+  .new-collection {
+    margin-top: 8%;
+    height: 100%;
+    margin-bottom: 5%; }
+
+  .grid-new-collection {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1000px);
+    grid-gap: 20px;
+    grid-template-areas: "coll1" "coll2"; }
+
+  .goods {
+    height: 100%;
+    opacity: 0.9;
+    margin-top: 50%;
+    max-width: 100%; }
+
+  .grid-best {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding-top: 20%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 460px);
+    grid-gap: 10px;
+    grid-template-areas: "best" "bestpara" "bestbtn"; }
+
+  .collection-img {
+    width: 100%;
+    height: 380px; }
+
+  .collection-img2 {
+    width: 100%;
+    height: 380px; }
+
+  .blog-section {
+    height: 100%;
+    background-color: #f9f9f9; }
+
+  .grid-blog {
+    display: block;
+    width: 100%;
+    margin: auto;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "blogimg" "bloginfo"; }
+
+  .footer1 {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2827; }
+
+  .grid-footer {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "footercontact" "footerlinks" "footershop" "footerinsta"; }
+
+  .footer1 {
+    width: 100%;
+    height: auto;
+    background-color: #2d2827; }
+
+  .copyright {
+    width: 100%;
+    height: 100%;
+    background-color: #d7d7d7; } }
+
+/*# sourceMappingURL=style.css.map */
