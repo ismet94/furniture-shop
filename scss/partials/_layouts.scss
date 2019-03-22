@@ -505,3 +505,41 @@
     grid-column: span 2;
 }
 
+// --------------------------------------------------------------------------------------
+// ----------------------------------- SHOP PAGE -------------------------------------
+// --------------------------------------------------------------------------------------
+
+.grid6 {
+    &-blogheader {
+        display: grid;
+        width: 70%;
+        height: 47px;
+        margin: auto;
+        align-items: center;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    
+        grid-template-areas: 
+                "showingresult selectorder"
+                "line6 lin6"
+    }
+
+    &-productpage1 {
+        display: grid;
+        width: 70%;
+        margin: auto;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+                "productimage1 productcontent1 productcontent1"
+                "productimage2 productcontent2 productcontent2"
+                "productimage3 productcontent3 productcontent3"
+                "productimage4 productcontent4 productcontent4"
+    }
+}
