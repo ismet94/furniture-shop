@@ -158,6 +158,11 @@ Tools:
 - Added extra variables
 - Responsiveness completed on index.html
 
+2019-03-22:
+- Created Grid Structure layout on shop.html
+- Added link to each page
+- Updated Readme
+
 
 ## Contributors
 
