@@ -163,6 +163,10 @@ Tools:
 - Added link to each page
 - Updated Readme
 
+2019-03-23:
+- Shop.html page 1 completed
+- Added pagenation
+- Updated Readme
 
 ## Contributors
 
