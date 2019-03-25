@@ -345,7 +345,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 40px;
-  grid-template-areas: "productimage1 productcontent1 productcontent1" "productimage2 productcontent2 productcontent2" "productimage3 productcontent3 productcontent3" "productimage4 productcontent4 productcontent4" ". . page1"; }
+  grid-template-areas: "productimage1 productcontent1 productcontent1" "productimage2 productcontent2 productcontent2" "productimage3 productcontent3 productcontent3" "productimage4 productcontent4 productcontent4" ". page1 page1"; }
 
 * {
   box-sizing: border-box; }

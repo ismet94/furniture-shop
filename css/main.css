@@ -1996,9 +1996,20 @@
 
 .page1 {
   grid-area: page1;
-  float: right;
+  text-align: end; }
+
+.page1-content {
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
   text-align: end;
-  padding: 2%; }
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666; }
 
 * {
   box-sizing: border-box; }
@@ -2452,7 +2463,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 40px;
-  grid-template-areas: "productimage1 productcontent1 productcontent1" "productimage2 productcontent2 productcontent2" "productimage3 productcontent3 productcontent3" "productimage4 productcontent4 productcontent4" ". . page1"; }
+  grid-template-areas: "productimage1 productcontent1 productcontent1" "productimage2 productcontent2 productcontent2" "productimage3 productcontent3 productcontent3" "productimage4 productcontent4 productcontent4" ". page1 page1"; }
 
 /***********************************************************************
 **************************** MEDIA QUERIES *****************************

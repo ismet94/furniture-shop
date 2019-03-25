@@ -1239,7 +1239,21 @@
 
 .page1 {
     grid-area: page1;
-    float: right;
     text-align: end;
-    padding: 2%;
+ 
+}
+
+.page1-content {
+
+    display: inline;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    text-align: end;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
 }
