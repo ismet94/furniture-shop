@@ -1067,8 +1067,8 @@
 .zoom {
   display: inline-block;
   overflow: hidden;
-  
 }
+
 .zoom img {
   display: block;
   -moz-transition: all 0.3s;
@@ -1081,6 +1081,100 @@
   transform: scale(1.1);
   filter: brightness(110%);
 }
+
+
+
+// This styles the lightbox
+.slideshow1 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-size: contain;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    // Transparent background
+    background-color: rgba(0, 0, 0, 0.944);
+    // ensures that the light box comes forward once clicked
+    z-index: 1;
+}
+
+// Lightbox content
+.lightbox-content {
+  position: relative;
+  background-color: $white-border;
+  margin: auto;
+  padding: 0;
+  width: 85%;
+  max-width: 50%;
+}
+
+// This styles the close button
+.close {
+  color: $white-border;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+}
+
+// This ensures that once hovered the close button changes colour and adds the cursor property
+.close:hover,
+.close:focus {
+  color: $teel-colour;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hide-lightbox {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+// This styles the next adn previous buttons
+.next,
+.previous {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-size: 30px;
+  
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+// This postions the next button 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+// This creates a transparent effect behind next and previous button
+.next:hover,
+.previous:hover {
+    color: $white-border;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.preview {
+  opacity: 0.6;
+}
+
+.active,
+.preview:hover {
+  opacity: 1;
+}
+  
 
 // --------------------------------------------------------------------------------------
 // ----------------------------------- SHOP PAGE -------------------------------------
@@ -1096,6 +1190,15 @@
     width: 100%;
     height: 50px;
 }
+
+.line7 {
+    grid-area: line7;
+    width: 90%;
+    margin-left: 5%;
+    height: 1.2px;
+    text-align: right;
+    background-color: $white-border;
+  }
 
 .showing-result {
     grid-area: showingresult;

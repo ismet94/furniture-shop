@@ -1864,6 +1864,76 @@
   transform: scale(1.1);
   filter: brightness(110%); }
 
+.slideshow1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  background-size: contain;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.944);
+  z-index: 1; }
+
+.lightbox-content {
+  position: relative;
+  background-color: #e6e6e6;
+  margin: auto;
+  padding: 0;
+  width: 85%;
+  max-width: 50%; }
+
+.close {
+  color: #e6e6e6;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px; }
+
+.close:hover,
+.close:focus {
+  color: #a88d7b;
+  text-decoration: none;
+  cursor: pointer; }
+
+.hide-lightbox {
+  display: none; }
+
+.cursor {
+  cursor: pointer; }
+
+.next,
+.previous {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none; }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.next:hover,
+.previous:hover {
+  color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.555); }
+
+.preview {
+  opacity: 0.6; }
+
+.active,
+.preview:hover {
+  opacity: 1; }
+
 .shop-page {
   width: 100%;
   height: 1610px;
@@ -1872,6 +1942,14 @@
 .shop-info {
   width: 100%;
   height: 50px; }
+
+.line7 {
+  grid-area: line7;
+  width: 90%;
+  margin-left: 5%;
+  height: 1.2px;
+  text-align: right;
+  background-color: #e6e6e6; }
 
 .showing-result {
   grid-area: showingresult;
@@ -2453,7 +2531,7 @@ img {
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "showingresult selectorder" "line6 lin6"; }
+  grid-template-areas: "showingresult selectorder" "line7 line7"; }
 .grid6-productpage1 {
   display: grid;
   width: 70%;

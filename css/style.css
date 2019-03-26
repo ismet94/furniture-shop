@@ -335,7 +335,7 @@
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "showingresult selectorder" "line6 lin6"; }
+  grid-template-areas: "showingresult selectorder" "line7 line7"; }
 .grid6-productpage1 {
   display: grid;
   width: 70%;
