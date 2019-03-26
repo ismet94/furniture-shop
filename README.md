@@ -175,7 +175,7 @@ Tools:
 - Created a lightbox slider for the lookbook
 - incorporated javascripting for lightbox functionality
 - Updated about.html
-- Updated Readme
+- Updated Readme.md
 
 ## Contributors
 
