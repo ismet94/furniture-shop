@@ -2027,6 +2027,7 @@
   font-stretch: normal;
   text-transform: uppercase;
   line-height: 1.6;
+  position: relative;
   cursor: pointer;
   letter-spacing: 1.5px;
   text-align: center;
@@ -2072,12 +2073,14 @@
   grid-area: productcontent4;
   width: 100%; }
 
-.page1 {
+.pagination {
   grid-area: page1;
-  text-align: end; }
+  display: inline-block; }
 
-.page1-content {
-  display: inline;
+.pagination a {
+  color: #666666;
+  float: right;
+  padding: 8px 16px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   text-align: end;
@@ -2088,6 +2091,10 @@
   letter-spacing: normal;
   text-align: center;
   color: #666666; }
+
+.pagination a:hover {
+  background-color: #a88d7b;
+  color: white; }
 
 * {
   box-sizing: border-box; }
@@ -2317,6 +2324,7 @@ img {
   width: 85%;
   line-height: 20px;
   text-transform: uppercase;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;

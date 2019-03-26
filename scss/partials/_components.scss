@@ -1285,6 +1285,8 @@
         font-stretch: normal; 
         text-transform: uppercase;
         line-height: 1.6;
+        position: relative;
+
         cursor: pointer;
         letter-spacing: 1.5px;  
         text-align: center;
@@ -1340,23 +1342,28 @@
     width: 100%;
 }
 
-.page1 {
+.pagination {
     grid-area: page1;
-    text-align: end;
- 
+    display: inline-block;
 }
-
-.page1-content {
-
-    display: inline;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    text-align: end;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: center;
-    color: #666666;
+  
+.pagination a {
+  color: #666666;
+  float: right;
+  padding: 8px 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  text-align: end;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+  
+  .pagination a:hover {
+      background-color: $teel-colour;
+    color: rgb(255, 255, 255);
 }

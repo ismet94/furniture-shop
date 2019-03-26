@@ -168,6 +168,11 @@ Tools:
 - Added pagenation
 - Updated Readme
 
+2019-03-26
+- Updated Navbar
+- Added JavaScript to shop.html
+- Updated about.html
+
 ## Contributors
 
 Ismet Samsodien - 2019
