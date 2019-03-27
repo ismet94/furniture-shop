@@ -169,13 +169,21 @@ Tools:
 - Added pagenation
 - Updated Readme
 
-2019-03-26
+2019-03-26:
 - Updated Navbar
 - Added JavaScript to shop.html
 - Created a lightbox slider for the lookbook
 - incorporated javascripting for lightbox functionality
 - Updated about.html
 - Updated Readme.md
+
+2019-03-27:
+- Replaced sass code with javascript in the shop.html
+- Structured index.html for all resolutions
+- Added back top top link to each page
+- Code indentation
+- Minimum comments added
+- Readme updated
 
 ## Contributors
 
