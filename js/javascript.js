@@ -1,5 +1,3 @@
-
-
 // ------------- LOOKBOOK ---------------
 
 // Below is the lookbook lightbox script
@@ -43,67 +41,70 @@ function previewSlides(n) {
     dots[slideShow-1].className += " active";
 }
 
-
-// let items = document.getElementByClassName('item');
-// console.log(items)
-
-// document.getElementById("showing-result1").innerHTML = "My First JavasdasdScript";
-
-// let cart = [
-//     // ( name: name, price: price,),
-//     // ( name: name, price: price,),
-//     // ( name: name, price: price,),
-//     // ( name: name, price: price,),
-//     // ( name: name, price: price,),
-//     // ( name: name, price: price,),
-// ];
+// ------------- SHOP PAGE ---------------
 
 
+document.getElementById("showing-result1").innerHTML = "Showing Results 1-4 out of 12";
 
-// function addCart(name, price) {
-//     // create item
-//     let item = {
-//         name: name,
-//         price: price,
-//     };
 
-//     // check array if empty
-//     if (cart.length != 0) {
-//         let check = false;
-//         for (let cartItem in cart) {
-//             if (cart[cartItem].name === item.name) {
-//                 check = true;
-//             }
-//         }
+let items = document.getElementByClassName('item');
+console.log(items)
 
-//     // if check returns false, item was not found in the array
-//     if (!check) { cart.push(item) }
 
-//     // else push to array
-//     } else {
-//         cart.push(item);
-//     }
+let cart = [
+    // ( name: Hexa-Chair, price: R4000,),
+    // ( name: name, price: price,),
+    // ( name: name, price: price,),
+    // ( name: name, price: price,),
+    // ( name: name, price: price,),
+    // ( name: name, price: price,),
+];
 
-//     // get cart div
-//     let div = document.getElementById('cart');
-//     // clear cart
-//     div.innerHTML = "";
 
-//     // show cart with updated array
-//     for (let value in cart) {
+function addCart(name, price) {
+    // create item
+    let item = {
+        name: name,
+        price: price,
+    };
 
-//         // Create a <li> node
-//         let node = document.createElement("LI");
-//         // Create a text node
-//         let textnode = document.createTextNode(cart[value].name);
+    // check array if empty
+    if (cart.length != 0) {
+        let check = false;
+        for (let cartItem in cart) {
+            if (cart[cartItem].name === item.name) {
+                check = true;
+            }
+        }
 
-//         // Append the text to <li>
-//         node.appendChild(textnode);
+    // if check returns false, item was not found in the array
+    if (!check) { cart.push(item) }
 
-//         // Append <li> to <ul> with id="myList"
-//         div.appendChild(node);
-//     }
-// }
+    // else push to array
+    } else {
+        cart.push(item);
+    }
+
+    // get cart div
+    let div = document.getElementById('cart');
+    // clear cart
+    div.innerHTML = "";
+
+    // show cart with updated array
+    for (let value in cart) {
+
+        // Create a <li> node
+        let node = document.createElement("LI");
+        // Create a text node
+        let textnode = document.createTextNode(cart[value].name);
+
+        // Append the text to <li>
+        node.appendChild(textnode);
+
+        // Append <li> to <ul> with id="myList"
+        div.appendChild(node);
+    }
+}
 
 // STILL TO DO
 // remove an item from cart

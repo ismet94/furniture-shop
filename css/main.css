@@ -376,7 +376,7 @@
 
 .feat-img1 {
   width: 100%;
-  height: 360px;
+  height: 80%;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -412,7 +412,7 @@
 
 .feat-img2 {
   width: 100%;
-  height: 360px;
+  height: 80%;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -455,7 +455,7 @@
 
 .feat-img3 {
   width: 100%;
-  height: 360px;
+  height: 80%;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -487,7 +487,7 @@
   color: #999999; }
 
 .new-collection {
-  margin-top: 8%;
+  margin-top: 12%;
   height: 555px;
   background-color: #ffffff; }
 
@@ -506,6 +506,7 @@
   color: #333333; }
 
 .line2 {
+  margin-bottom: 0px;
   margin-left: 46%;
   margin-right: 46%;
   margin-bottom: 3%;
@@ -517,8 +518,8 @@
   grid-area: coll1; }
 
 .collection-img {
-  width: 526px;
   height: 373px;
+  width: 100%;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -539,8 +540,8 @@
   grid-area: coll2; }
 
 .collection-img2 {
-  width: 526px;
   height: 373px;
+  width: 100%;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -565,6 +566,7 @@
   background-image: linear-gradient(to right, #383838b9, #66666652), url(../images/best.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   max-width: 100%; }
 
 .best-heading {
@@ -2260,16 +2262,17 @@ img {
 .grid-feature-products {
   display: grid;
   width: 70%;
-  margin-left: 15%;
+  margin: auto;
   /* grid columns and rows size */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   grid-template-areas: "feat1 feat2 feat3"; }
 .grid-new-collection {
-  margin-left: 15%;
   display: grid;
-  width: 70%;
+  width: 80%;
+  margin: auto;
+  align-items: center;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -2290,7 +2293,7 @@ img {
 .grid-blog {
   display: grid;
   width: 70%;
-  margin: 0px auto;
+  margin: auto;
   /* grid columns and rows size */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -2693,18 +2696,27 @@ img {
 
   .featured-products {
     margin-top: 5%;
-    height: 1055px;
+    height: auto;
     margin-bottom: 5%; }
 
   .grid-feature-products {
     display: block;
     width: 100%;
-    margin-left: 0px;
+    margin: auto;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 460px);
-    grid-gap: 10px;
+    grid-template-rows: repeat(3, 100vh);
+    grid-gap: 25px;
     grid-template-areas: "feat1" "feat2" "feat3"; }
+
+  .feat1 {
+    padding-bottom: 5%; }
+
+  .feat2 {
+    padding-bottom: 5%; }
+
+  .feat3 {
+    padding-bottom: 5%; }
 
   .new-collection {
     margin-top: 8%;
@@ -2717,34 +2729,28 @@ img {
     margin-left: 0px;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1000px);
+    grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas: "coll1" "coll2"; }
 
+  .coll1 {
+    padding-bottom: 9%; }
+
+  .coll2 {
+    padding-bottom: 9%; }
+
   .goods {
-    height: 100%;
-    opacity: 0.9;
-    margin-top: 50%;
-    max-width: 100%; }
+    height: 500px; }
 
   .grid-best {
     display: block;
     width: 100%;
-    margin: 0px;
-    padding-top: 20%;
+    margin: auto;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 460px);
+    grid-template-rows: auto;
     grid-gap: 10px;
-    grid-template-areas: "best" "bestpara" "bestbtn"; }
-
-  .collection-img {
-    width: 100%;
-    height: 380px; }
-
-  .collection-img2 {
-    width: 100%;
-    height: 380px; }
+    grid-template-areas: "best bestpar" "bestbtn"; }
 
   .blog-section {
     height: 100%;
@@ -2760,6 +2766,22 @@ img {
     grid-gap: 20px;
     grid-template-areas: "blogimg" "bloginfo"; }
 
+  .best-heading {
+    margin-left: 0%;
+    padding-bottom: 10%; }
+
+  .best-para {
+    padding: 5px;
+    margin-left: 0%; }
+
+  .best-btn {
+    grid-area: bestbtn;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #a88d7b;
+    text-align: center; }
+
   .footer1 {
     width: 100%;
     height: 100%;
@@ -2767,23 +2789,93 @@ img {
 
   .grid-footer {
     display: block;
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding-top: 5%;
     /* grid columns and rows size */
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
-    grid-template-areas: "footercontact" "footerlinks" "footershop" "footerinsta"; }
+    grid-template-areas: "footercontact footercontact" "footerlinks footershop" "footerinsta footerinsta"; }
 
   .footer1 {
     width: 100%;
-    height: auto;
-    background-color: #2d2827; }
+    height: auto; }
+
+  .footerlinks {
+    grid-auto-rows: auto;
+    width: 100px;
+    margin: 0px;
+    padding: 0px; }
+
+  .footerlinks-content {
+    width: 100px; }
+
+  .footershop {
+    width: 100px;
+    margin: 0px;
+    padding: 0px; }
+
+  .footershop-content {
+    width: 100px; }
+
+  .footerinsta {
+    padding: 0px; }
+
+  .grid-instagram {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas: "insta1 insta2 insta3 insta4" "insta5 isnta6 insta7 insta8"; }
+
+  .insta-img1 {
+    grid: insta1;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img2 {
+    grid: insta2;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img3 {
+    grid: insta3;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img4 {
+    grid: insta4;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img5 {
+    grid: insta5;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img6 {
+    grid: insta6;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img7 {
+    grid: insta7;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img8 {
+    grid: insta8;
+    width: 70px;
+    height: 70px; }
 
   .copyright {
     width: 100%;
-    height: 100%;
-    background-color: #d7d7d7; } }
+    height: 50px; } }
 
 /*# sourceMappingURL=main.css.map */

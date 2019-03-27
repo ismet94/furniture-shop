@@ -89,10 +89,8 @@
     &-feature-products {
         display: grid;
         width: 70%;
-        margin-left: 15%;
+        margin: auto;
      
-        
-    
         /* grid columns and rows size */
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -103,9 +101,11 @@
     }
 
     &-new-collection {
-        margin-left: 15%;
         display: grid;
-        width: 70%;
+        width: 80%;
+        margin: auto;
+ 
+        align-items: center;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(2, 1fr);
@@ -138,8 +138,7 @@
     &-blog {
         display: grid;
         width: 70%;
-        margin: 0px auto;
- 
+        margin: auto;
     
         /* grid columns and rows size */
         grid-template-columns: repeat(2, 1fr);

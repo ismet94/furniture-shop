@@ -170,7 +170,7 @@
 
 @mixin feature-image {
     width: 100%;
-    height: 360px;
+    height: 80%;
     background-color: $brown;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,6 +207,7 @@
 // ******* New Collection properties *********
 
 @mixin collection-image {
+    width: 100%;
     background-color: $brown;
     background-size: cover;
     background-repeat: no-repeat;
@@ -407,4 +408,67 @@
     padding: 0px;
     line-height: 1.1;
     letter-spacing: 2px;
+}
+
+@mixin res-mobi-feature-image {
+    width: 100%;
+    height: 50%;
+    background-color: $brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@mixin res-mobi-footer-heading1 {
+    width: 60%;
+    height: 20%;
+    margin-top: 4%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: $footer-heading;
+}
+
+@mixin res-mobi-footer-heading2 {
+    width: 46px;
+    height: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: $footer-heading;
+}
+
+@mixin res-mobi-footer-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: $brown;
+}
+
+@mixin res-mobi-footer-insta-images {
+    width: 80px;
+    height: 80px;
+    background-color: $white-back;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@mixin res-mobi-footer-insta-images {
+    width: 70px;
+    height: 70px;
 }

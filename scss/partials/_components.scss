@@ -315,7 +315,7 @@
 // ----------- New Collection ------------------
 
 .new-collection {
-  margin-top: 8%;
+  margin-top: 12%;
   height: 555px;
   background-color: $white-back;
 }
@@ -324,6 +324,7 @@
     @include main-heading;
 }
 .line2 {
+   margin-bottom: 0px;
     @include underline;
 }
 
@@ -333,7 +334,7 @@
     grid-area: coll1;
 }
 .collection-img {
-    width: 526px;
+
     height: 373px;
     @include collection-image;
 }
@@ -347,7 +348,7 @@
     grid-area: coll2;
 }
 .collection-img2 {
-    width: 526px;
+
     height: 373px;
     @include collection-image;
 }
@@ -365,6 +366,7 @@
     background-image: linear-gradient( to right, #383838b9, #66666652), url(../images/best.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     max-width: 100%;
 }
 
