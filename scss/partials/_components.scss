@@ -578,12 +578,39 @@
     color: $brown;
 }
 
+// ToTop Styling ---------------------------------------------
+ 
+.ToTop {
+    width: 4%;
+	height: 6%;
+	display: none;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	line-height: 2.2;
+	font-size: 25px;
+    color: $white-panel;
+    z-index: 1;
+    text-decoration: none;
+	background-color: $teel-colour;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ToTop:hover {
+	color: $dark-brown;
+	background-color: $to-top;
+
+}
+
 // --------------------------------------------------------------------------------------
 // ------------------------------------- ABOUT PAGE -------------------------------------
 // --------------------------------------------------------------------------------------
 
 .navabout {
     background-image: $nav-panel, url(../images/main2.jpg);
+    background-attachment: fixed;
     @include nav-image;
 }
 .aboutus {
@@ -730,6 +757,7 @@
 
 .navcontact {
     background-image: $nav-panel, url(../images/main3.jpg);
+    background-attachment: fixed;
     @include nav-image;
 }
 .contactus {
@@ -868,6 +896,7 @@
 
 .navblog {
     background-image: $nav-panel, url(../images/main4.jpg);
+    background-attachment: scroll;
     @include nav-image;
 }
   
@@ -1054,7 +1083,8 @@
 // --------------------------------------------------------------------------------------
 
 .navlook {
-    background-image: $nav-panel, url(../imagesmain5.jpg);
+    background-image: $nav-panel, url(../images/main5.jpg);
+    background-attachment: fixed;
     @include nav-image;
 }
 
@@ -1109,7 +1139,9 @@
   background-color: $white-border;
   margin: auto;
   padding: 0;
-  width: 85%;
+  background-color: rgba(0, 0, 0, 0.216);
+  width: 100vw;
+  height: 100vh;
   max-width: 50%;
 }
 

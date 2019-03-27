@@ -212,6 +212,7 @@
   padding-top: 3.5%;
   padding-bottom: 3.5%;
   grid-gap: 5px;
+  cursor: pointer;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(16, 300px); }

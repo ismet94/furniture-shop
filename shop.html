@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="js/javascript.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -73,6 +73,8 @@
         </nav>
     </section>
 
+    <a href="#" class="ToTop">↑</a>
+
     <nav class="navabout">
         <div>
         <h1 class="aboutus">
@@ -85,6 +87,7 @@
             <a href="index.html">Home</a> / <span>Shop</span>
         </p>
     </nav>
+
 
     <div>
 
@@ -112,68 +115,40 @@
                 
                 <section class="shop-page">
                     <div class="grid6-productpage1">
-                        <div class="product1-image">
-                            <img src="images/lookbook-images/future-chair4.jpg" alt="">
-                        </div>
-                        <div class="product1-content">
-                            <h2 class="product-heading">
-                                Chair
-                            </h2>
-                            <p class="product-price">
-                                R4000
-                            </p>
-                            <p class="product-info">
-                                The Hexa-Chair is a popular demand, it has soft memory foam padding and a tungsten steel copper structure making it basically indestructible. A well use of cow hide is used for the cover and comes in three different shades, either saturn black, royal blue or lavish gray.
-                            </p>
-                         <span>
 
+
+                        <div class="zoom product1-image" id="image1"></div>
+                        <div class="product1-content">
+                            <h2 class="product-heading" id="title1"></h2>
+                            <p class="product-price" id="price1"></p>
+                            <p class="product-info" id="description1"></p>
                             <br>
-                         <p>
+                            <p>
                             <button class="product-button">
                                 <i class="fas fa-shopping-cart"></i> Add To cart
                             </button>
                          </p>
-                           
-                   
-                         </span>
-                         
                         </div>
             
-                    <div class="product2-image">
-                            IMAGE
-                        </div>
+
+                    <div class="zoom product2-image" id="image2"></div>
                         <div class="product2-content">
-                            <h2 class="product-heading">
-                                Chair
-                            </h2>
-                            <p class="product-price">
-                                R4000
-                            </p>
-                            <p class="product-info">
-                                Lorem ipsum dolor sitamet consecteturadipisicing elit. Eumeveniet dictalaboriosam veniam doloraut, vero odio quidemquos labore illo,magnam voluptatibusblanditiis, culpanumquam alias sequiexpedita rerum.
-                            </p>
+                            <h2 class="product-heading" id="title2"></h2>
+                            <p class="product-price" id="price2"></p>
+                            <p class="product-info" id="description2"></p>
                             <br>
-                            <p>
-                                <button class="product-button">
-                                    <i class="fas fa-shopping-cart"></i> Add To cart
-                                </button>
-                            </p>
-                           
+                        <p>
+                            <button class="product-button">
+                                <i class="fas fa-shopping-cart"></i> Add To cart
+                            </button>
+                        </p>  
                     </div>
             
-                    <div class="product3-image">
-                        IMAGE
-                    </div>
+                    <div class="zoom product3-image" id="image3"></div>
                     <div class="product3-content">
-                        <h2 class="product-heading">
-                            Chair
-                        </h2>
-                        <p class="product-price">
-                            R4000
-                        </p>
-                        <p class="product-info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet dicta laboriosam veniam dolor aut, vero odio quidem quos labore illo, magnam voluptatibus blanditiis, culpa numquam alias sequi expedita rerum.
-                        </p>
+                        <h2 class="product-heading" id="title3"></h2>
+                        <p class="product-price" id="price3"></p>
+                        <p class="product-info" id="description3"></p>
                         <br>
                         <p>
                             <button class="product-button">
@@ -183,39 +158,30 @@
                        
                         </div>   
             
-                        <div class="product4-image">
-                                IMAGE
-                            </div>
-                            <div class="product4-content">
-                                <h2 class="product-heading">
-                                    Chair
-                                </h2>
-                                <p class="product-price">
-                                    R4000
-                                </p>
-                                <p class="product-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet dicta laboriosam veniam dolor aut, vero odio quidem quos labore illo, magnam voluptatibus blanditiis, culpa numquam alias sequi expedita rerum.
-                                </p>
-                                <br>
-                                <p>
-                                    <button class="product-button btn btn-primary shop-item-button" type="button">
-                                        <i class="fas fa-shopping-cart " ></i> Add To cart
-                                    </button> 
-
-                            
-                                </p>
-                                
+                    <div class="zoom product4-image" id="image4"></div>
+                        <div class="product4-content">
+                            <h2 class="product-heading" id="title4"><h2>
+                            <p class="product-price" id="price4"></p>
+                            <p class="product-info" id="description4"></p>
+                            <br>
+                            <p>
+                            <button class="product-button btn btn-primary shop-item-button" type="button">
+                                <i class="fas fa-shopping-cart " ></i> Add To cart
+                            </button> 
+                        </p>
                     </div>
-            
-                    
+
             <div class="pagination">
                     <a href="#">></a>
+                    <a href="#">8</a>
+                    <a href="#">...</a>
                     <a href="#">4</a>
                     <a href="#">3</a>
                     <a href="#">2</a>
                     <a href="#">1</a>
             </div>
     </section>
+
     </div>
 
 
@@ -299,6 +265,8 @@
         </p>
     </div>
 
-   
+
+    <script src="js/shop.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 </html>

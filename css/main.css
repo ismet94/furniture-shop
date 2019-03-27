@@ -883,15 +883,37 @@
   text-align: center;
   color: #666666; }
 
+.ToTop {
+  width: 4%;
+  height: 6%;
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  line-height: 2.2;
+  font-size: 25px;
+  color: #f0f0f0;
+  z-index: 1;
+  text-decoration: none;
+  background-color: #a88d7b;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer; }
+
+.ToTop:hover {
+  color: #2d2827;
+  background-color: #ffc579; }
+
 .navabout {
   background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main2.jpg);
+  background-attachment: fixed;
   height: 385px;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
 
 .aboutus {
-  padding-top: 7%;
+  padding-top: 140px;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1225,13 +1247,14 @@
 
 .navcontact {
   background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main3.jpg);
+  background-attachment: fixed;
   height: 385px;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
 
 .contactus {
-  padding-top: 7%;
+  padding-top: 140px;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1480,13 +1503,14 @@
 
 .navblog {
   background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main4.jpg);
+  background-attachment: scroll;
   height: 385px;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
 
 .blogus {
-  padding-top: 7%;
+  padding-top: 140px;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1819,14 +1843,15 @@
   color: #666666; }
 
 .navlook {
-  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../imagesmain5.jpg);
+  background-image: linear-gradient(to right, #383838b9, #383838b9), url(../images/main5.jpg);
+  background-attachment: fixed;
   height: 385px;
   background-color: #666666;
   background-size: cover;
   background-repeat: no-repeat; }
 
 .lookus {
-  padding-top: 7%;
+  padding-top: 140px;
   height: 35px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
@@ -1884,7 +1909,9 @@
   background-color: #e6e6e6;
   margin: auto;
   padding: 0;
-  width: 85%;
+  background-color: rgba(0, 0, 0, 0.216);
+  width: 100vw;
+  height: 100vh;
   max-width: 50%; }
 
 .close {
@@ -2417,6 +2444,7 @@ img {
   padding-top: 3.5%;
   padding-bottom: 3.5%;
   grid-gap: 5px;
+  cursor: pointer;
   /* grid columns and rows size */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(16, 300px); }
