@@ -1262,6 +1262,43 @@
     list-style: none; 
 }
 
+.like {
+    width: 21px;
+    height: 18px;
+    font-family: Linearicons-Free;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    text-align: center;
+    float: right;
+    color: #999999;
+    cursor: pointer;
+}
+
+.like:hover {
+    color: #ff0000;
+}
+
+.liked {
+    width: 21px;
+    height: 18px;
+    font-family: Linearicons-Free;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    text-align: center;
+    float: right;
+    color: #ff0000;
+    background-color: #999999;
+    cursor: pointer;
+}
+
 .product {
     &-heading {
         width: 100%;

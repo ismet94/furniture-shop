@@ -3,6 +3,8 @@
 
 // document.getElementById("showing-result1").innerHTML = "Showing Results 1-4 out of 12";
 
+
+
 function shopProducts(img, title, price, description) {
     this.img = img;
     this.title = title;
@@ -37,6 +39,19 @@ function shopProducts(img, title, price, description) {
         document.getElementById("title4").innerHTML = couch2.title;
         document.getElementById("price4").innerHTML = couch2.price;
         document.getElementById("description4").innerHTML = couch2.description;
+
+
+
+
+
+$(document).function();
+
+$(function() {
+  $('.like')
+    .bind('click', function(event) {
+      $(".like").toggleClass("liked");
+    })
+});
 
 // let items = document.getElementByClassName('item');
 // console.log(items)
