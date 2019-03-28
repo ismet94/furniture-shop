@@ -779,6 +779,9 @@ img {
     width: 100%;
     height: 50px; }
 
+  .ToTop {
+    width: 7%; }
+
   .grid2-nav2 {
     display: grid;
     margin-left: 0px;
@@ -795,6 +798,7 @@ img {
   .who-we-are {
     margin-top: 5%;
     height: 100%;
+    padding-bottom: 10px;
     background-color: #ffffff; }
 
   .grid2-about {
@@ -810,119 +814,190 @@ img {
     grid-template-areas: "whowe" "aboutimage"; }
 
   .about-us-image {
-    grid-area: aboutimage;
     width: 100%;
-    height: 270px;
+    height: 280px;
     background-size: contain;
     background-repeat: no-repeat; }
 
   .meet-us {
-    margin-top: 10%;
+    margin-top: 15%;
     height: 100%;
     background-color: #ffffff; }
 
+  .meet-our-team {
+    padding-top: 30%; }
+
   .grid2-meet {
     display: block;
-    width: 90%;
+    width: 75%;
     margin: auto;
     line-height: 70px;
+    padding-top: 10px;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
-    grid-template-areas: "meet1" "meet2" "meet3" "meet4"; }
+    grid-template-areas: "feature" "meet1" "meet2" "meet3" "meet4"; }
 
   .meet1 {
     align-items: center; }
 
   .meet-name1 {
-    height: 5px;
+    height: 100%;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 1px;
-    padding-bottom: -30%; }
+    letter-spacing: 1px; }
 
   .meet-position1 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 0.5; }
+    line-height: 0.5;
+    padding: 5px; }
 
   .meet-social1 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding: 10px; }
 
   .meet2 {
     align-items: center; }
 
   .meet-name2 {
-    height: 5px;
+    height: 100%;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 1px;
-    padding-bottom: -30%; }
+    letter-spacing: 1px; }
 
   .meet-position2 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 0.5; }
+    line-height: 0.5;
+    padding: 5px; }
 
   .meet-social2 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding: 10px; }
 
   .meet3 {
     align-items: center; }
 
   .meet-name3 {
-    height: 5px;
+    height: 100%;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 1px;
-    padding-bottom: -30%; }
+    letter-spacing: 1px; }
 
   .meet-position3 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 0.5; }
+    line-height: 0.5;
+    padding: 5px; }
 
   .meet-social3 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding: 10px; }
 
   .meet4 {
     align-items: center; }
 
   .meet-name4 {
-    height: 5px;
+    height: 100%;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 1px;
-    padding-bottom: -30%; }
+    letter-spacing: 1px; }
 
   .meet-position4 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 0.5; }
+    line-height: 0.5;
+    padding: 5px; }
 
   .meet-social4 {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding: 10px; }
 
   .what-we-do {
     height: 100%; }
 
   .grid2-we-do {
-    display: grid;
+    display: block;
     width: 90%;
     margin: 0px auto;
     /* grid columns and rows size */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
-    grid-template-areas: "wedoimg wedoinfo"; } }
+    grid-template-areas: "wedoimg wedoinfo"; }
+
+  .what-we-do-info {
+    grid-area: wedoinfo;
+    height: 100%; }
+
+  .what-we-do-para {
+    width: 100%;
+    height: 100%; }
+
+  .what-we-do-img {
+    width: 100%;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .navcontact {
+    height: 355px;
+    background-size: cover; }
+
+  .contact-us-view {
+    height: 100%; }
+
+  .grid3-contact-us-view {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding-top: 5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr); }
+
+  .grid3-form {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    text-align: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 55px;
+    grid-template-areas: "yourname email" "number  subject" "textarea1 textarea1" "contactbtn contactbtn"; }
+
+  .form1 {
+    width: 100%;
+    height: 100%; }
+
+  .grid4-blog-main {
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+    grid-template-areas: "blog1 blog2 blog3" "blog4 blog5 blog6"; }
+
+  .grid5-container {
+    display: block;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -393,6 +393,11 @@
     padding: 10%;
 }
 
+@mixin res-mobi-nav-image {
+    height: 355px;
+    background-size: cover;
+}
+
 @mixin res-mobi-reslangcurr {
     padding: 0px;
     margin-right: 0%;
@@ -475,27 +480,34 @@
 
 @mixin res-mobi-what-we-do-images {
     width: 100%;
-    height: 270px;
+    height: 280px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 @mixin res-mobi-meet-name {
-    height: 5px;
+    height: 100%;
     font-weight: 600;
     line-height: 1.4;
     letter-spacing: 1px;
-    padding-bottom: -30%;
 }
 
 @mixin res-mobi-meet-position {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
     line-height: 0.5;
+    padding: 5px;
 }
 
 @mixin res-mobi-meet-social {
-    height: 5px;
+    height: 100%;
     font-size: 15px;
     line-height: 1.5;
+    padding: 10px;
 }
+
+@mixin res-mobi-about-paragraph {
+    width: 100%;
+    height: 100%;
+}
+

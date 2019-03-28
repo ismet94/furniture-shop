@@ -386,6 +386,10 @@
             height: 50px;
         }
 
+        .ToTop {
+            width: 7%;
+        }
+
         // About Page
 
         .grid2-nav2 {
@@ -409,6 +413,7 @@
         .who-we-are {
             margin-top: 5%;
             height: 100%;
+            padding-bottom: 10px;
             background-color: $white-back;
         } 
         .grid2-about {
@@ -429,22 +434,24 @@
             }   
 
             .about-us-image {
-                grid-area: aboutimage;
                 @include res-mobi-what-we-do-images;
             }
 
             .meet-us {
-                margin-top: 10%;
+                margin-top: 15%;
                 height: 100%;
                 background-color: $white-back;
             }
-
+            .meet-our-team {
+                padding-top: 30%;
+            }
+  
             .grid2-meet {
                 display: block;
-                width: 90%;
+                width: 75%;
                 margin: auto;
                 line-height: 70px;
-                
+                padding-top: 10px;
                
                 /* grid columns and rows size */
                 grid-template-columns: repeat(1, 1fr);
@@ -452,6 +459,7 @@
                 grid-gap: 10px;
             
                 grid-template-areas: 
+                        "feature"
                         "meet1"
                         "meet2"
                         "meet3"
@@ -516,7 +524,7 @@
     
             }
             .grid2-we-do {
-                display: grid;
+                display: block;
                 width: 90%;
                 margin: 0px auto;
                
@@ -528,5 +536,94 @@
                 grid-template-areas: 
                          "wedoimg wedoinfo"
             }
+
+            .what-we-do-info {
+                grid-area: wedoinfo;
+                height: 100%;
+            }
+
+            .what-we-do-para {
+                @include res-mobi-about-paragraph;
+            }
+
+            .what-we-do-img {
+                @include res-mobi-what-we-do-images;
+            }
+
+
+            // Contact Page
+
+            .navcontact {
+                @include res-mobi-nav-image;
+            }
+
+            .contact-us-view {
+                
+                height: 100%;
+                 
+             }
+
+            .grid3-contact-us-view {
+                    display: block;
+                    width: 90%;
+                    height: 100%;
+                    margin: auto;
+                    padding-top: 5%;
+                
+                    /* grid columns and rows size */
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            .grid3-form {
+                    display: block;
+                    width: 90%;
+                    height: 100%;
+                    margin: auto;
+                    padding-top: 8%;
+                    padding-bottom: 8%;
+                    text-align: center;
+                
+                    /* grid columns and rows size */
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: auto;
+                    grid-gap: 55px;
+            
+                    grid-template-areas: 
+                            "yourname email"
+                            "number  subject"
+                            "textarea1 textarea1"
+                            "contactbtn contactbtn"
+                }
+
+                .form1 {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                // Blog Page
+
+                .grid4-blog-main {
+                    display: block;
+                    width: 95%;
+                    margin: auto;
+                    padding-top: 3.5%;
+                    padding-bottom: 3.5%;
+                
+                    /* grid columns and rows size */
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, auto);
+                    grid-gap: 20px;
+                
+                    grid-template-areas: 
+                            "blog1 blog2 blog3"
+                            "blog4 blog5 blog6"
+                                
+                }
+
+                
+        .grid5-container {
+        display: block;
+        width: 100%;
+    }
+
         }
         
