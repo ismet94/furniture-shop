@@ -28,7 +28,7 @@
 // HEADERS --------------------------
 
 @mixin langcurr {
-    padding: 1%;
+
     margin-right: 0%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -46,8 +46,8 @@
 @mixin socialship {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 17px;
-    padding: 1%;
-    line-height: 1.83;
+ 
+    line-height: 1;
     letter-spacing: 2.4px;
     font-weight: normal;
     font-style: normal;

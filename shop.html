@@ -6,29 +6,36 @@
     <title>Shop Page 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <!-- Linked google fonts into webpage -->
     <link href="https://fonts.googleapis.com/css?family=Dosis|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 
-    <header class="header2">
-        <div class="grid-head2" >
+    <!-- Header section added -->
+    <section class="header2">
+        <!-- Grid layout 2 for the head added -->
+        <header class="grid-head2" >
+            <!-- Language selection with dropdown list created -->
             <span class="lang">
              <div class="dropdownlang">EN <a href=""> <i class="fas fa-angle-down"></i> </a>
-                    <div class="dropdownlang-content">
-                        <li><a href="#">ENGLISH</a></li>
-                        <li><a href="#">FRENCH</a></li>
-                        <li><a href="#">SPANISH</a></li> 
-                        <li><a href="#">CHINESE</a></li> 
-                        <li><a href="#">RUSSIAN</a></li>  
-                    </div>
+                <div class="dropdownlang-content">
+                    <!-- Dropdown list content -->
+                    <li><a href="#">ENGLISH</a></li>
+                    <li><a href="#">FRENCH</a></li>
+                    <li><a href="#">SPANISH</a></li> 
+                    <li><a href="#">CHINESE</a></li> 
+                    <li><a href="#">RUSSIAN</a></li>  
+                </div>
                 </div> 
             </span>  
+            <!-- Currency selection with dropdown list created -->
             <span class="curr">
                 <div class="dropdownzar">ZAR <a href=""> <i class="fas fa-angle-down"></i> </a>
                     <div class="dropdownzar-content">
+                        <!-- Dropdown list content -->
                         <li><a href="#">ZAR</a></li>
                         <li><a href="#">EURO</a></li>
                         <li><a href="#">USD</a></li> 
@@ -38,24 +45,25 @@
                 </div> 
             </span>
         
-
-        <div class="ship">
-            <p>Free shipping for standard order over R100</p>
-        </div>
+            <!-- Text for Free shipping -->
+            <div class="ship">
+                <p>Free shipping for standard order over R100</p>
+            </div>
         
-        <div>
+            <!-- Social conent added with original hex code colour -->
             <span class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>&nbsp;&nbsp;
                 <a href="#"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;
                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
             </span>
-        </div>
-    </div>
-    </header>
+        </header>
+    </section>
+    <!-- End of header section -->
 
-
-    <section>
+  <!-- Light Navbar content added  -->
+  <section>
+        <!-- Navabar grid layout created -->
         <nav class="grid2-nav2">
             <span class="logo"><a href="index.html">NATEB</a></span>
             <span class="home"><a href="index.html" >Home</a></span>
@@ -65,15 +73,17 @@
             <span class="contact"><a href="contact.html">Contact</a></span>
             <span class="lookbook"><a href="lookbook.html">Lookbook</a></span>
             <span class="cart">
-                    <div id="total-items">
-                            0
-                        </div>
-                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <div>
+                    <span class="glyphicon glyphicon-shoppng-cart my-cart-icon"><i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-notify my-cart-badge"></span></span>
+                </div>
             </span>
             <span class="search"><a href=""><i class="fas fa-search"></i></a></span>
         </nav>
     </section>
+    <!-- End of Navbar -->
 
+    <!-- To to link added -->
     <a href="#" class="ToTop">↑</a>
 
     <nav class="navabout">
@@ -125,7 +135,7 @@
                             <p class="product-info" id="description1"></p>
                             <br>
                             <p>
-                            <button class="product-button">
+                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1">
                                 <i class="fas fa-shopping-cart"></i> Add To cart
                             </button>
                          </p>
@@ -139,7 +149,7 @@
                             <p class="product-info" id="description2"></p>
                             <br>
                         <p>
-                            <button class="product-button">
+                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">
                                 <i class="fas fa-shopping-cart"></i> Add To cart
                             </button>
                         </p>  
@@ -152,7 +162,7 @@
                         <p class="product-info" id="description3"></p>
                         <br>
                         <p>
-                            <button class="product-button">
+                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="images/img_4.png">
                                 <i class="fas fa-shopping-cart"></i> Add To cart
                             </button>
                         </p>
@@ -166,7 +176,7 @@
                             <p class="product-info" id="description4"></p>
                             <br>
                             <p>
-                            <button class="product-button btn btn-primary shop-item-button" type="button">
+                            <button class="product-button btn btn-primary shop-item-button" class="btn btn-danger my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1" data-image="images/img_5.png" type="button">
                                 <i class="fas fa-shopping-cart " ></i> Add To cart
                             </button> 
                         </p>
@@ -267,9 +277,72 @@
     </div>
 
 
-    <script src="js/shop.js">
-    
-    </script>
     <script src="js/functions.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+ $(function () {
+
+var goToCartIcon = function($addTocartBtn){
+  var $cartIcon = $(".my-cart-icon");
+  var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+  $addTocartBtn.prepend($image);
+  var position = $cartIcon.position();
+  $image.animate({
+    top: position.top,
+    left: position.left
+  }, 500 , "linear", function() {
+    $image.remove();
+  });
+}
+
+$('.my-cart-btn').myCart({
+  currencySymbol: '$',
+  classCartIcon: 'my-cart-icon',
+  classCartBadge: 'my-cart-badge',
+  classProductQuantity: 'my-product-quantity',
+  classProductRemove: 'my-product-remove',
+  classCheckoutCart: 'my-cart-checkout',
+  affixCartIcon: true,
+  showCheckoutModal: true,
+  numberOfDecimals: 2,
+  cartItems: [
+    {id: 1, name: 'product 1', summary: 'summary 1', price: 4000, quantity: 1, image: 'images/lookbook-images/future-chair4.jpg'},
+    {id: 2, name: 'product 2', summary: 'summary 2', price: 17000, quantity: 2, image: 'images/lookbook-images/future-bed5.jpg'},
+    {id: 3, name: 'product 3', summary: 'summary 3', price: 7500, quantity: 1, image: 'images/lookbook-images/future-coffee-table2.jpg'},
+    {id: 4, name: 'product 4', summary: 'summary 4', price: 13500, quantity: 1, image: 'images/lookbook-images/future-couch2.jpg'}
+  ],
+  clickOnAddToCart: function($addTocart){
+    goToCartIcon($addTocart);
+  },
+  afterAddOnCart: function(products, totalPrice, totalQuantity) {
+    console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+  },
+  clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+    console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+  },
+  checkoutCart: function(products, totalPrice, totalQuantity) {
+    var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+    checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+    $.each(products, function(){
+      checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+    });
+    alert(checkoutString)
+    console.log("checking out", products, totalPrice, totalQuantity);
+  },
+  getDiscountPrice: function(products, totalPrice, totalQuantity) {
+    console.log("calculating discount", products, totalPrice, totalQuantity);
+    return totalPrice * 1;
+  }
+});
+
+$("#addNewProduct").click(function(event) {
+  var currentElementNo = $(".row").children().length + 1;
+  $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+});
+});
+    </script>
 </body>
 </html>

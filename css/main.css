@@ -2,7 +2,7 @@
 /* ------------------ Responsive Mixins -------------------- */
 .header1 {
   width: 100%;
-  height: 53px;
+  height: 55px;
   background-color: #2d2827; }
 
 .header2 {
@@ -12,7 +12,6 @@
 
 .lang {
   grid-area: lang;
-  padding: 1%;
   margin-right: 0%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -52,7 +51,7 @@
 
 .curr {
   grid-area: curr;
-  padding: 1%;
+  float: left;
   margin-right: 0%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
@@ -94,8 +93,7 @@
   grid-area: ship;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 17px;
-  padding: 1%;
-  line-height: 1.83;
+  line-height: 1;
   letter-spacing: 2.4px;
   font-weight: normal;
   font-style: normal;
@@ -107,10 +105,10 @@
 
 .social {
   grid-area: social;
+  float: right;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 17px;
-  padding: 1%;
-  line-height: 1.83;
+  line-height: 1;
   letter-spacing: 2.4px;
   font-weight: normal;
   font-style: normal;
@@ -289,6 +287,16 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
+.badge-notify {
+  background: red;
+  position: relative;
+  top: -20px;
+  right: 10px; }
+
+.my-cart-icon-affix {
+  position: fixed;
+  z-index: 999; }
+
 .main-logo {
   grid-area: logo;
   margin-top: 70px;
@@ -298,6 +306,7 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  text-transform: uppercase;
   line-height: 0.96;
   letter-spacing: normal;
   text-align: center;
@@ -422,7 +431,16 @@
   height: 25px;
   border-radius: 7.5px;
   background-color: #a88d7b;
-  z-index: 1; }
+  z-index: 1;
+  width: 60px;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 10px;
+  letter-spacing: 2.5px;
+  top: 10px; }
 
 .feat-name2 {
   padding: 2%;
@@ -1965,7 +1983,7 @@
 
 .shop-page {
   width: 100%;
-  height: 1610px;
+  height: 1510px;
   background-color: var(--white); }
 
 .shop-info {
@@ -2275,8 +2293,8 @@ img {
 
 .grid-head {
   display: grid;
-  width: 85%;
-  margin-left: 8%;
+  width: 75%;
+  margin: auto;
   color: white;
   align-items: center;
   /* grid columns and rows size */
@@ -2314,7 +2332,6 @@ img {
   margin: 0px auto;
   text-align: center;
   line-height: 30px;
-  text-transform: uppercase;
   /* grid columns and rows size */
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -2331,7 +2348,7 @@ img {
   grid-template-areas: "feat1 feat2 feat3"; }
 .grid-new-collection {
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: auto;
   align-items: center;
   /* grid columns and rows size */
@@ -2677,6 +2694,7 @@ img {
   .logo {
     padding: 10%;
     font-size: 20px;
+    padding: 0px;
     letter-spacing: 1px; }
 
   .blog {
@@ -2696,7 +2714,7 @@ img {
     font-size: 12px; }
 
   .main-logo {
-    margin-top: 50px;
+    margin-top: 80px;
     height: 58px;
     font-size: 50px;
     line-height: 0.96; }
@@ -2704,6 +2722,7 @@ img {
   .main-slogan {
     height: 80px;
     font-size: 8px;
+    padding-top: 62px;
     line-height: 2.97; }
 
   .main-button {
@@ -2848,7 +2867,7 @@ img {
     background-color: #2d2827; }
 
   .grid-footer {
-    display: block;
+    display: grid;
     width: 90%;
     margin: auto;
     padding-top: 5%;
@@ -2943,16 +2962,16 @@ img {
 
   .grid2-nav2 {
     display: grid;
-    margin-left: 0px;
+    margin: auto;
     width: 95%;
     line-height: 20px;
     text-transform: uppercase;
     align-items: center;
     /* grid columns and rows size */
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
-    grid-gap: 8px;
-    grid-template-areas: "logo . . . home shop about  blog contact lookbook cart search"; }
+    grid-gap: 6px;
+    grid-template-areas: "logo home shop about blog contact lookbook cart search"; }
 
   .who-we-are {
     margin-top: 5%;
@@ -3157,6 +3176,61 @@ img {
 
   .grid5-container {
     display: block;
-    width: 100%; } }
+    width: 100%; }
+
+  .shop-page {
+    height: 100%; }
+
+  .grid6-productpage1 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    grid-template-areas: "productimage1 productcontent1 productcontent1" "productimage2 productcontent2 productcontent2" "productimage3 productcontent3 productcontent3" "productimage4 productcontent4 productcontent4" ". page1 page1"; }
+
+  .like {
+    padding-right: 10%; }
+
+  .product-heading {
+    width: 95%;
+    height: 100%;
+    margin: auto; }
+
+  .product-price {
+    width: 95%;
+    height: 100%;
+    padding-bottom: 1%;
+    margin: auto; }
+
+  .product-info {
+    width: 95%;
+    height: 100%;
+    padding-bottom: 1%;
+    margin: auto; }
+
+  .product-button {
+    width: 100%;
+    margin: auto; }
+
+  .product1-image {
+    width: 100%;
+    height: 300px; }
+
+  .product2-image {
+    width: 100%;
+    height: 300px; }
+
+  .product3-image {
+    width: 100%;
+    height: 300px; }
+
+  .product4-image {
+    width: 100%;
+    height: 300px; } }
+/* ---------------------------- TABLET -------------------------------*/
 
 /*# sourceMappingURL=main.css.map */

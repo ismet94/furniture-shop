@@ -56,6 +56,8 @@
         .logo {
             @include res-mobi-nav;
             font-size: 20px;
+          
+            padding: 0px;
             letter-spacing: 1px;
         }
         .blog {
@@ -76,15 +78,18 @@
         }
 
         .main-logo {
-            margin-top: 50px;
+            margin-top: 80px;
             height: 58px;
             font-size: 50px;
+           
             line-height: 0.96;
         }   
     
         .main-slogan {
             height: 80px;
             font-size: 8px;
+            padding-top: 62px;
+
             line-height: 2.97;
         }
     
@@ -285,7 +290,7 @@
           }
    
         .grid-footer {
-            display: block;
+            display: grid;
             width: 90%;
             margin: auto;
             padding-top: 5%;
@@ -394,19 +399,19 @@
 
         .grid2-nav2 {
                 display: grid;
-                margin-left: 0px;
+                margin: auto;
                 width: 95%;
                 line-height: 20px;
                 text-transform: uppercase;
                 align-items: center;
             
                 /* grid columns and rows size */
-                grid-template-columns: repeat(12, 1fr);
+                grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: auto;
-                grid-gap: 8px;
+                grid-gap: 6px;
             
                 grid-template-areas: 
-                        "logo . . . home shop about  blog contact lookbook cart search"
+                        "logo home shop about blog contact lookbook cart search"
                 }
 
 
@@ -625,5 +630,86 @@
         width: 100%;
     }
 
+    .shop-page {
+        height: 100%;
+
+    }
+
+    .grid6-productpage1 {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding-top: 2%;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 40px;
+    
+        grid-template-areas: 
+                "productimage1 productcontent1 productcontent1"
+                "productimage2 productcontent2 productcontent2"
+                "productimage3 productcontent3 productcontent3"
+                "productimage4 productcontent4 productcontent4"
+                ". page1 page1"
+            }
+
+            .like {
+                padding-right: 10%;
+            }
+
+
+            .product-heading {
+                    width: 95%;
+                    height: 100%;
+                    margin: auto;
+                }
+            
+                .product-price {
+                    width: 95%;
+                    height: 100%;
+                    padding-bottom: 1%;
+                    margin: auto;
+                
+                }
+            
+                .product-info {
+                    width: 95%;
+                    height: 100%;
+                    padding-bottom: 1%;
+                    margin: auto;
+                }
+            
+                .product-button {
+                    width: 100%;
+                    margin: auto;
+                }
+
+                .product1-image {
+                    width: 100%;
+                    height: 300px;
+                }
+                .product2-image {
+                    width: 100%;
+                    height: 300px;
+                }
+                .product3-image {
+                    width: 100%;
+                    height: 300px;
+                }
+                .product4-image {
+                    width: 100%;
+                    height: 300px;
+                }
+
         }
         
+
+/* ---------------------------- TABLET -------------------------------*/        
+
+        @media only screen 
+    and (min-width: 481px)
+    and (max-width: 1280px) {
+
+
+    }

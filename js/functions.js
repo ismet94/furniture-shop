@@ -1,19 +1,19 @@
 // Back To Top Function
 
-Top(document).ready(function() {
+jQuery(document).ready(function() {
     var counter = 230;
     var fading = 520;
-    Top(window).scroll(function() {
-        if (Top(this).scrollTop() > counter) {
-            Top('.ToTop').fadeIn(fading);
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > counter) {
+            jQuery('.ToTop').fadeIn(fading);
         } else {
-            Top('.ToTop').fadeOut(fading);
+            jQuery('.ToTop').fadeOut(fading);
         }
     });
 
-    Top('.ToTop').click(function(event) {
+    jQuery('.ToTop').click(function(event) {
         event.preventDefault();
-        Top('html, body').animate({scrollTop: 0}, fading);
+        jQuery('html, body').animate({scrollTop: 0}, fading);
         return false;
     })
 });
