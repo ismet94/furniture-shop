@@ -73,13 +73,13 @@
             <span class="contact"><a href="contact.html">Contact</a></span>
             <span class="lookbook"><a href="lookbook.html">Lookbook</a></span>
             <span class="cart">
-                <div>
-                    <span class="glyphicon glyphicon-shoppng-cart my-cart-icon"><i class="fas fa-shopping-cart"></i>
-                    <span class="badge badge-notify my-cart-badge"></span></span>
-                </div>
+                    <span><i class="badge badge-notify my-cart-badge my-cart-icon"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
             </span>
             <span class="search"><a href=""><i class="fas fa-search"></i></a></span>
         </nav>
+       
     </section>
     <!-- End of Navbar -->
 
@@ -134,11 +134,8 @@
                             <p class="product-price" id="price1"></p>
                             <p class="product-info" id="description1"></p>
                             <br>
-                            <p>
-                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1">
-                                <i class="fas fa-shopping-cart"></i> Add To cart
-                            </button>
-                         </p>
+                            <br>
+                            <button class="product-button btn my-cart-btn" data-id="1" data-name="Hexa-Chair" data-summary="summary 1" data-price="4000" data-quantity="1" data-image="images/lookbook-images/future-chair4.jpg"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
                         </div>
             
 
@@ -148,11 +145,8 @@
                             <p class="product-price" id="price2"></p>
                             <p class="product-info" id="description2"></p>
                             <br>
-                        <p>
-                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">
-                                <i class="fas fa-shopping-cart"></i> Add To cart
-                            </button>
-                        </p>  
+                            <br>
+                            <button class="product-button btn my-cart-btn" data-id="2" data-name="Memo-Bed" data-summary="summary 2" data-price="17000" data-quantity="2" data-image="images/lookbook-images/future-bed5.jpg"><i class="fas fa-shopping-cart"></i>Add To Cart</button> 
                     </div>
             
                     <div class="zoom product3-image" id="image3"></div>
@@ -161,12 +155,8 @@
                         <p class="product-price" id="price3"></p>
                         <p class="product-info" id="description3"></p>
                         <br>
-                        <p>
-                            <button class="product-button" class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="images/img_4.png">
-                                <i class="fas fa-shopping-cart"></i> Add To cart
-                            </button>
-                        </p>
-                       
+                            <br>
+                            <button class="product-button btn my-cart-btn" data-id="3" data-name="Halo Coffee Table" data-summary="summary 3" data-price="7500" data-quantity="3" data-image="images/lookbook-images/future-coffee-table2.jpg"><i class="fas fa-shopping-cart"></i>Add To Cart</button> 
                         </div>   
             
                     <div class="zoom product4-image" id="image4"></div>
@@ -175,11 +165,8 @@
                             <p class="product-price" id="price4"></p>
                             <p class="product-info" id="description4"></p>
                             <br>
-                            <p>
-                            <button class="product-button btn btn-primary shop-item-button" class="btn btn-danger my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1" data-image="images/img_5.png" type="button">
-                                <i class="fas fa-shopping-cart " ></i> Add To cart
-                            </button> 
-                        </p>
+                            <br>
+                            <button class="product-button btn my-cart-btn" data-id="4" data-name="Retro Style II" data-summary="summary 4" data-price="13500" data-quantity="4" data-image="images/lookbook-images/future-couch2.jpg"><i class="fas fa-shopping-cart"></i>Add To Cart</button> 
                     </div>
 
             <div class="pagination">
@@ -299,7 +286,7 @@ var goToCartIcon = function($addTocartBtn){
 }
 
 $('.my-cart-btn').myCart({
-  currencySymbol: '$',
+  currencySymbol: 'R',
   classCartIcon: 'my-cart-icon',
   classCartBadge: 'my-cart-badge',
   classProductQuantity: 'my-product-quantity',
@@ -309,10 +296,6 @@ $('.my-cart-btn').myCart({
   showCheckoutModal: true,
   numberOfDecimals: 2,
   cartItems: [
-    {id: 1, name: 'product 1', summary: 'summary 1', price: 4000, quantity: 1, image: 'images/lookbook-images/future-chair4.jpg'},
-    {id: 2, name: 'product 2', summary: 'summary 2', price: 17000, quantity: 2, image: 'images/lookbook-images/future-bed5.jpg'},
-    {id: 3, name: 'product 3', summary: 'summary 3', price: 7500, quantity: 1, image: 'images/lookbook-images/future-coffee-table2.jpg'},
-    {id: 4, name: 'product 4', summary: 'summary 4', price: 13500, quantity: 1, image: 'images/lookbook-images/future-couch2.jpg'}
   ],
   clickOnAddToCart: function($addTocart){
     goToCartIcon($addTocart);
