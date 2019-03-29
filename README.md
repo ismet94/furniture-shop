@@ -185,6 +185,16 @@ Tools:
 - Minimum comments added
 - Readme updated
 
+2019-03-28:
+- Completed Responsiveness for mobile
+- Started Responsiveness for Tablet
+- Added bootstrap code for cart
+- Altered code for personal style
+
+2019-03-29:
+- Completed add to cart functionality
+- styled buttons and added classes
+
 ## Contributors
 
 Ismet Samsodien - 2019
