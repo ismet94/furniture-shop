@@ -511,3 +511,12 @@
     height: 100%;
 }
 
+
+@mixin res-tab-what-we-do-images {
+    width: 87%;
+    height: 380px;
+    align-items: center;
+    padding-left: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

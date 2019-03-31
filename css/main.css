@@ -2722,7 +2722,8 @@ img {
   .main-slogan {
     height: 80px;
     font-size: 8px;
-    padding-top: 62px;
+    padding-top: 50%;
+    margin-top: 52px;
     line-height: 2.97; }
 
   .main-button {
@@ -3273,7 +3274,7 @@ img {
 
   .grid-new-collection {
     display: block;
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     /* grid columns and rows size */
     grid-template-columns: repeat(2, 1fr);
@@ -3311,12 +3312,325 @@ img {
 
   .grid-blog {
     display: block;
-    width: 90%;
+    width: 85%;
     margin: auto;
     /* grid columns and rows size */
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
-    grid-template-areas: "blogimg" "bloginfo"; } }
+    grid-template-areas: "blogimg" "bloginfo"; }
+
+  .footer1 {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2827; }
+
+  .grid-footer {
+    display: grid;
+    width: 96%;
+    margin: auto;
+    padding-top: 5%; }
+
+  .footer1 {
+    width: 100%;
+    height: auto; }
+
+  .footerlinks {
+    grid-auto-rows: auto;
+    width: 100px;
+    margin: 0px;
+    padding: 0px; }
+
+  .footerlinks-content {
+    width: 100px; }
+
+  .footershop {
+    width: 70px;
+    margin: 0px;
+    padding: 0px; }
+
+  .footershop-content {
+    width: 90px; }
+
+  .footerinsta {
+    padding: 0px; }
+
+  .grid-instagram {
+    display: grid;
+    width: 90%;
+    margin: auto 0px;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2px;
+    grid-template-areas: "insta1 insta2 insta3 insta4" "insta5 isnta6 insta7 insta8"; }
+
+  .insta-img1 {
+    grid: insta1;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img2 {
+    grid: insta2;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img3 {
+    grid: insta3;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img4 {
+    grid: insta4;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img5 {
+    grid: insta5;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img6 {
+    grid: insta6;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img7 {
+    grid: insta7;
+    width: 70px;
+    height: 70px; }
+
+  .insta-img8 {
+    grid: insta8;
+    width: 70px;
+    height: 70px; }
+
+  .copyright {
+    width: 100%;
+    height: 50px; }
+
+  .grid2-nav2 {
+    display: grid;
+    margin: auto;
+    width: 95%;
+    line-height: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 6px;
+    grid-template-areas: "logo home shop about blog contact lookbook cart search"; }
+
+  .who-we-are {
+    margin-top: 5%;
+    height: 50%;
+    padding-bottom: 10px;
+    background-color: #ffffff; }
+
+  .grid2-about {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+    align-content: center;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "aboutimage" "whowe"; }
+
+  .about-us-image {
+    width: 87%;
+    height: 380px;
+    align-items: center;
+    padding-left: 70px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .meet-us {
+    margin-top: 15%;
+    height: 100%;
+    background-color: #ffffff; }
+
+  .meet-our-team {
+    padding-top: 30px; }
+
+  .grid2-meet {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    line-height: 70px;
+    padding-top: 10px;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "feature feature" "meet1 meet2" "meet3 meet4"; }
+
+  .meet1 {
+    align-items: center; }
+
+  .meet-name1 {
+    height: 100%;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1px; }
+
+  .meet-position1 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 0.5;
+    padding: 5px; }
+
+  .meet-social1 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px; }
+
+  .meet2 {
+    align-items: center; }
+
+  .meet-name2 {
+    height: 100%;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1px; }
+
+  .meet-position2 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 0.5;
+    padding: 5px; }
+
+  .meet-social2 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px; }
+
+  .meet3 {
+    align-items: center; }
+
+  .meet-name3 {
+    height: 100%;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1px; }
+
+  .meet-position3 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 0.5;
+    padding: 5px; }
+
+  .meet-social3 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px; }
+
+  .meet4 {
+    align-items: center; }
+
+  .meet-name4 {
+    height: 100%;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1px; }
+
+  .meet-position4 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 0.5;
+    padding: 5px; }
+
+  .meet-social4 {
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px; }
+
+  .what-we-do {
+    height: 100%; }
+
+  .grid2-we-do {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "wedoimg " "wedoinfo"; }
+
+  .what-we-do-info {
+    grid-area: wedoinfo;
+    height: 80%; }
+
+  .what-we-do-para {
+    width: 100%;
+    height: 100%; }
+
+  .what-we-do-img {
+    width: 87%;
+    height: 380px;
+    align-items: center;
+    padding-left: 70px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .grid4-blog-main {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    grid-template-areas: "blog1 blog2" "blog3 blog4" "blog5 blog6"; }
+
+  .grid3-contact-us-view {
+    width: 90%; }
+
+  .grid3-form {
+    width: 90%;
+    padding-top: 28%; }
+
+  .grid5-container {
+    /* grid columns and rows size */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 300px); }
+
+  .grid6-productpage1 {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    padding-top: 2%;
+    /* grid columns and rows size */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    grid-template-areas: "productimage1 productcontent1" "productimage2 productcontent2" "productimage3 productcontent3" "productimage4 productcontent4" "page1 page1"; }
+
+  .like {
+    margin: 18px auto;
+    padding-right: 10%; }
+
+  .product-price {
+    padding-bottom: 2%;
+    margin: 18px auto; }
+
+  .product-info {
+    padding-bottom: 2%;
+    margin: 18px auto; }
+
+  .product-button {
+    margin: 38px auto; } }
 
 /*# sourceMappingURL=main.css.map */
