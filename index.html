@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- Added the effects link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
 
@@ -115,12 +117,12 @@
     <!-- Content of the featured products -->
     <section class="featured-products" >
 
-        <h2 class="feature">
+        <h2 class="feature" data-aos="zoom-in">
             Featured Products
         </h2>
             <p class="line"></p>
             <div class="grid-feature-products">
-            <div class="feat1">
+            <div class="feat1" data-aos="fade-right">
                 <div class="zoom feat-img1">
                     <img src="images/future-chair.jpg" alt="">
                 </div>
@@ -132,15 +134,12 @@
                 </div>
             </div>
 
-            <div class="feat2">
+            <div class="feat2"  data-aos="fade-up">
                 <div class="zoom feat-img2">
                         <!-- <p class="button-new">
                                 NEW
                         </p> -->
                     <img src="images/future-coffee-table.jpg" alt="">
-               
-                          
-                   
                    
                 </div>
                 <div class="feat-name2">
@@ -151,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="feat3">
+            <div class="feat3" data-aos="fade-left">
                 <div class="zoom feat-img3">
                     <img src="images/future-sofa.jpg" alt="">
                 </div>
@@ -167,12 +166,12 @@
 
     
     <section class="new-collection">
-        <h2 class="neww">
+        <h2 class="neww" data-aos="zoom-in">
             New Collection
         </h2>
             <p class="line2"></p>
             <div class="grid-new-collection">
-            <div class="coll1">
+            <div class="coll1" data-aos="fade-right">
                 <div  class="zoom collection-img">
                     <img src="images/future-bed-new.jpg" alt="new future bed">
                 </div>
@@ -180,7 +179,7 @@
                     Dream-On Starlight Bed
                 </div>
             </div>
-            <div class="coll2">
+            <div class="coll2" data-aos="fade-left">
                 <div class="zoom collection-img2"> 
                     <img src="images/future-chair-new.jpg" alt="new future chair">
                 </div>
@@ -192,19 +191,19 @@
     </section>
 
 
-    <section class="goods">
+    <section class="goods" >
         <aside class="grid-best">
-            <h1 class="best-heading">
+            <h1 class="best-heading" data-aos="flip-right">
                 Our Best Item
             </h1>
-            <div class="best-para">
+            <div class="best-para" data-aos="flip-right">
                 <p>
                 Nova LifeStyle, Inc., designer, manufacturer and distributor of modern LifeStyle furniture, announced the successful development of a new line of furniture that has the ability to monitor, record and deliver user data to key medical care providers.
                 <br>
                 Called Smart Health Furniture, the new line will be able to automatically examine a person’s blood pressure, heart rate, breathing, weight, body temperature, sleep quality and other physiological indexes. The data obtained by the Smart Health Furniture will be made available to medical professionals to aid in the early detection of possible health issues. Nova is currently in talks with several distributors in the US, China and Europe.
             </p>
             <a href="https://siliconangle.com/2015/04/23/new-furniture-tracks-your-health-from-weight-to-blood-pressure/" target="_blank">
-            <button class="best-btn">
+            <button class="best-btn" data-aos="flip-right">
                 SEE MORE
             </button></a>
         </aside>
@@ -212,15 +211,15 @@
 
 
     <section class="blog-section">
-        <h2 class="blog-head">
+        <h2 class="blog-head" data-aos="zoom-in">
             Our Blog
         </h2>
             <p class="line3"></p>
             <div class="grid-blog">
-            <div class=" zoom blogimg">
+            <div class=" zoom blogimg" data-aos="fade-right">
                 <img src="images/blog-images/z-island.jpg" alt="">
             </div>
-            <div class="bloginfo">
+            <div class="bloginfo" data-aos="fade-left">
                 <p class="blog-seconday-head">Accessories for everyday living</p>
                 <p class="blog-date">Feberuary 05, 2017</p>
                 <p class="blog-para">
@@ -313,6 +312,12 @@
     </div>
     
     <script src="js/functions.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+        });
+    </script>
 
 </body>
 </html>

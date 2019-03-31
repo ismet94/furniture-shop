@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="js/lookbook.js"></script>
+    <!-- Added the effects link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
 
@@ -95,7 +97,7 @@
     </nav>
 
     <section>
-        <div class="grid5-container">
+        <div class="grid5-container" >
             <div class="zoom future-office-design" >
                <img src="images/lookbook-images/future-office-design.png" alt="future office design" onclick="openlightbox();currentSlide(1)" >
             </div>
@@ -402,5 +404,10 @@
     </div>
 
     <script src="js/functions.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+        });
+    </script>
 </body>
 </html>
