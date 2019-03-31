@@ -5,9 +5,9 @@ The Future... We often think about future objects and elements in our daily live
 
 Loads of hours put into the website I started off with a grid structure layout this would help for future references concerning the responsiveness. Each tag had certain properties to abide by, by this, the code added up to 2000+ code I then resolved this by adding in mixins.scss file which removed alot of my redundancy. 
 Next step was to figure out a way to make the page feel professional so instead of having several odd colours I then turned to more subtle colours and kept it consist throught. Seeing that the website is aimed at a futuristic look the colours I chose, remained modern and easy.
-For my Lookbook the task was too create a masonry grid by this i used the grid system and then spaned each image to size the next step was to add a gallery slider for this I chose the lighbox slider which incorporated javascripting.
+For my Lookbook the task was too create a masonry grid by this i used the grid system and then spaned each image to size the next step was to add a gallery slider for this I chose the lighbox slider which incorporated javascripting next was to make my website responsive so as said above using the grid structure layout helped me lay each section under each other or alter the current columns and rows to site in the desired position (display: block;). 
 
-The final step was to make my website responsive so as said above using the grid sturcture layout helped me lay each section under each other or alter the current columns and rows to site in the desired position... Next is functionality... JS Here I come...
+The final step was to create the cart system into which a shop page could be functional with the use of JavaScripting. In this section I incoporated a bootstrap cart system both functional and styled. In the end abit of responsive was done to complete the project.
 
 ## Setting up my workspace
 
@@ -194,6 +194,14 @@ Tools:
 2019-03-29:
 - Completed add to cart functionality
 - styled buttons and added classes
+- Added additional comments
+- Removed additional functions
+
+2019-03-31:
+- Added effects to index.html
+- Compressed Lookbook images
+- Code indentation
+
 
 ## Contributors
 
