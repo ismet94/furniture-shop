@@ -36,10 +36,3 @@ function shopProducts(img, title, price, description) {
         document.getElementById("price4").innerHTML = couch2.price;
         document.getElementById("description4").innerHTML = couch2.description;
 
-    let coffeetable = new shopProducts( '<img src="images/future-coffee-table.jpg">', "Infinity Glass Coffee Table", "R10000", "Retro Styled Sofa set, the second version which includes a one seater. Made from Moonrock plastic compound and the padding designed from our famous memory foam and bull hide. The seating has a self heating or cooling function depending on the mood and has an auto feature set to room tempreture.");
-  
-        document.getElementById("image5").innerHTML = coffeetable.img;  
-        document.getElementById("title5").innerHTML = coffeetable.title;
-        document.getElementById("price5").innerHTML = coffeetable.price;
-        document.getElementById("description5").innerHTML = coffeetable.description;
-
