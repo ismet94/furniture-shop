@@ -504,7 +504,7 @@
 }
 
 // --------------------------------------------------------------------------------------
-// ----------------------------------- SHOP PAGE -------------------------------------
+// ----------------------------------- SHOP PAGES -------------------------------------
 // --------------------------------------------------------------------------------------
 
 .grid6 {
@@ -542,4 +542,23 @@
                 "productimage4 productcontent4 productcontent4"
                 ". page1 page1"
             }
+
+    &-productpage2 {
+        display: grid;
+        width: 70%;
+        margin: auto;
+        padding-top: 2%;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 40px;
+    
+        grid-template-areas: 
+                "productimage5 productcontent5 productcontent5"
+                "productimage6 productcontent6 productcontent6"
+                "productimage7 productcontent7 productcontent7"
+                "productimage8 productcontent8 productcontent8"
+                ". page1 page1"
+            }        
 }

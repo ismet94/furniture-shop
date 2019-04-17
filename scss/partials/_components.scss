@@ -1461,3 +1461,55 @@ top: 10px;
       background-color: $teel-colour;
     color: rgb(255, 255, 255);
 }
+
+// ---- Shop Page 2
+
+
+
+.product5-image {
+    grid-area: productimage5;
+    width: 300px;
+    height: 300px;
+    background-color: #666666;
+}
+
+.product5-content {
+    grid-area: productcontent5;
+    width: 100%;
+}
+
+.product6-image {
+    grid-area: productimage6;
+    width: 300px;
+    height: 300px;
+    background-color: #666666;
+}
+
+.product6-content {
+    grid-area: productcontent6;
+    width: 100%;
+}
+
+.product7-image {
+    grid-area: productimage7;
+    width: 300px;
+    height: 300px;
+    background-color: #666666;
+}
+
+.product7-content {
+    grid-area: productcontent7;
+    width: 100%;
+}
+
+.product8-image {
+    grid-area: productimage8;
+    width: 300px;
+    height: 300px;
+    background-color: #666666;
+}
+
+.product8-content {
+    grid-area: productcontent8;
+    width: 100%;
+}
